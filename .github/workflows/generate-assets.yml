@@ -22,7 +22,7 @@ jobs:
           fetch-depth: 0
 
       - name: Install ImageMagick
-        run: sudo apt-get update && sudo apt-get install -y imagemagick librsvg2-bin inkscape
+        run: sudo apt-get update && sudo apt-get install -y imagemagick librsvg2-bin inkscape libxml2-utils
 
       - name: Make script executable
         run: chmod +x src/scripts/generate-pngs.sh

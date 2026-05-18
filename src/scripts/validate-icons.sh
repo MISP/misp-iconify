@@ -24,7 +24,7 @@ for file in "$SVG_DIR"/*.svg; do
   #
   # No width/height
   #
-  if grep -qE '(<[^>]*\swidth=|<[^>]*\sheight=)' "$file"; then
+  if xmllint --xpath '//@width | //@height' "$file" 2>/dev/null | grep -q .; then
     echo "❌ $name: must not contain width/height attributes"
     FAILED=1
   fi
