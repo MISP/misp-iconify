@@ -1,13 +1,54 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
+   width="24mm"
+   height="24.000086mm"
    viewBox="0 0 24 24.000086"
    version="1.1"
    id="svg1"
+   inkscape:version="1.4.4 (1:1.4.4+202605061436+dcaf3e7d9e)"
+   sodipodi:docname="analyst-opinion.svg"
+   inkscape:export-filename="../../git/misp-iconify/src/svg/analyst-note.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="4.108614"
+     inkscape:cx="36.265271"
+     inkscape:cy="50.990432"
+     inkscape:window-width="2307"
+     inkscape:window-height="1403"
+     inkscape:window-x="20"
+     inkscape:window-y="20"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="24"
+       height="24.000086"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
   <defs
      id="defs1" />
   <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
      id="layer1">
     <path
        id="path2"
@@ -19,10 +60,8 @@
        id="path2-6"
        style="stroke-width:0.0197494" />
     <path
-       fill="currentColor"
-       fill-rule="evenodd"
-       d="M 11.849499,8.3866576 H 3.7797633 c -0.5547945,0 -1.0087173,0.4539221 -1.0087173,1.0087174 v 7.061022 c 0,0.554794 0.4539228,1.008716 1.0087173,1.008716 h 8.0697357 c 0.554795,0 1.008717,-0.453922 1.008717,-1.008716 V 9.395375 c 0,-0.5547953 -0.453922,-1.0087174 -1.008717,-1.0087174 M 6.8059149,15.447679 H 4.2841221 v -1.008718 h 2.5217928 z m 0,-2.017434 H 4.2841221 v -1.008718 h 2.5217928 z m 0,-2.017436 H 4.2841221 v -1.008715 h 2.5217928 z m 2.431009,3.026152 -1.4222918,-1.432377 0.7111456,-0.711146 0.7111462,0.716191 1.5988141,-1.59882 0.71619,0.716191 z"
        id="path2-0"
-       style="stroke-width:0.504358" />
+       style="fill:#000000;stroke-width:1.02802"
+       d="m 6.9048365,16.009943 -2.8990154,-2.919572 1.4495071,-1.449507 1.4495083,1.45979 3.2588155,-3.2588271 1.459789,1.4597911 z M 11.849499,8.3866576 H 3.7797633 c -0.5547945,0 -1.0087173,0.4539221 -1.0087173,1.0087174 v 7.061022 c 0,0.554794 0.4539228,1.008716 1.0087173,1.008716 h 8.0697357 c 0.554795,0 1.008717,-0.453922 1.008717,-1.008716 V 9.395375 c 0,-0.5547953 -0.453922,-1.0087174 -1.008717,-1.0087174" />
   </g>
 </svg>
