@@ -27,15 +27,15 @@ jobs:
       - name: Make script executable
         run: chmod +x src/scripts/generate-pngs.sh
 
-      - name: Generate PNG assets
-        run: make png
+      - name: Generate assets
+        run: make assets
 
-      - name: Commit generated PNGs
+      - name: Commit generated assets
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add exports/png
+          git add exports
 
           if git diff --cached --quiet; then
             echo "No PNG changes."

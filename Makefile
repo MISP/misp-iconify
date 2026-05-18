@@ -19,6 +19,8 @@ catalog:
 attribution:
 	@bash src/scripts/generate-attribution.sh
 
+assets: webp png
+
 webp:
 	@bash src/scripts/generate-webp.sh
 
