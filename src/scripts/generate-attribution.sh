@@ -27,7 +27,6 @@ fi
 # 1. Generate ATTRIBUTION.md
 #
 {
-  echo "# Attribution"
   echo ""
   echo "This project includes icons from third-party sources that require attribution."
   echo ""
