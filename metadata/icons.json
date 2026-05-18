@@ -1,6 +1,80 @@
 {
+  "analyst-note": {
+    "source": "MISP Project",
+    "original": "misp-project:analyst-note",
+    "license": "MIT",
+    "url": "https://github.com/MISP"
+  },
+  "analyst-opinion": {
+    "source": "MISP Project",
+    "original": "misp-project:analyst-note",
+    "license": "MIT",
+    "url": "https://github.com/MISP"
+  },
+  "attribute": {
+    "source": "Clarity",
+    "original": "clarity:block-group-solid",
+    "license": "MIT",
+    "url": "https://blade-ui-kit.com"
+  },
+  "event": {
+    "source": "MISP Project",
+    "original": "misp-project:analyst-note",
+    "license": "MIT",
+    "url": "https://github.com/MISP"
+  },
+  "galaxy": {
+    "source": "Plump free icons",
+    "original": "streamline-plump:galaxy-2-solid",
+    "license": "CC BY 4.0",
+    "url": "https://streamlinehq.com"
+  },
+  "object": {
+    "source": "Clarity",
+    "original": "clarity:blocks-group-solid",
+    "license": "MIT",
+    "url": "https://blade-ui-kit.com"
+  },
+  "organisation": {
+    "source": "Fluent UI System Icons",
+    "original": "fluent:building-48-filled",
+    "license": "MIT",
+    "url": "https://github.com/microsoft/fluentui-system-icons"
+  },
+  "report": {
+    "source": "Tabler Icons",
+    "original": "tabler:file-text-filled",
+    "license": "MIT",
+    "url": "https://github.com/tabler/tabler-icons"
+  },
+  "sharing-group": {
+    "source": "MISP Project",
+    "original": "misp-project:sharing-group",
+    "license": "MIT",
+    "url": "https://github.com/MISP"
+  },
+  "sighting": {
+    "source": "Material Design Icons",
+    "original": "mdi:eye",
+    "license": "Apache 2.0",
+    "url": "https://github.com/google/material-design-icons"
+  },
   "tag": {
-    "name": "tag"
+    "source": "Bootstrap Icons",
+    "original": "bi:tag-fill",
+    "license": "MIT",
+    "url": "https://github.com/twbs/icons"
+  },
+  "taxonomy": {
+    "source": "Bootstrap Icons",
+    "original": "bi:tags-fill",
+    "license": "MIT",
+    "url": "https://github.com/twbs/icons"
+  },
+  "user": {
+    "source": "Font Awesome Solid",
+    "original": "fa7-solid:user",
+    "license": "CC BY 4.0",
+    "url": "https://github.com/FortAwesome/Font-Awesome"
   }
-
 }

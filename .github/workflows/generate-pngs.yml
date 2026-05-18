@@ -5,8 +5,7 @@ on:
     branches:
       - main
     paths:
-      - "src/svg/**"
-      - "scripts/**"
+      - "src/**"
       - "Makefile"
 
 jobs:
@@ -26,7 +25,7 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y imagemagick librsvg2-bin
 
       - name: Make script executable
-        run: chmod +x scripts/generate-pngs.sh
+        run: chmod +x src/scripts/generate-pngs.sh
 
       - name: Generate PNG assets
         run: make png
