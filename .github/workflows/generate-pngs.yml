@@ -1,0 +1,47 @@
+name: Generate PNG Icons
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "src/svg/**"
+      - "scripts/**"
+      - "Makefile"
+
+jobs:
+  generate-pngs:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install ImageMagick
+        run: sudo apt-get update && sudo apt-get install -y imagemagick librsvg2-bin
+
+      - name: Make script executable
+        run: chmod +x scripts/generate-pngs.sh
+
+      - name: Generate PNG assets
+        run: make png
+
+      - name: Commit generated PNGs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add exports/png
+
+          if git diff --cached --quiet; then
+            echo "No PNG changes."
+            exit 0
+          fi
+
+          git commit -m "chore: generate PNG icons [skip ci]"
+          git push
