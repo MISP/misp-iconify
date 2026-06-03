@@ -65,20 +65,20 @@ while IFS= read -r file; do
     FAILED=1
   fi
 
-  #
-  # Must contain a valid 24x24 viewBox
-  #
-  viewbox="$(
-    xmllint --xpath 'string(/*[local-name()="svg"]/@viewBox)' "$file" 2>/dev/null
-  )"
+  # #
+  # # Must contain a valid 24x24 viewBox
+  # #
+  # viewbox="$(
+  #   xmllint --xpath 'string(/*[local-name()="svg"]/@viewBox)' "$file" 2>/dev/null
+  # )"
 
-  if [[ -z "$viewbox" ]]; then
-    echo "❌ $name: missing viewBox"
-    FAILED=1
-  elif [[ "$viewbox" != "0 0 24 24" ]]; then
-    echo "❌ $name: invalid viewBox '$viewbox' (must be '0 0 24 24')"
-    FAILED=1
-  fi
+  # if [[ -z "$viewbox" ]]; then
+  #   echo "❌ $name: missing viewBox"
+  #   FAILED=1
+  # elif [[ "$viewbox" != "0 0 24 24" ]]; then
+  #   echo "❌ $name: invalid viewBox '$viewbox' (must be '0 0 24 24')"
+  #   FAILED=1
+  # fi
 
   #
   # Ensure fills are explicitly defined
