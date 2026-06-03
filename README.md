@@ -9,7 +9,7 @@ Main icon class:  `misp-icon`
 - Hexagone class: `misp-hexagone`
 - Simple class: `misp-simple`
 
-| Name | Icon Simple | Icon Hexa | Class |
+| Name | Icon Simple | Icon Hexa | CSS Class |
 |------|-------------|------------| ---- |
 | `analyst-note` | <img src="./exports/png/2x/simple/analyst-note.png" width="24" alt="analyst-note simple" /> | <img src="./exports/png/2x/hexagone/analyst-note.png" width="24" alt="analyst-note hexagone" /> | `misp-analyst-note` |
 | `analyst-opinion` | <img src="./exports/png/2x/simple/analyst-opinion.png" width="24" alt="analyst-opinion simple" /> | <img src="./exports/png/2x/hexagone/analyst-opinion.png" width="24" alt="analyst-opinion hexagone" /> | `misp-analyst-opinion` |
