@@ -18,8 +18,14 @@ SIMPLE_DIR="./src/svg/simple"
   echo "$START"
   echo ""
 
-  echo "| Name | Icon Simple | Icon Hexa |"
-  echo "|------|-------------|------------|"
+  echo ""
+  echo "Main icon class:  \`misp-icon\`"
+  echo "- Hexagone class: \`misp-hexagone\`"
+  echo "- Simple class: \`misp-simple\`"
+  echo ""
+
+  echo "| Name | Icon Simple | Icon Hexa | CSS Class |"
+  echo "|------|-------------|------------| ---- |"
 
   #
   # Use simple/ as source of truth
@@ -31,7 +37,9 @@ SIMPLE_DIR="./src/svg/simple"
     simple_png="./exports/png/2x/simple/${name}.png"
     hexa_png="./exports/png/2x/hexagone/${name}.png"
 
-    echo "| \`$name\` | <img src=\"$simple_png\" width=\"24\" alt=\"$name simple\" /> | <img src=\"$hexa_png\" width=\"24\" alt=\"$name hexagone\" /> |"
+    class="misp-${name}"
+
+    echo "| \`$name\` | <img src=\"$simple_png\" width=\"24\" alt=\"$name simple\" /> | <img src=\"$hexa_png\" width=\"24\" alt=\"$name hexagone\" /> | \`$class\` |"
 
   done < <(find "$SIMPLE_DIR" -type f -name "*.svg" | sort)
 
