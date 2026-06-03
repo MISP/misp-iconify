@@ -24,22 +24,16 @@
     <rect
        x="12.65"
        y="15.23"
-       width="1.55"
-       height="1.55"
        fill="currentColor"
        id="rect2" />
     <rect
        x="15.23"
        y="15.23"
-       width="1.55"
-       height="1.55"
        fill="currentColor"
        id="rect3" />
     <rect
        x="17.81"
        y="15.23"
-       width="1.55"
-       height="1.55"
        fill="currentColor"
        id="rect4" />
   </g>

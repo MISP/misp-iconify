@@ -11,24 +11,18 @@
   <rect
      x="13.75"
      y="15.59"
-     width="1"
-     height="5.52"
      transform="translate(-8.6 22.56) rotate(-62.6)"
      fill="currentColor"
      id="rect1" />
   <rect
      x="14.55"
      y="14.05"
-     width="1"
-     height="5.52"
      transform="translate(-6.8 22.44) rotate(-62.6)"
      fill="currentColor"
      id="rect2" />
   <rect
      x="12.94"
      y="17.17"
-     width="1"
-     height="5.52"
      transform="translate(-10.44 22.69) rotate(-62.6)"
      fill="currentColor"
      id="rect3" />

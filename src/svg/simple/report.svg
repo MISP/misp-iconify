@@ -24,50 +24,36 @@
     <rect
        x="11.01"
        y="10.73"
-       width="9.97"
-       height="1.45"
        fill="currentColor"
        id="rect2" />
     <rect
        x="11.01"
        y="16.99"
-       width="9.97"
-       height="1.45"
        fill="currentColor"
        id="rect3" />
     <rect
        x="18.91"
        y="19.82"
-       width="2.08"
-       height="1.45"
        fill="currentColor"
        id="rect4" />
     <rect
        x="13.3"
        y="19.82"
-       width="4.2"
-       height="1.45"
        fill="currentColor"
        id="rect5" />
     <rect
        x="11.01"
        y="19.82"
-       width=".87"
-       height="1.45"
        fill="currentColor"
        id="rect6" />
     <rect
        x="11.01"
        y="14.17"
-       width="2.15"
-       height="1.45"
        fill="currentColor"
        id="rect7" />
     <rect
        x="14.7"
        y="14.17"
-       width="6.28"
-       height="1.45"
        fill="currentColor"
        id="rect8" />
   </g>
