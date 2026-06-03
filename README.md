@@ -26,13 +26,31 @@
 <!-- ICONS_END -->
 
 
+## Usage
+
+Icons inherit color and size from CSS (currentColor, font-size).
+
+### SVG (direct file)
+```html
+<!-- For the event with the hexagone shape  -->
+<img src="./hexagone/event.svg" />
+```
+
+### CSS
+```html
+<link rel="stylesheet" href="./exports/css/icons.css" />
+...
+<!-- For the event with the hexagone shape  -->
+<i class="misp-icon misp-hexagone misp-event"></i>
+```
+
 
 ## Contribution Rules
 
 - `src/svg` is the source of truth
 - Never edit generated PNGs manually
 - SVG filenames must use kebab-case
-- Icons should use a 24x24 viewBox
+<!-- - Icons should use a 24x24 viewBox -->
 - Icons should use the fill=`currentColor`
 - Icons provenance is tracked in `metadata/icons.json`
 
