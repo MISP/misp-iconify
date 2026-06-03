@@ -16,7 +16,7 @@ fi
 
 mkdir -p "$OUTPUT_DIR"
 
-find "$SVG_DIR" -type f -name "*.svg" | while read -r file; do
+while IFS= read -r file; do
   name="$(basename "$file" .svg)"
 
   output="$OUTPUT_DIR/$name.webp"
@@ -28,7 +28,7 @@ find "$SVG_DIR" -type f -name "*.svg" | while read -r file; do
     "$file" \
     -resize 128x128 \
     "$output"
-done
+done < <(find "$SVG_DIR" -type f -name "*.svg")
 
 echo ""
 echo "WebP generation complete."

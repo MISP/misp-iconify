@@ -8,7 +8,15 @@ META="./metadata/icons.json"
 echo "Validating metadata..."
 
 #
-# 0. Validate JSON first
+# Allowed variants
+#
+VARIANTS=(
+  "simple"
+  "hexagone"
+)
+
+#
+# Validate JSON first
 #
 if ! jq empty "$META" 2>/dev/null; then
   echo "❌ metadata/icons.json is not valid JSON"
@@ -16,7 +24,7 @@ if ! jq empty "$META" 2>/dev/null; then
 fi
 
 #
-# 0.5 Normalize JSON order (IMPORTANT NEW STEP)
+# Normalize JSON order
 #
 TMP="$(mktemp)"
 
@@ -28,48 +36,65 @@ echo "✔ metadata sorted by key"
 FAILED=0
 
 #
-# 1. Validate SVG ↔ metadata consistency
+# Validate SVG ↔ metadata consistency
 #
-for file in "$SVG_DIR"/*.svg; do
-  name="$(basename "$file" .svg)"
+for variant in "${VARIANTS[@]}"; do
 
-  echo "→ $name"
+  while IFS= read -r file; do
+    relative="${file#$SVG_DIR/$variant/}"
+    name="${relative%.svg}"
 
-  #
-  # Check entry exists
-  #
-  if ! jq -e --arg k "$name" '.[$k]' "$META" >/dev/null; then
-    echo "❌ Missing metadata entry for: $name"
-    FAILED=1
-    continue
-  fi
+    echo "→ $variant/$name"
 
-  #
-  # Strict validation: field must be a non-empty string
-  #
-  for field in source original license; do
-    if ! jq -e --arg k "$name" --arg f "$field" \
-      '.[$k][$f] | type == "string" and length > 0' "$META" >/dev/null; then
-      echo "❌ Missing or invalid '$field' for: $name"
+    #
+    # Metadata key is based on icon name only
+    # not the variant
+    #
+    if ! jq -e --arg k "$name" '.[$k]' "$META" >/dev/null; then
+      echo "❌ Missing metadata entry for: $name"
       FAILED=1
+      continue
     fi
-  done
+
+    #
+    # Strict validation
+    #
+    for field in source original license; do
+      if ! jq -e --arg k "$name" --arg f "$field" \
+        '.[$k][$f] | type == "string" and length > 0' "$META" >/dev/null; then
+        echo "❌ Missing or invalid '$field' for: $name"
+        FAILED=1
+      fi
+    done
+
+  done < <(find "$SVG_DIR/$variant" -type f -name "*.svg" | sort)
+
 done
 
 #
-# 2. Orphan metadata detection
+# Orphan metadata detection
 #
 echo ""
 echo "Checking for orphan metadata entries..."
 
-jq -r 'keys[]' "$META" | while read -r key; do
-  if [ ! -f "$SVG_DIR/$key.svg" ]; then
+while IFS= read -r key; do
+  found=0
+
+  for variant in "${VARIANTS[@]}"; do
+    if [[ -f "$SVG_DIR/$variant/$key.svg" ]]; then
+      found=1
+      break
+    fi
+  done
+
+  if [[ "$found" -eq 0 ]]; then
     echo "⚠️  Orphan metadata entry (no SVG): $key"
   fi
-done
+
+done < <(jq -r 'keys[]' "$META")
 
 #
-# 3. Final result
+# Final result
 #
 if [ "$FAILED" -eq 1 ]; then
   echo ""

@@ -4,21 +4,24 @@
 
 <!-- ICONS_START -->
 
-| Icon | Name |
-|------|------|
-| <img src="./exports/png/2x/analyst-note.png" width="24" alt="analyst-note" /> | `analyst-note` |
-| <img src="./exports/png/2x/analyst-opinion.png" width="24" alt="analyst-opinion" /> | `analyst-opinion` |
-| <img src="./exports/png/2x/attribute.png" width="24" alt="attribute" /> | `attribute` |
-| <img src="./exports/png/2x/event.png" width="24" alt="event" /> | `event` |
-| <img src="./exports/png/2x/galaxy.png" width="24" alt="galaxy" /> | `galaxy` |
-| <img src="./exports/png/2x/object.png" width="24" alt="object" /> | `object` |
-| <img src="./exports/png/2x/organisation.png" width="24" alt="organisation" /> | `organisation` |
-| <img src="./exports/png/2x/report.png" width="24" alt="report" /> | `report` |
-| <img src="./exports/png/2x/sharing-group.png" width="24" alt="sharing-group" /> | `sharing-group` |
-| <img src="./exports/png/2x/sighting.png" width="24" alt="sighting" /> | `sighting` |
-| <img src="./exports/png/2x/tag.png" width="24" alt="tag" /> | `tag` |
-| <img src="./exports/png/2x/taxonomy.png" width="24" alt="taxonomy" /> | `taxonomy` |
-| <img src="./exports/png/2x/user.png" width="24" alt="user" /> | `user` |
+| Name | Icon Simple | Icon Hexa |
+|------|-------------|------------|
+| `analyst-note` | <img src="./exports/png/2x/simple/analyst-note.png" width="24" alt="analyst-note simple" /> | <img src="./exports/png/2x/hexagone/analyst-note.png" width="24" alt="analyst-note hexagone" /> |
+| `analyst-opinion` | <img src="./exports/png/2x/simple/analyst-opinion.png" width="24" alt="analyst-opinion simple" /> | <img src="./exports/png/2x/hexagone/analyst-opinion.png" width="24" alt="analyst-opinion hexagone" /> |
+| `attribute` | <img src="./exports/png/2x/simple/attribute.png" width="24" alt="attribute simple" /> | <img src="./exports/png/2x/hexagone/attribute.png" width="24" alt="attribute hexagone" /> |
+| `event` | <img src="./exports/png/2x/simple/event.png" width="24" alt="event simple" /> | <img src="./exports/png/2x/hexagone/event.png" width="24" alt="event hexagone" /> |
+| `galaxy` | <img src="./exports/png/2x/simple/galaxy.png" width="24" alt="galaxy simple" /> | <img src="./exports/png/2x/hexagone/galaxy.png" width="24" alt="galaxy hexagone" /> |
+| `misp` | <img src="./exports/png/2x/simple/misp.png" width="24" alt="misp simple" /> | <img src="./exports/png/2x/hexagone/misp.png" width="24" alt="misp hexagone" /> |
+| `object` | <img src="./exports/png/2x/simple/object.png" width="24" alt="object simple" /> | <img src="./exports/png/2x/hexagone/object.png" width="24" alt="object hexagone" /> |
+| `organisation` | <img src="./exports/png/2x/simple/organisation.png" width="24" alt="organisation simple" /> | <img src="./exports/png/2x/hexagone/organisation.png" width="24" alt="organisation hexagone" /> |
+| `report` | <img src="./exports/png/2x/simple/report.png" width="24" alt="report simple" /> | <img src="./exports/png/2x/hexagone/report.png" width="24" alt="report hexagone" /> |
+| `sharing-group` | <img src="./exports/png/2x/simple/sharing-group.png" width="24" alt="sharing-group simple" /> | <img src="./exports/png/2x/hexagone/sharing-group.png" width="24" alt="sharing-group hexagone" /> |
+| `sighting` | <img src="./exports/png/2x/simple/sighting.png" width="24" alt="sighting simple" /> | <img src="./exports/png/2x/hexagone/sighting.png" width="24" alt="sighting hexagone" /> |
+| `tag` | <img src="./exports/png/2x/simple/tag.png" width="24" alt="tag simple" /> | <img src="./exports/png/2x/hexagone/tag.png" width="24" alt="tag hexagone" /> |
+| `taxonomy` | <img src="./exports/png/2x/simple/taxonomy.png" width="24" alt="taxonomy simple" /> | <img src="./exports/png/2x/hexagone/taxonomy.png" width="24" alt="taxonomy hexagone" /> |
+| `user1` | <img src="./exports/png/2x/simple/user1.png" width="24" alt="user1 simple" /> | <img src="./exports/png/2x/hexagone/user1.png" width="24" alt="user1 hexagone" /> |
+| `user2` | <img src="./exports/png/2x/simple/user2.png" width="24" alt="user2 simple" /> | <img src="./exports/png/2x/hexagone/user2.png" width="24" alt="user2 hexagone" /> |
+| `user3` | <img src="./exports/png/2x/simple/user3.png" width="24" alt="user3 simple" /> | <img src="./exports/png/2x/hexagone/user3.png" width="24" alt="user3 hexagone" /> |
 
 <!-- ICONS_END -->
 
@@ -37,12 +40,8 @@
 ## Attribution
 
 <!-- ATTRIBUTION_START -->
-# Attribution
 
 This project includes icons from third-party sources that require attribution.
 
-- **galaxy** → streamline-plump:galaxy-2-solid (source: Plump free icons, license: CC BY 4.0, url: https://streamlinehq.com)
-- **sighting** → mdi:eye (source: Material Design Icons, license: Apache 2.0, url: https://github.com/google/material-design-icons)
-- **user** → fa7-solid:user (source: Font Awesome Solid, license: CC BY 4.0, url: https://github.com/FortAwesome/Font-Awesome)
 
 <!-- ATTRIBUTION_END -->

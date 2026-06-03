@@ -10,29 +10,39 @@ END="<!-- ICONS_END -->"
 TMP="$(mktemp)"
 
 #
-# Build markdown table
+# Variants
 #
+SIMPLE_DIR="./src/svg/simple"
 
 {
   echo "$START"
   echo ""
-  echo "| Icon | Name |"
-  echo "|------|------|"
 
-  find ./src/svg -type f -name "*.svg" | sort | while read -r file; do
-    name="$(basename "$file" .svg)"
+  echo "| Name | Icon Simple | Icon Hexa |"
+  echo "|------|-------------|------------|"
 
-    echo "| <img src=\"./exports/png/2x/$name.png\" width=\"24\" alt=\"$name\" /> | \`$name\` |"
-  done
+  #
+  # Use simple/ as source of truth
+  #
+  while IFS= read -r file; do
+    relative="${file#$SIMPLE_DIR/}"
+    name="${relative%.svg}"
+
+    simple_png="./exports/png/2x/simple/${name}.png"
+    hexa_png="./exports/png/2x/hexagone/${name}.png"
+
+    echo "| \`$name\` | <img src=\"$simple_png\" width=\"24\" alt=\"$name simple\" /> | <img src=\"$hexa_png\" width=\"24\" alt=\"$name hexagone\" /> |"
+
+  done < <(find "$SIMPLE_DIR" -type f -name "*.svg" | sort)
 
   echo ""
   echo "$END"
+
 } > "$TMP"
 
 #
 # Replace section in README
 #
-
 awk -v start="$START" -v end="$END" '
 BEGIN { inside = 0 }
 

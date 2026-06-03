@@ -6,8 +6,9 @@ SVG_DIR="./src/svg"
 
 echo "Optimizing SVGs..."
 
-find "$SVG_DIR" -type f -name "*.svg" | while read -r file; do
-  echo "→ $file"
+while IFS= read -r file; do
+  relative="${file#$SVG_DIR/}"
+  echo "→ $relative"
 
   tmp="$(mktemp).svg"
 
@@ -18,7 +19,7 @@ find "$SVG_DIR" -type f -name "*.svg" | while read -r file; do
     >/dev/null 2>&1
 
   mv "$tmp" "$file"
-done
+done < <(find "$SVG_DIR" -type f -name "*.svg")
 
 echo ""
 echo "SVG optimization complete."

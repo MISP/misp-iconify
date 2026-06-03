@@ -1,6 +1,6 @@
-.PHONY: all clean validate optimize png metadata catalog webp
+.PHONY: all clean validate optimize png metadata catalog webp css
 
-all: clean validate optimize metadata catalog attribution png webp
+all: clean validate optimize metadata catalog attribution png webp css
 
 clean:
 	@rm -rf exports
@@ -26,3 +26,6 @@ webp:
 
 png:
 	@bash src/scripts/generate-pngs.sh
+
+css:
+	@bash src/scripts/generate-css.sh
