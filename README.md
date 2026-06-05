@@ -1,5 +1,7 @@
 # misp-iconify
 
+Icons and related visual elements for MISP and MISP standard.
+
 ## Catalog
 
 <!-- ICONS_START -->
