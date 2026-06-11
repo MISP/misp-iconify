@@ -19,11 +19,11 @@ echo "Generating CSS icons..."
 #
 cat > "$OUTPUT_FILE" <<'EOF'
 .misp-icon {
-  width: 1em;
+  width: 1.25em;
   height: 1em;
 
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: center;
 
   background-color: currentColor;
 
@@ -36,10 +36,6 @@ cat > "$OUTPUT_FILE" <<'EOF'
   -webkit-mask-size: contain;
 }
 
-.misp-fw {
-  width: 1.25em;
-  text-align: center;
-}
 EOF
 
 echo "" >> "$OUTPUT_FILE"
