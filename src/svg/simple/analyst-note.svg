@@ -17,6 +17,8 @@
     <rect
        x="9.57"
        y="11.12"
+       width="9.56"
+       height="1.42"
        fill="currentColor"
        id="rect1" />
     <g
@@ -24,11 +26,15 @@
       <rect
          x="9.57"
          y="14.25"
+         width="4.75"
+         height="1.42"
          fill="currentColor"
          id="rect2" />
       <rect
          x="15.53"
          y="14.25"
+         width="3.6"
+         height="1.42"
          fill="currentColor"
          id="rect3" />
     </g>

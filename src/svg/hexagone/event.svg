@@ -15,11 +15,15 @@
   <rect
      x="17.04"
      y="23.49"
+     width="4.09"
+     height=".75"
      fill="currentColor"
      id="rect1" />
   <rect
      x="17.04"
      y="21.97"
+     width= "2.61"
+     height=".75"
      fill="currentColor"
      id="rect2" />
   <path
