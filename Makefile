@@ -1,6 +1,6 @@
-.PHONY: all clean validate optimize png metadata catalog webp css
+.PHONY: all clean validate optimize fit-ratio png metadata catalog webp css
 
-all: clean validate optimize metadata catalog attribution png webp css
+all: clean validate optimize fit-ratio metadata catalog attribution png webp css
 
 clean:
 	@rm -rf exports
@@ -12,6 +12,9 @@ validate:
 
 optimize:
 	@bash src/scripts/optimize-svgs.sh
+
+fit-ratio:
+	@bash src/scripts/fit-to-ratio.sh
 
 catalog:
 	@bash src/scripts/generate-catalog.sh
