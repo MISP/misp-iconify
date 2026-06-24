@@ -13,6 +13,7 @@ echo "Validating metadata..."
 VARIANTS=(
   "simple"
   "hexagone"
+  "attributes"
 )
 
 #
@@ -26,12 +27,20 @@ fi
 #
 # Normalize JSON order
 #
+# Group MISP Project icons first, then everything else (e.g. attribute-type
+# icons sourced from third parties), each group sorted alphabetically by key.
+# This keeps the attribution file easy to browse while staying idempotent.
+#
 TMP="$(mktemp)"
 
-jq 'to_entries | sort_by(.key) | from_entries' "$META" > "$TMP"
+jq '
+  to_entries
+  | sort_by([ (if .value.source == "MISP Project" then 0 else 1 end), .key ])
+  | from_entries
+' "$META" > "$TMP"
 mv "$TMP" "$META"
 
-echo "✔ metadata sorted by key"
+echo "✔ metadata grouped (MISP first) and sorted by key"
 
 FAILED=0
 

@@ -13,7 +13,8 @@ END="<!-- ATTRIBUTION_END -->"
 ATTRIBUTION_LICENSES='[
   "CC-BY-4.0",
   "CC-BY-3.0",
-  "Apache-2.0"
+  "Apache-2.0",
+  "MIT"
 ]'
 
 echo "Generating attribution file..."

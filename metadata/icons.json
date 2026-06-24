@@ -94,5 +94,305 @@
     "original": "misp-project:user3",
     "license": "BSD-2-Clause",
     "url": "https://github.com/MISP"
+  },
+  "as": {
+    "source": "Tabler Icons",
+    "original": "tabler:affiliate",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "attachment": {
+    "source": "Tabler Icons",
+    "original": "tabler:paperclip",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "btc": {
+    "source": "Tabler Icons",
+    "original": "tabler:currency-bitcoin",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "campaign-name": {
+    "source": "Tabler Icons",
+    "original": "tabler:flag",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "cc-number": {
+    "source": "Tabler Icons",
+    "original": "tabler:credit-card",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "comment": {
+    "source": "Tabler Icons",
+    "original": "tabler:message",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "cookie": {
+    "source": "Tabler Icons",
+    "original": "tabler:cookie",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "cpe": {
+    "source": "Tabler Icons",
+    "original": "tabler:package",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "datetime": {
+    "source": "Tabler Icons",
+    "original": "tabler:clock",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "domain": {
+    "source": "Tabler Icons",
+    "original": "tabler:world",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "domain-ip": {
+    "source": "Tabler Icons",
+    "original": "tabler:route",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "email": {
+    "source": "Tabler Icons",
+    "original": "tabler:mail",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "email-dst": {
+    "source": "Tabler Icons",
+    "original": "tabler:mail-down",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "email-src": {
+    "source": "Tabler Icons",
+    "original": "tabler:mail-forward",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "filename": {
+    "source": "Tabler Icons",
+    "original": "tabler:file",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "filename-md5": {
+    "source": "Tabler Icons",
+    "original": "tabler:file-digit",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "filename-sha256": {
+    "source": "Tabler Icons",
+    "original": "tabler:file-digit",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "full-name": {
+    "source": "Tabler Icons",
+    "original": "tabler:user",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "github-username": {
+    "source": "Tabler Icons",
+    "original": "tabler:brand-github",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "hostname": {
+    "source": "Tabler Icons",
+    "original": "tabler:server",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "iban": {
+    "source": "Tabler Icons",
+    "original": "tabler:building-bank",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "ip-dst": {
+    "source": "Tabler Icons",
+    "original": "tabler:world-download",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "ip-dst-port": {
+    "source": "Tabler Icons",
+    "original": "tabler:plug-connected",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "ip-src": {
+    "source": "Tabler Icons",
+    "original": "tabler:world-upload",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "link": {
+    "source": "Tabler Icons",
+    "original": "tabler:external-link",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "mac-address": {
+    "source": "Tabler Icons",
+    "original": "tabler:id",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "malware-sample": {
+    "source": "Tabler Icons",
+    "original": "tabler:bug",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "md5": {
+    "source": "Tabler Icons",
+    "original": "tabler:hash",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "mutex": {
+    "source": "Tabler Icons",
+    "original": "tabler:lock",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "pattern-in-file": {
+    "source": "Tabler Icons",
+    "original": "tabler:file-search",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "pgp-public-key": {
+    "source": "Tabler Icons",
+    "original": "tabler:shield-lock",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "phone-number": {
+    "source": "Tabler Icons",
+    "original": "tabler:phone",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "port": {
+    "source": "Tabler Icons",
+    "original": "tabler:plug",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "regkey": {
+    "source": "Tabler Icons",
+    "original": "tabler:key",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "sha1": {
+    "source": "Tabler Icons",
+    "original": "tabler:hash",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "sha256": {
+    "source": "Tabler Icons",
+    "original": "tabler:hash",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "sigma": {
+    "source": "Tabler Icons",
+    "original": "tabler:sum",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "snort": {
+    "source": "Tabler Icons",
+    "original": "tabler:radar",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "ssh-fingerprint": {
+    "source": "Tabler Icons",
+    "original": "tabler:fingerprint",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "text": {
+    "source": "Tabler Icons",
+    "original": "tabler:file-text",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "threat-actor": {
+    "source": "Tabler Icons",
+    "original": "tabler:spy",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "twitter-id": {
+    "source": "Tabler Icons",
+    "original": "tabler:brand-x",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "uri": {
+    "source": "Tabler Icons",
+    "original": "tabler:link",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "url": {
+    "source": "Tabler Icons",
+    "original": "tabler:link",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "user-agent": {
+    "source": "Tabler Icons",
+    "original": "tabler:browser",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "vulnerability": {
+    "source": "Tabler Icons",
+    "original": "tabler:shield-exclamation",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "windows-scheduled-task": {
+    "source": "Tabler Icons",
+    "original": "tabler:calendar-time",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "windows-service-name": {
+    "source": "Tabler Icons",
+    "original": "tabler:settings",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "x509-fingerprint-sha1": {
+    "source": "Tabler Icons",
+    "original": "tabler:certificate",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "yara": {
+    "source": "Tabler Icons",
+    "original": "tabler:file-code",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
   }
 }
