@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="-13.5000 0.0000 25.0000 20.0000"
+   version="1.1"
+   id="svg26"
+   sodipodi:docname="file-js.svg"
+  
+  
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <defs
+     id="defs26" />
+  <mask
+     id="ft-js">
+    <path
+       d="M 13,9 V 3.5 L 18.5,9 M 6,2 C 4.89,2 4,2.89 4,4 v 16 a 2,2 0 0 0 2,2 h 12 a 2,2 0 0 0 2,-2 V 8 L 14,2 Z"
+       fill="#ffffff"
+       id="path1" />
+    <g
+       fill="#000000"
+       id="g26">
+      <rect
+         x="8"
+         y="12.3"
+         id="rect1"
+        
+         />
+      <rect
+         x="9.1400003"
+         y="12.3"
+         id="rect2"
+        
+         />
+      <rect
+         x="10.29"
+         y="12.3"
+         id="rect3"
+        
+         />
+      <rect
+         x="9.1400003"
+         y="13.44"
+         id="rect4"
+        
+         />
+      <rect
+         x="9.1400003"
+         y="14.59"
+         id="rect5"
+        
+         />
+      <rect
+         x="9.1400003"
+         y="15.73"
+         id="rect6"
+        
+         />
+      <rect
+         x="9.1400003"
+         y="16.870001"
+         id="rect7"
+        
+         />
+      <rect
+         x="5.71"
+         y="18.01"
+         id="rect8"
+        
+         />
+      <rect
+         x="9.1400003"
+         y="18.01"
+         id="rect9"
+        
+         />
+      <rect
+         x="6.8600001"
+         y="19.16"
+         id="rect10"
+        
+         />
+      <rect
+         x="8"
+         y="19.16"
+         id="rect11"
+        
+         />
+      <rect
+         x="13.71"
+         y="12.3"
+         id="rect12"
+        
+         />
+      <rect
+         x="14.86"
+         y="12.3"
+         id="rect13"
+        
+         />
+      <rect
+         x="16"
+         y="12.3"
+         id="rect14"
+        
+         />
+      <rect
+         x="17.139999"
+         y="12.3"
+         id="rect15"
+        
+         />
+      <rect
+         x="12.57"
+         y="13.44"
+         id="rect16"
+        
+         />
+      <rect
+         x="12.57"
+         y="14.59"
+         id="rect17"
+        
+         />
+      <rect
+         x="13.71"
+         y="15.73"
+         id="rect18"
+        
+         />
+      <rect
+         x="14.86"
+         y="15.73"
+         id="rect19"
+        
+         />
+      <rect
+         x="16"
+         y="15.73"
+         id="rect20"
+        
+         />
+      <rect
+         x="17.139999"
+         y="16.870001"
+         id="rect21"
+        
+         />
+      <rect
+         x="17.139999"
+         y="18.01"
+         id="rect22"
+        
+         />
+      <rect
+         x="12.57"
+         y="19.16"
+         id="rect23"
+        
+         />
+      <rect
+         x="13.71"
+         y="19.16"
+         id="rect24"
+        
+         />
+      <rect
+         x="14.86"
+         y="19.16"
+         id="rect25"
+        
+         />
+      <rect
+         x="16"
+         y="19.16"
+         id="rect26"
+        
+         />
+    </g>
+  </mask>
+  <path
+     d="M 13,9 V 3.5 L 18.5,9 M 6,2 C 4.89,2 4,2.89 4,4 v 16 a 2,2 0 0 0 2,2 h 12 a 2,2 0 0 0 2,-2 V 8 L 14,2 Z"
+     fill="currentColor"
+     mask="url(#ft-js)"
+     id="path26"
+     transform="translate(-13,-2)" />
+</svg>

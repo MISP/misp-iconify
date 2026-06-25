@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="-9.7500 0.0000 17.5000 14.0000"
+   version="1.1"
+   id="svg2"
+   sodipodi:docname="network-profile.svg"
+  
+  
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <defs
+     id="defs2" />
+  <g
+     fill="none"
+     stroke="currentColor"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     id="g2"
+     transform="translate(-8)">
+    <path
+       d="m 7,10.5 v 3 m -5,0 h 10 m -5,-3 a 5,5 0 1 0 0,-10 5,5 0 0 0 0,10 m -5,-5 h 10"
+       id="path1" />
+    <path
+       d="M 7,10.5 C 10,7.08 10,3.74 7,0.5 4.06,3.62 4,6.94 7,10.5"
+       id="path2" />
+  </g>
+</svg>

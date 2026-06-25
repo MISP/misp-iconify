@@ -64,7 +64,7 @@ while IFS= read -r file; do
       --export-filename="$output_file" \
       >/dev/null 2>&1
   done
-done < <(find "$SVG_DIR" -type f -name "*.svg")
+done < <(find "$SVG_DIR${ONLY:+/$ONLY}" -type f -name "*.svg")
 
 echo ""
 echo "PNG generation complete."

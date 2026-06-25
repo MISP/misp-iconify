@@ -19,11 +19,11 @@ echo "Generating CSS icons..."
 #
 cat > "$OUTPUT_FILE" <<'EOF'
 .misp-icon {
-  width: 1.25em;
+  width: 1em;
   height: 1em;
 
   display: inline-block;
-  vertical-align: center;
+  vertical-align: middle;
 
   background-color: currentColor;
 
@@ -36,18 +36,34 @@ cat > "$OUTPUT_FILE" <<'EOF'
   -webkit-mask-size: contain;
 }
 
+.misp-fw {
+  width: 1.25em;
+  text-align: center;
+}
+
 EOF
 
 echo "" >> "$OUTPUT_FILE"
 
 #
-# Generate one class per icon/variant
+# Generate one class per icon/variant.
 #
-while IFS= read -r file; do
+# Variants are emitted in an explicit order (objects appended last) so the file
+# stays stable and append-only as new sets are added; icons within a variant are
+# sorted by name.
+#
+for variant in hexagone simple attributes objects; do
+  [[ -d "$SVG_DIR/$variant" ]] || continue
+
+  case "$variant" in
+    attributes) printf '\n/* --- attribute type icons --- */\n\n' >> "$OUTPUT_FILE" ;;
+    objects)    printf '\n/* --- object icons --- */\n\n' >> "$OUTPUT_FILE" ;;
+  esac
+
+  while IFS= read -r file; do
 
   relative="${file#$SVG_DIR/}"
 
-  variant="$(dirname "$relative")"
   name="$(basename "$relative" .svg)"
 
   class_name=".$CLASS_PREFIX-$name.$VARIANT_PREFIX-$variant"
@@ -68,6 +84,7 @@ while IFS= read -r file; do
   echo "}" >> "$OUTPUT_FILE"
   echo "" >> "$OUTPUT_FILE"
 
-done < <(find "$SVG_DIR" -type f -name "*.svg" | sort)
+  done < <(find "$SVG_DIR/$variant" -type f -name "*.svg" | sort)
+done
 
 echo "✔ Generated $OUTPUT_FILE"

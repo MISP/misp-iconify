@@ -1,10 +1,16 @@
-.PHONY: all clean validate optimize fit-ratio png metadata catalog webp css
+.PHONY: all clean validate optimize fit-ratio png metadata catalog webp css fetch-objects
 
 all: clean validate optimize fit-ratio metadata catalog attribution png webp css
 
 clean:
 	@rm -rf exports
 	@echo "Cleaned."
+
+# Import per-object icons from the misp-objects submodule into src/svg/objects,
+# then run `make all` to build assets. Pass REFRESH=1 to first pull the latest
+# of the tracked submodule branch.
+fetch-objects:
+	@bash src/scripts/fetch-object-icons.sh
 
 validate:
 	@bash src/scripts/validate-icons.sh

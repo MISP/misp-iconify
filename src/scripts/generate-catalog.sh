@@ -157,3 +157,82 @@ if [[ -d "$ATTR_DIR" ]]; then
 
   echo "README attribute catalog updated."
 fi
+
+#
+# ---------------------------------------------------------------------------
+# Object icons (imported from the misp-objects submodule, "objects" variant)
+# ---------------------------------------------------------------------------
+#
+OBJ_START="<!-- OBJECT_ICONS_START -->"
+OBJ_END="<!-- OBJECT_ICONS_END -->"
+
+OBJ_DIR="./src/svg/objects"
+
+# A name "collides" when it also exists as a core (simple) or attribute icon.
+# Object icons stay addressable through the misp-objects variant class, so there
+# is no real conflict — the marker is purely informational.
+collides() {
+  [[ -f "./src/svg/simple/$1.svg" || -f "./src/svg/attributes/$1.svg" ]]
+}
+
+if [[ -d "$OBJ_DIR" ]]; then
+  TMP_OBJ="$(mktemp)"
+
+  {
+    echo "$OBJ_START"
+    echo ""
+    echo ""
+    echo "Icons for **MISP objects**, imported from the [\`misp-objects\`](https://github.com/MISP/misp-objects)"
+    echo "submodule. Single style, variant class \`misp-objects\`. Use them like any other"
+    echo "icon: \`<i class=\"misp-icon misp-icon-<name> misp-objects\"></i>\`."
+    echo ""
+    echo "Names marked † also exist as a core or attribute icon; they stay separate"
+    echo "thanks to the \`misp-objects\` variant class, so both render independently."
+    echo ""
+
+    echo "| Object | Icon | File | CSS classes |"
+    echo "|--------|------|------|-------------|"
+
+    while IFS= read -r file; do
+      relative="${file#$OBJ_DIR/}"
+      name="${relative%.svg}"
+
+      marker=""
+      if collides "$name"; then marker=" †"; fi
+
+      png="./exports/png/2x/objects/${name}.png"
+
+      echo "| \`$name\`$marker | <img src=\"$png\" width=\"24\" alt=\"$name object\" /> | \`$name.svg\` | \`misp-icon misp-icon-$name misp-objects\` |"
+
+    done < <(find "$OBJ_DIR" -type f -name "*.svg" | sort)
+
+    echo ""
+    echo "$OBJ_END"
+
+  } > "$TMP_OBJ"
+
+  awk -v start="$OBJ_START" -v end="$OBJ_END" '
+  BEGIN { inside = 0 }
+
+  $0 == start {
+    inside = 1
+
+    while ((getline line < "'"$TMP_OBJ"'") > 0)
+      print line
+
+    next
+  }
+
+  $0 == end {
+    inside = 0
+    next
+  }
+
+  !inside { print }
+  ' "$README" > "$README.tmp"
+
+  mv "$README.tmp" "$README"
+  rm "$TMP_OBJ"
+
+  echo "README object catalog updated."
+fi

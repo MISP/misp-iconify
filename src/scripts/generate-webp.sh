@@ -17,9 +17,16 @@ fi
 mkdir -p "$OUTPUT_DIR"
 
 while IFS= read -r file; do
+  # Preserve the variant sub-path (simple/hexagone/attributes/objects) so icons
+  # that share a name across variants don't overwrite each other.
+  relative_path="${file#$SVG_DIR/}"
+  relative_dir="$(dirname "$relative_path")"
   name="$(basename "$file" .svg)"
 
-  output="$OUTPUT_DIR/$name.webp"
+  out_dir="$OUTPUT_DIR/$relative_dir"
+  mkdir -p "$out_dir"
+
+  output="$out_dir/$name.webp"
 
   echo "Generating $output"
 
@@ -28,7 +35,7 @@ while IFS= read -r file; do
     "$file" \
     -resize 128x128 \
     "$output"
-done < <(find "$SVG_DIR" -type f -name "*.svg")
+done < <(find "$SVG_DIR${ONLY:+/$ONLY}" -type f -name "*.svg")
 
 echo ""
 echo "WebP generation complete."

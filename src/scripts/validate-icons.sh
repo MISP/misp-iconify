@@ -81,8 +81,12 @@ while IFS= read -r file; do
   # fi
 
   #
-  # Ensure fills are explicitly defined
-  # and use currentColor
+  # Ensure fills are explicitly defined and use currentColor.
+  #
+  # Only the *rendered* fills are checked: fills inside <defs>/<mask> are the
+  # legitimate monochrome masking technique (e.g. fill="white"/"black" knocking
+  # a shape out of a currentColor body) and must be ignored, so we select fills
+  # via XPath excluding any element with a defs/mask ancestor.
   #
   fill_found=0
   while IFS= read -r fill; do
@@ -93,7 +97,8 @@ while IFS= read -r file; do
       FAILED=1
     fi
   done < <(
-    grep -oE 'fill="[^"]+"' "$file" \
+    xmllint --xpath '//*[not(ancestor-or-self::*[local-name()="defs"]) and not(ancestor-or-self::*[local-name()="mask"])]/@fill' "$file" 2>/dev/null \
+      | grep -oE 'fill="[^"]+"' \
       | sed 's/fill="//' \
       | sed 's/"//'
   )

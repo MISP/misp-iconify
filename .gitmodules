@@ -1,0 +1,4 @@
+[submodule "vendor/misp-objects"]
+	path = vendor/misp-objects
+	url = git@github.com:MISP/misp-objects.git
+	branch = main

@@ -19,7 +19,7 @@ while IFS= read -r file; do
     >/dev/null 2>&1
 
   mv "$tmp" "$file"
-done < <(find "$SVG_DIR" -type f -name "*.svg")
+done < <(find "$SVG_DIR${ONLY:+/$ONLY}" -type f -name "*.svg")
 
 echo ""
 echo "SVG optimization complete."

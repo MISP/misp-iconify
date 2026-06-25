@@ -14,7 +14,22 @@ VARIANTS=(
   "simple"
   "hexagone"
   "attributes"
+  "objects"
 )
+
+#
+# Object icons (imported from the misp-objects submodule) are keyed with a
+# variant-qualified key ("objects/<name>") so their names never collide with the
+# bare-name keys used by the other sets. Map a (variant, name) pair to its key.
+#
+metadata_key() {
+  local variant="$1" name="$2"
+  if [[ "$variant" == "objects" ]]; then
+    echo "objects/$name"
+  else
+    echo "$name"
+  fi
+}
 
 #
 # Validate JSON first
@@ -49,18 +64,17 @@ FAILED=0
 #
 for variant in "${VARIANTS[@]}"; do
 
+  [[ -d "$SVG_DIR/$variant" ]] || continue
+
   while IFS= read -r file; do
     relative="${file#$SVG_DIR/$variant/}"
     name="${relative%.svg}"
+    key="$(metadata_key "$variant" "$name")"
 
     echo "→ $variant/$name"
 
-    #
-    # Metadata key is based on icon name only
-    # not the variant
-    #
-    if ! jq -e --arg k "$name" '.[$k]' "$META" >/dev/null; then
-      echo "❌ Missing metadata entry for: $name"
+    if ! jq -e --arg k "$key" '.[$k]' "$META" >/dev/null; then
+      echo "❌ Missing metadata entry for: $key"
       FAILED=1
       continue
     fi
@@ -69,9 +83,9 @@ for variant in "${VARIANTS[@]}"; do
     # Strict validation
     #
     for field in source original license; do
-      if ! jq -e --arg k "$name" --arg f "$field" \
+      if ! jq -e --arg k "$key" --arg f "$field" \
         '.[$k][$f] | type == "string" and length > 0' "$META" >/dev/null; then
-        echo "❌ Missing or invalid '$field' for: $name"
+        echo "❌ Missing or invalid '$field' for: $key"
         FAILED=1
       fi
     done
@@ -87,8 +101,15 @@ echo ""
 echo "Checking for orphan metadata entries..."
 
 while IFS= read -r key; do
-  found=0
+  #
+  # Variant-qualified keys (e.g. "objects/<name>") point straight at the file.
+  #
+  if [[ "$key" == */* ]]; then
+    [[ -f "$SVG_DIR/$key.svg" ]] || echo "⚠️  Orphan metadata entry (no SVG): $key"
+    continue
+  fi
 
+  found=0
   for variant in "${VARIANTS[@]}"; do
     if [[ -f "$SVG_DIR/$variant/$key.svg" ]]; then
       found=1

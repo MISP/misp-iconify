@@ -60,7 +60,7 @@ while IFS= read -r file; do
 
   mv "$tmp" "$file"
 
-done < <(find "$SVG_DIR" -type f -name "*.svg")
+done < <(find "$SVG_DIR${ONLY:+/$ONLY}" -type f -name "*.svg")
 
 echo ""
 echo "Done."
