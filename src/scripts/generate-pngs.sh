@@ -56,13 +56,30 @@ while IFS= read -r file; do
 
     echo "Generating $output_file (${size}x${size})"
 
+    # Render preserving the SVG's aspect ratio (only the width is pinned, so
+    # inkscape keeps the viewBox proportions), then centre the result on a
+    # transparent square canvas. Forcing both --export-width and --export-height
+    # stretched any non-square viewBox (e.g. the 1.25-ratio object icons). This
+    # mirrors how the icons actually render via CSS (`mask-size: contain` in a
+    # square box), so the catalog preview matches real usage.
+    tmp_png="$(mktemp --suffix=.png)"
+
     inkscape \
       "$file" \
       --export-type=png \
-      --export-width="$size" \
-      --export-height="$size" \
-      --export-filename="$output_file" \
+      --export-width="$((size * 4))" \
+      --export-filename="$tmp_png" \
       >/dev/null 2>&1
+
+    "$IMAGEMAGICK" \
+      "$tmp_png" \
+      -background none \
+      -resize "${size}x${size}" \
+      -gravity center \
+      -extent "${size}x${size}" \
+      "$output_file"
+
+    rm -f "$tmp_png"
   done
 done < <(find "$SVG_DIR${ONLY:+/$ONLY}" -type f -name "*.svg")
 
