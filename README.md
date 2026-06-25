@@ -2,6 +2,18 @@
 
 Icons and related visual elements for MISP and MISP standard.
 
+## Table of Contents
+
+- [Catalog](#catalog)
+  - [Attribute type icons](#attribute-type-icons)
+  - [Object icons](#object-icons)
+- [Usage](#usage)
+  - [SVG (direct file)](#svg-direct-file)
+  - [CSS](#css)
+- [Object icons (misp-objects submodule)](#object-icons-misp-objects-submodule)
+- [Contribution Rules](#contribution-rules)
+- [Attribution](#attribution)
+
 ## Catalog
 
 <!-- ICONS_START -->
