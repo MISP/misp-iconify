@@ -183,15 +183,23 @@ if [[ -d "$OBJ_DIR" ]]; then
     echo ""
     echo ""
     echo "Icons for **MISP objects**, imported from the [\`misp-objects\`](https://github.com/MISP/misp-objects)"
-    echo "submodule. Single style, variant class \`misp-objects\`. Use them like any other"
-    echo "icon: \`<i class=\"misp-icon misp-icon-<name> misp-objects\"></i>\`."
+    echo "submodule. Each object ships in **two variants** under the same name:"
+    echo ""
+    echo "- \`misp-objects\` — the plain glyph."
+    echo "- \`misp-objects-framed\` — the glyph inside a thin rounded **frame**. Because an"
+    echo "  object groups several attributes, the frame is a \`currentColor\` cue (legible"
+    echo "  even at 16px) that sets an object apart from a single-attribute icon."
+    echo ""
+    echo "Use whichever fits: \`<i class=\"misp-icon misp-icon-<name> misp-objects\"></i>\` or"
+    echo "\`<i class=\"misp-icon misp-icon-<name> misp-objects-framed\"></i>\`. The framed"
+    echo "variant is derived from the plain one by \`src/scripts/frame-objects.sh\`."
     echo ""
     echo "Names marked † also exist as a core or attribute icon; they stay separate"
-    echo "thanks to the \`misp-objects\` variant class, so both render independently."
+    echo "thanks to the variant class, so both render independently."
     echo ""
 
-    echo "| Object | Icon | File | CSS classes |"
-    echo "|--------|------|------|-------------|"
+    echo "| Object | Plain | Framed | File |"
+    echo "|--------|-------|--------|------|"
 
     while IFS= read -r file; do
       relative="${file#$OBJ_DIR/}"
@@ -201,8 +209,9 @@ if [[ -d "$OBJ_DIR" ]]; then
       if collides "$name"; then marker=" †"; fi
 
       png="./exports/png/2x/objects/${name}.png"
+      png_framed="./exports/png/2x/objects-framed/${name}.png"
 
-      echo "| \`$name\`$marker | <img src=\"$png\" width=\"24\" alt=\"$name object\" /> | \`$name.svg\` | \`misp-icon misp-icon-$name misp-objects\` |"
+      echo "| \`$name\`$marker | <img src=\"$png\" width=\"24\" alt=\"$name object\" /> | <img src=\"$png_framed\" width=\"24\" alt=\"$name object framed\" /> | \`$name.svg\` |"
 
     done < <(find "$OBJ_DIR" -type f -name "*.svg" | sort)
 

@@ -9,6 +9,15 @@ echo "Fitting SVGs to content bbox with ${RATIO}:1 ratio..."
 
 while IFS= read -r file; do
   relative="${file#$SVG_DIR/}"
+
+  # Framed object icons are already normalised to a 0 0 24 24 canvas; re-cropping
+  # to their content box would clip the frame and break the square layout. Leave
+  # them untouched (keeps the build idempotent — see frame-objects.sh).
+  if grep -q "misp-object-frame" "$file"; then
+    echo "→ $relative (framed, skip)"
+    continue
+  fi
+
   echo "→ $relative"
 
   tmp="$(mktemp --suffix=.svg)"

@@ -116,227 +116,235 @@ containing `|` or `/` are sanitized to `-` (shown in the *Attribute type* column
 
 
 Icons for **MISP objects**, imported from the [`misp-objects`](https://github.com/MISP/misp-objects)
-submodule. Single style, variant class `misp-objects`. Use them like any other
-icon: `<i class="misp-icon misp-icon-<name> misp-objects"></i>`.
+submodule. Each object ships in **two variants** under the same name:
+
+- `misp-objects` — the plain glyph.
+- `misp-objects-framed` — the glyph inside a thin rounded **frame**. Because an
+  object groups several attributes, the frame is a `currentColor` cue (legible
+  even at 16px) that sets an object apart from a single-attribute icon.
+
+Use whichever fits: `<i class="misp-icon misp-icon-<name> misp-objects"></i>` or
+`<i class="misp-icon misp-icon-<name> misp-objects-framed"></i>`. The framed
+variant is derived from the plain one by `src/scripts/frame-objects.sh`.
 
 Names marked † also exist as a core or attribute icon; they stay separate
-thanks to the `misp-objects` variant class, so both render independently.
+thanks to the variant class, so both render independently.
 
-| Object | Icon | File | CSS classes |
-|--------|------|------|-------------|
-| `android-app` | <img src="./exports/png/2x/objects/android-app.png" width="24" alt="android-app object" /> | `android-app.svg` | `misp-icon misp-icon-android-app misp-objects` |
-| `android-permission` | <img src="./exports/png/2x/objects/android-permission.png" width="24" alt="android-permission object" /> | `android-permission.svg` | `misp-icon misp-icon-android-permission misp-objects` |
-| `annotation` | <img src="./exports/png/2x/objects/annotation.png" width="24" alt="annotation object" /> | `annotation.svg` | `misp-icon misp-icon-annotation misp-objects` |
-| `apk` | <img src="./exports/png/2x/objects/apk.png" width="24" alt="apk object" /> | `apk.svg` | `misp-icon misp-icon-apk misp-objects` |
-| `artifact` | <img src="./exports/png/2x/objects/artifact.png" width="24" alt="artifact object" /> | `artifact.svg` | `misp-icon misp-icon-artifact misp-objects` |
-| `asn` | <img src="./exports/png/2x/objects/asn.png" width="24" alt="asn object" /> | `asn.svg` | `misp-icon misp-icon-asn misp-objects` |
-| `attack-pattern` | <img src="./exports/png/2x/objects/attack-pattern.png" width="24" alt="attack-pattern object" /> | `attack-pattern.svg` | `misp-icon misp-icon-attack-pattern misp-objects` |
-| `av-signature` | <img src="./exports/png/2x/objects/av-signature.png" width="24" alt="av-signature object" /> | `av-signature.svg` | `misp-icon misp-icon-av-signature misp-objects` |
-| `bank-account` | <img src="./exports/png/2x/objects/bank-account.png" width="24" alt="bank-account object" /> | `bank-account.svg` | `misp-icon misp-icon-bank-account misp-objects` |
-| `blog` | <img src="./exports/png/2x/objects/blog.png" width="24" alt="blog object" /> | `blog.svg` | `misp-icon misp-icon-blog misp-objects` |
-| `btc-transaction` | <img src="./exports/png/2x/objects/btc-transaction.png" width="24" alt="btc-transaction object" /> | `btc-transaction.svg` | `misp-icon misp-icon-btc-transaction misp-objects` |
-| `btc-wallet` | <img src="./exports/png/2x/objects/btc-wallet.png" width="24" alt="btc-wallet object" /> | `btc-wallet.svg` | `misp-icon misp-icon-btc-wallet misp-objects` |
-| `c2-list` | <img src="./exports/png/2x/objects/c2-list.png" width="24" alt="c2-list object" /> | `c2-list.svg` | `misp-icon misp-icon-c2-list misp-objects` |
-| `chat-message` | <img src="./exports/png/2x/objects/chat-message.png" width="24" alt="chat-message object" /> | `chat-message.svg` | `misp-icon misp-icon-chat-message misp-objects` |
-| `coin-address` | <img src="./exports/png/2x/objects/coin-address.png" width="24" alt="coin-address object" /> | `coin-address.svg` | `misp-icon misp-icon-coin-address misp-objects` |
-| `command-line` | <img src="./exports/png/2x/objects/command-line.png" width="24" alt="command-line object" /> | `command-line.svg` | `misp-icon misp-icon-command-line misp-objects` |
-| `command` | <img src="./exports/png/2x/objects/command.png" width="24" alt="command object" /> | `command.svg` | `misp-icon misp-icon-command misp-objects` |
-| `cookie` † | <img src="./exports/png/2x/objects/cookie.png" width="24" alt="cookie object" /> | `cookie.svg` | `misp-icon misp-icon-cookie misp-objects` |
-| `course-of-action` | <img src="./exports/png/2x/objects/course-of-action.png" width="24" alt="course-of-action object" /> | `course-of-action.svg` | `misp-icon misp-icon-course-of-action misp-objects` |
-| `cpe-asset` | <img src="./exports/png/2x/objects/cpe-asset.png" width="24" alt="cpe-asset object" /> | `cpe-asset.svg` | `misp-icon misp-icon-cpe-asset misp-objects` |
-| `credential` | <img src="./exports/png/2x/objects/credential.png" width="24" alt="credential object" /> | `credential.svg` | `misp-icon misp-icon-credential misp-objects` |
-| `credit-card` | <img src="./exports/png/2x/objects/credit-card.png" width="24" alt="credit-card object" /> | `credit-card.svg` | `misp-icon misp-icon-credit-card misp-objects` |
-| `crypto-material` | <img src="./exports/png/2x/objects/crypto-material.png" width="24" alt="crypto-material object" /> | `crypto-material.svg` | `misp-icon misp-icon-crypto-material misp-objects` |
-| `data-url` | <img src="./exports/png/2x/objects/data-url.png" width="24" alt="data-url object" /> | `data-url.svg` | `misp-icon misp-icon-data-url misp-objects` |
-| `ddos-config` | <img src="./exports/png/2x/objects/ddos-config.png" width="24" alt="ddos-config object" /> | `ddos-config.svg` | `misp-icon misp-icon-ddos-config misp-objects` |
-| `ddos` | <img src="./exports/png/2x/objects/ddos.png" width="24" alt="ddos object" /> | `ddos.svg` | `misp-icon misp-icon-ddos misp-objects` |
-| `decoded-barcode` | <img src="./exports/png/2x/objects/decoded-barcode.png" width="24" alt="decoded-barcode object" /> | `decoded-barcode.svg` | `misp-icon misp-icon-decoded-barcode misp-objects` |
-| `decoded-qrcode` | <img src="./exports/png/2x/objects/decoded-qrcode.png" width="24" alt="decoded-qrcode object" /> | `decoded-qrcode.svg` | `misp-icon misp-icon-decoded-qrcode misp-objects` |
-| `device` | <img src="./exports/png/2x/objects/device.png" width="24" alt="device object" /> | `device.svg` | `misp-icon misp-icon-device misp-objects` |
-| `diamond` | <img src="./exports/png/2x/objects/diamond.png" width="24" alt="diamond object" /> | `diamond.svg` | `misp-icon misp-icon-diamond misp-objects` |
-| `directory` | <img src="./exports/png/2x/objects/directory.png" width="24" alt="directory object" /> | `directory.svg` | `misp-icon misp-icon-directory misp-objects` |
-| `dkim` | <img src="./exports/png/2x/objects/dkim.png" width="24" alt="dkim object" /> | `dkim.svg` | `misp-icon misp-icon-dkim misp-objects` |
-| `dns-record` | <img src="./exports/png/2x/objects/dns-record.png" width="24" alt="dns-record object" /> | `dns-record.svg` | `misp-icon misp-icon-dns-record misp-objects` |
-| `domain-ip` † | <img src="./exports/png/2x/objects/domain-ip.png" width="24" alt="domain-ip object" /> | `domain-ip.svg` | `misp-icon misp-icon-domain-ip misp-objects` |
-| `elf` | <img src="./exports/png/2x/objects/elf.png" width="24" alt="elf object" /> | `elf.svg` | `misp-icon misp-icon-elf misp-objects` |
-| `email` † | <img src="./exports/png/2x/objects/email.png" width="24" alt="email object" /> | `email.svg` | `misp-icon misp-icon-email misp-objects` |
-| `employee` | <img src="./exports/png/2x/objects/employee.png" width="24" alt="employee object" /> | `employee.svg` | `misp-icon misp-icon-employee misp-objects` |
-| `event` † | <img src="./exports/png/2x/objects/event.png" width="24" alt="event object" /> | `event.svg` | `misp-icon misp-icon-event misp-objects` |
-| `exploit-poc` | <img src="./exports/png/2x/objects/exploit-poc.png" width="24" alt="exploit-poc object" /> | `exploit-poc.svg` | `misp-icon misp-icon-exploit-poc misp-objects` |
-| `exploit` | <img src="./exports/png/2x/objects/exploit.png" width="24" alt="exploit object" /> | `exploit.svg` | `misp-icon misp-icon-exploit misp-objects` |
-| `facebook-account` | <img src="./exports/png/2x/objects/facebook-account.png" width="24" alt="facebook-account object" /> | `facebook-account.svg` | `misp-icon misp-icon-facebook-account misp-objects` |
-| `facebook-group` | <img src="./exports/png/2x/objects/facebook-group.png" width="24" alt="facebook-group object" /> | `facebook-group.svg` | `misp-icon misp-icon-facebook-group misp-objects` |
-| `facebook-page` | <img src="./exports/png/2x/objects/facebook-page.png" width="24" alt="facebook-page object" /> | `facebook-page.svg` | `misp-icon misp-icon-facebook-page misp-objects` |
-| `facebook-post` | <img src="./exports/png/2x/objects/facebook-post.png" width="24" alt="facebook-post object" /> | `facebook-post.svg` | `misp-icon misp-icon-facebook-post misp-objects` |
-| `facebook-reaction` | <img src="./exports/png/2x/objects/facebook-reaction.png" width="24" alt="facebook-reaction object" /> | `facebook-reaction.svg` | `misp-icon misp-icon-facebook-reaction misp-objects` |
-| `favicon` | <img src="./exports/png/2x/objects/favicon.png" width="24" alt="favicon object" /> | `favicon.svg` | `misp-icon misp-icon-favicon misp-objects` |
-| `file-7z` | <img src="./exports/png/2x/objects/file-7z.png" width="24" alt="file-7z object" /> | `file-7z.svg` | `misp-icon misp-icon-file-7z misp-objects` |
-| `file-apk` | <img src="./exports/png/2x/objects/file-apk.png" width="24" alt="file-apk object" /> | `file-apk.svg` | `misp-icon misp-icon-file-apk misp-objects` |
-| `file-bat` | <img src="./exports/png/2x/objects/file-bat.png" width="24" alt="file-bat object" /> | `file-bat.svg` | `misp-icon misp-icon-file-bat misp-objects` |
-| `file-css` | <img src="./exports/png/2x/objects/file-css.png" width="24" alt="file-css object" /> | `file-css.svg` | `misp-icon misp-icon-file-css misp-objects` |
-| `file-csv` | <img src="./exports/png/2x/objects/file-csv.png" width="24" alt="file-csv object" /> | `file-csv.svg` | `misp-icon misp-icon-file-csv misp-objects` |
-| `file-dll` | <img src="./exports/png/2x/objects/file-dll.png" width="24" alt="file-dll object" /> | `file-dll.svg` | `misp-icon misp-icon-file-dll misp-objects` |
-| `file-doc` | <img src="./exports/png/2x/objects/file-doc.png" width="24" alt="file-doc object" /> | `file-doc.svg` | `misp-icon misp-icon-file-doc misp-objects` |
-| `file-docx` | <img src="./exports/png/2x/objects/file-docx.png" width="24" alt="file-docx object" /> | `file-docx.svg` | `misp-icon misp-icon-file-docx misp-objects` |
-| `file-elf` | <img src="./exports/png/2x/objects/file-elf.png" width="24" alt="file-elf object" /> | `file-elf.svg` | `misp-icon misp-icon-file-elf misp-objects` |
-| `file-eml` | <img src="./exports/png/2x/objects/file-eml.png" width="24" alt="file-eml object" /> | `file-eml.svg` | `misp-icon misp-icon-file-eml misp-objects` |
-| `file-exe` | <img src="./exports/png/2x/objects/file-exe.png" width="24" alt="file-exe object" /> | `file-exe.svg` | `misp-icon misp-icon-file-exe misp-objects` |
-| `file-gif` | <img src="./exports/png/2x/objects/file-gif.png" width="24" alt="file-gif object" /> | `file-gif.svg` | `misp-icon misp-icon-file-gif misp-objects` |
-| `file-gz` | <img src="./exports/png/2x/objects/file-gz.png" width="24" alt="file-gz object" /> | `file-gz.svg` | `misp-icon misp-icon-file-gz misp-objects` |
-| `file-html` | <img src="./exports/png/2x/objects/file-html.png" width="24" alt="file-html object" /> | `file-html.svg` | `misp-icon misp-icon-file-html misp-objects` |
-| `file-iso` | <img src="./exports/png/2x/objects/file-iso.png" width="24" alt="file-iso object" /> | `file-iso.svg` | `misp-icon misp-icon-file-iso misp-objects` |
-| `file-jar` | <img src="./exports/png/2x/objects/file-jar.png" width="24" alt="file-jar object" /> | `file-jar.svg` | `misp-icon misp-icon-file-jar misp-objects` |
-| `file-jpg` | <img src="./exports/png/2x/objects/file-jpg.png" width="24" alt="file-jpg object" /> | `file-jpg.svg` | `misp-icon misp-icon-file-jpg misp-objects` |
-| `file-json` | <img src="./exports/png/2x/objects/file-json.png" width="24" alt="file-json object" /> | `file-json.svg` | `misp-icon misp-icon-file-json misp-objects` |
-| `file-js` | <img src="./exports/png/2x/objects/file-js.png" width="24" alt="file-js object" /> | `file-js.svg` | `misp-icon misp-icon-file-js misp-objects` |
-| `file-lnk` | <img src="./exports/png/2x/objects/file-lnk.png" width="24" alt="file-lnk object" /> | `file-lnk.svg` | `misp-icon misp-icon-file-lnk misp-objects` |
-| `file-mp3` | <img src="./exports/png/2x/objects/file-mp3.png" width="24" alt="file-mp3 object" /> | `file-mp3.svg` | `misp-icon misp-icon-file-mp3 misp-objects` |
-| `file-mp4` | <img src="./exports/png/2x/objects/file-mp4.png" width="24" alt="file-mp4 object" /> | `file-mp4.svg` | `misp-icon misp-icon-file-mp4 misp-objects` |
-| `file-msg` | <img src="./exports/png/2x/objects/file-msg.png" width="24" alt="file-msg object" /> | `file-msg.svg` | `misp-icon misp-icon-file-msg misp-objects` |
-| `file-pcap` | <img src="./exports/png/2x/objects/file-pcap.png" width="24" alt="file-pcap object" /> | `file-pcap.svg` | `misp-icon misp-icon-file-pcap misp-objects` |
-| `file-pdf` | <img src="./exports/png/2x/objects/file-pdf.png" width="24" alt="file-pdf object" /> | `file-pdf.svg` | `misp-icon misp-icon-file-pdf misp-objects` |
-| `file-png` | <img src="./exports/png/2x/objects/file-png.png" width="24" alt="file-png object" /> | `file-png.svg` | `misp-icon misp-icon-file-png misp-objects` |
-| `file-ppt` | <img src="./exports/png/2x/objects/file-ppt.png" width="24" alt="file-ppt object" /> | `file-ppt.svg` | `misp-icon misp-icon-file-ppt misp-objects` |
-| `file-pptx` | <img src="./exports/png/2x/objects/file-pptx.png" width="24" alt="file-pptx object" /> | `file-pptx.svg` | `misp-icon misp-icon-file-pptx misp-objects` |
-| `file-ps1` | <img src="./exports/png/2x/objects/file-ps1.png" width="24" alt="file-ps1 object" /> | `file-ps1.svg` | `misp-icon misp-icon-file-ps1 misp-objects` |
-| `file-py` | <img src="./exports/png/2x/objects/file-py.png" width="24" alt="file-py object" /> | `file-py.svg` | `misp-icon misp-icon-file-py misp-objects` |
-| `file-rar` | <img src="./exports/png/2x/objects/file-rar.png" width="24" alt="file-rar object" /> | `file-rar.svg` | `misp-icon misp-icon-file-rar misp-objects` |
-| `file-rtf` | <img src="./exports/png/2x/objects/file-rtf.png" width="24" alt="file-rtf object" /> | `file-rtf.svg` | `misp-icon misp-icon-file-rtf misp-objects` |
-| `file-sh` | <img src="./exports/png/2x/objects/file-sh.png" width="24" alt="file-sh object" /> | `file-sh.svg` | `misp-icon misp-icon-file-sh misp-objects` |
-| `file` | <img src="./exports/png/2x/objects/file.png" width="24" alt="file object" /> | `file.svg` | `misp-icon misp-icon-file misp-objects` |
-| `file-svg` | <img src="./exports/png/2x/objects/file-svg.png" width="24" alt="file-svg object" /> | `file-svg.svg` | `misp-icon misp-icon-file-svg misp-objects` |
-| `file-txt` | <img src="./exports/png/2x/objects/file-txt.png" width="24" alt="file-txt object" /> | `file-txt.svg` | `misp-icon misp-icon-file-txt misp-objects` |
-| `file-vbs` | <img src="./exports/png/2x/objects/file-vbs.png" width="24" alt="file-vbs object" /> | `file-vbs.svg` | `misp-icon misp-icon-file-vbs misp-objects` |
-| `file-xls` | <img src="./exports/png/2x/objects/file-xls.png" width="24" alt="file-xls object" /> | `file-xls.svg` | `misp-icon misp-icon-file-xls misp-objects` |
-| `file-xlsx` | <img src="./exports/png/2x/objects/file-xlsx.png" width="24" alt="file-xlsx object" /> | `file-xlsx.svg` | `misp-icon misp-icon-file-xlsx misp-objects` |
-| `file-xml` | <img src="./exports/png/2x/objects/file-xml.png" width="24" alt="file-xml object" /> | `file-xml.svg` | `misp-icon misp-icon-file-xml misp-objects` |
-| `file-zip` | <img src="./exports/png/2x/objects/file-zip.png" width="24" alt="file-zip object" /> | `file-zip.svg` | `misp-icon misp-icon-file-zip misp-objects` |
-| `forensic-case` | <img src="./exports/png/2x/objects/forensic-case.png" width="24" alt="forensic-case object" /> | `forensic-case.svg` | `misp-icon misp-icon-forensic-case misp-objects` |
-| `forensic-evidence` | <img src="./exports/png/2x/objects/forensic-evidence.png" width="24" alt="forensic-evidence object" /> | `forensic-evidence.svg` | `misp-icon misp-icon-forensic-evidence misp-objects` |
-| `forged-document` | <img src="./exports/png/2x/objects/forged-document.png" width="24" alt="forged-document object" /> | `forged-document.svg` | `misp-icon misp-icon-forged-document misp-objects` |
-| `geojson` | <img src="./exports/png/2x/objects/geojson.png" width="24" alt="geojson object" /> | `geojson.svg` | `misp-icon misp-icon-geojson misp-objects` |
-| `geolocation` | <img src="./exports/png/2x/objects/geolocation.png" width="24" alt="geolocation object" /> | `geolocation.svg` | `misp-icon misp-icon-geolocation misp-objects` |
-| `ghidra-function` | <img src="./exports/png/2x/objects/ghidra-function.png" width="24" alt="ghidra-function object" /> | `ghidra-function.svg` | `misp-icon misp-icon-ghidra-function misp-objects` |
-| `github-action` | <img src="./exports/png/2x/objects/github-action.png" width="24" alt="github-action object" /> | `github-action.svg` | `misp-icon misp-icon-github-action misp-objects` |
-| `github-repo` | <img src="./exports/png/2x/objects/github-repo.png" width="24" alt="github-repo object" /> | `github-repo.svg` | `misp-icon misp-icon-github-repo misp-objects` |
-| `github-user` | <img src="./exports/png/2x/objects/github-user.png" width="24" alt="github-user object" /> | `github-user.svg` | `misp-icon misp-icon-github-user misp-objects` |
-| `gitlab-user` | <img src="./exports/png/2x/objects/gitlab-user.png" width="24" alt="gitlab-user object" /> | `gitlab-user.svg` | `misp-icon misp-icon-gitlab-user misp-objects` |
-| `google-account` | <img src="./exports/png/2x/objects/google-account.png" width="24" alt="google-account object" /> | `google-account.svg` | `misp-icon misp-icon-google-account misp-objects` |
-| `google-threat-intelligence-report` | <img src="./exports/png/2x/objects/google-threat-intelligence-report.png" width="24" alt="google-threat-intelligence-report object" /> | `google-threat-intelligence-report.svg` | `misp-icon misp-icon-google-threat-intelligence-report misp-objects` |
-| `gpx` | <img src="./exports/png/2x/objects/gpx.png" width="24" alt="gpx object" /> | `gpx.svg` | `misp-icon misp-icon-gpx misp-objects` |
-| `http-request` | <img src="./exports/png/2x/objects/http-request.png" width="24" alt="http-request object" /> | `http-request.svg` | `misp-icon misp-icon-http-request misp-objects` |
-| `identity` | <img src="./exports/png/2x/objects/identity.png" width="24" alt="identity object" /> | `identity.svg` | `misp-icon misp-icon-identity misp-objects` |
-| `image` | <img src="./exports/png/2x/objects/image.png" width="24" alt="image object" /> | `image.svg` | `misp-icon misp-icon-image misp-objects` |
-| `impersonation` | <img src="./exports/png/2x/objects/impersonation.png" width="24" alt="impersonation object" /> | `impersonation.svg` | `misp-icon misp-icon-impersonation misp-objects` |
-| `incident` | <img src="./exports/png/2x/objects/incident.png" width="24" alt="incident object" /> | `incident.svg` | `misp-icon misp-icon-incident misp-objects` |
-| `infrastructure` | <img src="./exports/png/2x/objects/infrastructure.png" width="24" alt="infrastructure object" /> | `infrastructure.svg` | `misp-icon misp-icon-infrastructure misp-objects` |
-| `instagram-account` | <img src="./exports/png/2x/objects/instagram-account.png" width="24" alt="instagram-account object" /> | `instagram-account.svg` | `misp-icon misp-icon-instagram-account misp-objects` |
-| `instant-message` | <img src="./exports/png/2x/objects/instant-message.png" width="24" alt="instant-message object" /> | `instant-message.svg` | `misp-icon misp-icon-instant-message misp-objects` |
-| `intelligence-report` | <img src="./exports/png/2x/objects/intelligence-report.png" width="24" alt="intelligence-report object" /> | `intelligence-report.svg` | `misp-icon misp-icon-intelligence-report misp-objects` |
-| `intrusion-set` | <img src="./exports/png/2x/objects/intrusion-set.png" width="24" alt="intrusion-set object" /> | `intrusion-set.svg` | `misp-icon misp-icon-intrusion-set misp-objects` |
-| `iot-device` | <img src="./exports/png/2x/objects/iot-device.png" width="24" alt="iot-device object" /> | `iot-device.svg` | `misp-icon misp-icon-iot-device misp-objects` |
-| `iot-firmware` | <img src="./exports/png/2x/objects/iot-firmware.png" width="24" alt="iot-firmware object" /> | `iot-firmware.svg` | `misp-icon misp-icon-iot-firmware misp-objects` |
-| `ip-port` | <img src="./exports/png/2x/objects/ip-port.png" width="24" alt="ip-port object" /> | `ip-port.svg` | `misp-icon misp-icon-ip-port misp-objects` |
-| `irc` | <img src="./exports/png/2x/objects/irc.png" width="24" alt="irc object" /> | `irc.svg` | `misp-icon misp-icon-irc misp-objects` |
-| `ja3` | <img src="./exports/png/2x/objects/ja3.png" width="24" alt="ja3 object" /> | `ja3.svg` | `misp-icon misp-icon-ja3 misp-objects` |
-| `keybase-account` | <img src="./exports/png/2x/objects/keybase-account.png" width="24" alt="keybase-account object" /> | `keybase-account.svg` | `misp-icon misp-icon-keybase-account misp-objects` |
-| `leaked-document` | <img src="./exports/png/2x/objects/leaked-document.png" width="24" alt="leaked-document object" /> | `leaked-document.svg` | `misp-icon misp-icon-leaked-document misp-objects` |
-| `legal-entity` | <img src="./exports/png/2x/objects/legal-entity.png" width="24" alt="legal-entity object" /> | `legal-entity.svg` | `misp-icon misp-icon-legal-entity misp-objects` |
-| `lnk` | <img src="./exports/png/2x/objects/lnk.png" width="24" alt="lnk object" /> | `lnk.svg` | `misp-icon misp-icon-lnk misp-objects` |
-| `macho` | <img src="./exports/png/2x/objects/macho.png" width="24" alt="macho object" /> | `macho.svg` | `misp-icon misp-icon-macho misp-objects` |
-| `malicious-website` | <img src="./exports/png/2x/objects/malicious-website.png" width="24" alt="malicious-website object" /> | `malicious-website.svg` | `misp-icon misp-icon-malicious-website misp-objects` |
-| `malware-analysis` | <img src="./exports/png/2x/objects/malware-analysis.png" width="24" alt="malware-analysis object" /> | `malware-analysis.svg` | `misp-icon misp-icon-malware-analysis misp-objects` |
-| `malware-config` | <img src="./exports/png/2x/objects/malware-config.png" width="24" alt="malware-config object" /> | `malware-config.svg` | `misp-icon misp-icon-malware-config misp-objects` |
-| `malware` | <img src="./exports/png/2x/objects/malware.png" width="24" alt="malware object" /> | `malware.svg` | `misp-icon misp-icon-malware misp-objects` |
-| `microblog` | <img src="./exports/png/2x/objects/microblog.png" width="24" alt="microblog object" /> | `microblog.svg` | `misp-icon misp-icon-microblog misp-objects` |
-| `mutex` † | <img src="./exports/png/2x/objects/mutex.png" width="24" alt="mutex object" /> | `mutex.svg` | `misp-icon misp-icon-mutex misp-objects` |
-| `netflow` | <img src="./exports/png/2x/objects/netflow.png" width="24" alt="netflow object" /> | `netflow.svg` | `misp-icon misp-icon-netflow misp-objects` |
-| `network-connection` | <img src="./exports/png/2x/objects/network-connection.png" width="24" alt="network-connection object" /> | `network-connection.svg` | `misp-icon misp-icon-network-connection misp-objects` |
-| `network-data` | <img src="./exports/png/2x/objects/network-data.png" width="24" alt="network-data object" /> | `network-data.svg` | `misp-icon misp-icon-network-data misp-objects` |
-| `network-profile` | <img src="./exports/png/2x/objects/network-profile.png" width="24" alt="network-profile object" /> | `network-profile.svg` | `misp-icon misp-icon-network-profile misp-objects` |
-| `network-socket` | <img src="./exports/png/2x/objects/network-socket.png" width="24" alt="network-socket object" /> | `network-socket.svg` | `misp-icon misp-icon-network-socket misp-objects` |
-| `network-traffic` | <img src="./exports/png/2x/objects/network-traffic.png" width="24" alt="network-traffic object" /> | `network-traffic.svg` | `misp-icon misp-icon-network-traffic misp-objects` |
-| `news-agency` | <img src="./exports/png/2x/objects/news-agency.png" width="24" alt="news-agency object" /> | `news-agency.svg` | `misp-icon misp-icon-news-agency misp-objects` |
-| `news-media` | <img src="./exports/png/2x/objects/news-media.png" width="24" alt="news-media object" /> | `news-media.svg` | `misp-icon misp-icon-news-media misp-objects` |
-| `nse-script` | <img src="./exports/png/2x/objects/nse-script.png" width="24" alt="nse-script object" /> | `nse-script.svg` | `misp-icon misp-icon-nse-script misp-objects` |
-| `organization` | <img src="./exports/png/2x/objects/organization.png" width="24" alt="organization object" /> | `organization.svg` | `misp-icon misp-icon-organization misp-objects` |
-| `passive-dns-dnsdbflex` | <img src="./exports/png/2x/objects/passive-dns-dnsdbflex.png" width="24" alt="passive-dns-dnsdbflex object" /> | `passive-dns-dnsdbflex.svg` | `misp-icon misp-icon-passive-dns-dnsdbflex misp-objects` |
-| `passive-dns` | <img src="./exports/png/2x/objects/passive-dns.png" width="24" alt="passive-dns object" /> | `passive-dns.svg` | `misp-icon misp-icon-passive-dns misp-objects` |
-| `passive-ssh` | <img src="./exports/png/2x/objects/passive-ssh.png" width="24" alt="passive-ssh object" /> | `passive-ssh.svg` | `misp-icon misp-icon-passive-ssh misp-objects` |
-| `paste` | <img src="./exports/png/2x/objects/paste.png" width="24" alt="paste object" /> | `paste.svg` | `misp-icon misp-icon-paste misp-objects` |
-| `personification` | <img src="./exports/png/2x/objects/personification.png" width="24" alt="personification object" /> | `personification.svg` | `misp-icon misp-icon-personification misp-objects` |
-| `person` | <img src="./exports/png/2x/objects/person.png" width="24" alt="person object" /> | `person.svg` | `misp-icon misp-icon-person misp-objects` |
-| `pe-section` | <img src="./exports/png/2x/objects/pe-section.png" width="24" alt="pe-section object" /> | `pe-section.svg` | `misp-icon misp-icon-pe-section misp-objects` |
-| `pe` | <img src="./exports/png/2x/objects/pe.png" width="24" alt="pe object" /> | `pe.svg` | `misp-icon misp-icon-pe misp-objects` |
-| `phishing-kit` | <img src="./exports/png/2x/objects/phishing-kit.png" width="24" alt="phishing-kit object" /> | `phishing-kit.svg` | `misp-icon misp-icon-phishing-kit misp-objects` |
-| `phishing` | <img src="./exports/png/2x/objects/phishing.png" width="24" alt="phishing object" /> | `phishing.svg` | `misp-icon misp-icon-phishing misp-objects` |
-| `phone-number` † | <img src="./exports/png/2x/objects/phone-number.png" width="24" alt="phone-number object" /> | `phone-number.svg` | `misp-icon misp-icon-phone-number misp-objects` |
-| `phone` | <img src="./exports/png/2x/objects/phone.png" width="24" alt="phone object" /> | `phone.svg` | `misp-icon misp-icon-phone misp-objects` |
-| `physical-impact` | <img src="./exports/png/2x/objects/physical-impact.png" width="24" alt="physical-impact object" /> | `physical-impact.svg` | `misp-icon misp-icon-physical-impact misp-objects` |
-| `postal-address` | <img src="./exports/png/2x/objects/postal-address.png" width="24" alt="postal-address object" /> | `postal-address.svg` | `misp-icon misp-icon-postal-address misp-objects` |
-| `process` | <img src="./exports/png/2x/objects/process.png" width="24" alt="process object" /> | `process.svg` | `misp-icon misp-icon-process misp-objects` |
-| `query` | <img src="./exports/png/2x/objects/query.png" width="24" alt="query object" /> | `query.svg` | `misp-icon misp-icon-query misp-objects` |
-| `reddit-account` | <img src="./exports/png/2x/objects/reddit-account.png" width="24" alt="reddit-account object" /> | `reddit-account.svg` | `misp-icon misp-icon-reddit-account misp-objects` |
-| `reddit-comment` | <img src="./exports/png/2x/objects/reddit-comment.png" width="24" alt="reddit-comment object" /> | `reddit-comment.svg` | `misp-icon misp-icon-reddit-comment misp-objects` |
-| `reddit-post` | <img src="./exports/png/2x/objects/reddit-post.png" width="24" alt="reddit-post object" /> | `reddit-post.svg` | `misp-icon misp-icon-reddit-post misp-objects` |
-| `reddit-subreddit` | <img src="./exports/png/2x/objects/reddit-subreddit.png" width="24" alt="reddit-subreddit object" /> | `reddit-subreddit.svg` | `misp-icon misp-icon-reddit-subreddit misp-objects` |
-| `regexp` | <img src="./exports/png/2x/objects/regexp.png" width="24" alt="regexp object" /> | `regexp.svg` | `misp-icon misp-icon-regexp misp-objects` |
-| `registry-key` | <img src="./exports/png/2x/objects/registry-key.png" width="24" alt="registry-key object" /> | `registry-key.svg` | `misp-icon misp-icon-registry-key misp-objects` |
-| `registry-key-value` | <img src="./exports/png/2x/objects/registry-key-value.png" width="24" alt="registry-key-value object" /> | `registry-key-value.svg` | `misp-icon misp-icon-registry-key-value misp-objects` |
-| `report` † | <img src="./exports/png/2x/objects/report.png" width="24" alt="report object" /> | `report.svg` | `misp-icon misp-icon-report misp-objects` |
-| `risk-assessment-report` | <img src="./exports/png/2x/objects/risk-assessment-report.png" width="24" alt="risk-assessment-report object" /> | `risk-assessment-report.svg` | `misp-icon misp-icon-risk-assessment-report misp-objects` |
-| `sandbox-report` | <img src="./exports/png/2x/objects/sandbox-report.png" width="24" alt="sandbox-report object" /> | `sandbox-report.svg` | `misp-icon misp-icon-sandbox-report misp-objects` |
-| `scan-result` | <img src="./exports/png/2x/objects/scan-result.png" width="24" alt="scan-result object" /> | `scan-result.svg` | `misp-icon misp-icon-scan-result misp-objects` |
-| `scheduled-event` | <img src="./exports/png/2x/objects/scheduled-event.png" width="24" alt="scheduled-event object" /> | `scheduled-event.svg` | `misp-icon misp-icon-scheduled-event misp-objects` |
-| `scheduled-task` | <img src="./exports/png/2x/objects/scheduled-task.png" width="24" alt="scheduled-task object" /> | `scheduled-task.svg` | `misp-icon misp-icon-scheduled-task misp-objects` |
-| `script` | <img src="./exports/png/2x/objects/script.png" width="24" alt="script object" /> | `script.svg` | `misp-icon misp-icon-script misp-objects` |
-| `service` | <img src="./exports/png/2x/objects/service.png" width="24" alt="service object" /> | `service.svg` | `misp-icon misp-icon-service misp-objects` |
-| `shell-commands` | <img src="./exports/png/2x/objects/shell-commands.png" width="24" alt="shell-commands object" /> | `shell-commands.svg` | `misp-icon misp-icon-shell-commands misp-objects` |
-| `shortened-link` | <img src="./exports/png/2x/objects/shortened-link.png" width="24" alt="shortened-link object" /> | `shortened-link.svg` | `misp-icon misp-icon-shortened-link misp-objects` |
-| `software-package` | <img src="./exports/png/2x/objects/software-package.png" width="24" alt="software-package object" /> | `software-package.svg` | `misp-icon misp-icon-software-package misp-objects` |
-| `software` | <img src="./exports/png/2x/objects/software.png" width="24" alt="software object" /> | `software.svg` | `misp-icon misp-icon-software misp-objects` |
-| `spearphishing-attachment` | <img src="./exports/png/2x/objects/spearphishing-attachment.png" width="24" alt="spearphishing-attachment object" /> | `spearphishing-attachment.svg` | `misp-icon misp-icon-spearphishing-attachment misp-objects` |
-| `spearphishing-campaign` | <img src="./exports/png/2x/objects/spearphishing-campaign.png" width="24" alt="spearphishing-campaign object" /> | `spearphishing-campaign.svg` | `misp-icon misp-icon-spearphishing-campaign misp-objects` |
-| `spearphishing-link` | <img src="./exports/png/2x/objects/spearphishing-link.png" width="24" alt="spearphishing-link object" /> | `spearphishing-link.svg` | `misp-icon misp-icon-spearphishing-link misp-objects` |
-| `splunk` | <img src="./exports/png/2x/objects/splunk.png" width="24" alt="splunk object" /> | `splunk.svg` | `misp-icon misp-icon-splunk misp-objects` |
-| `ssh-authorized-keys` | <img src="./exports/png/2x/objects/ssh-authorized-keys.png" width="24" alt="ssh-authorized-keys object" /> | `ssh-authorized-keys.svg` | `misp-icon misp-icon-ssh-authorized-keys misp-objects` |
-| `stix2-pattern` | <img src="./exports/png/2x/objects/stix2-pattern.png" width="24" alt="stix2-pattern object" /> | `stix2-pattern.svg` | `misp-icon misp-icon-stix2-pattern misp-objects` |
-| `suricata` | <img src="./exports/png/2x/objects/suricata.png" width="24" alt="suricata object" /> | `suricata.svg` | `misp-icon misp-icon-suricata misp-objects` |
-| `task` | <img src="./exports/png/2x/objects/task.png" width="24" alt="task object" /> | `task.svg` | `misp-icon misp-icon-task misp-objects` |
-| `telegram-account` | <img src="./exports/png/2x/objects/telegram-account.png" width="24" alt="telegram-account object" /> | `telegram-account.svg` | `misp-icon misp-icon-telegram-account misp-objects` |
-| `telegram-bot` | <img src="./exports/png/2x/objects/telegram-bot.png" width="24" alt="telegram-bot object" /> | `telegram-bot.svg` | `misp-icon misp-icon-telegram-bot misp-objects` |
-| `temporal-event` | <img src="./exports/png/2x/objects/temporal-event.png" width="24" alt="temporal-event object" /> | `temporal-event.svg` | `misp-icon misp-icon-temporal-event misp-objects` |
-| `terminal-output` | <img src="./exports/png/2x/objects/terminal-output.png" width="24" alt="terminal-output object" /> | `terminal-output.svg` | `misp-icon misp-icon-terminal-output misp-objects` |
-| `timestamp` | <img src="./exports/png/2x/objects/timestamp.png" width="24" alt="timestamp object" /> | `timestamp.svg` | `misp-icon misp-icon-timestamp misp-objects` |
-| `tor-hiddenservice` | <img src="./exports/png/2x/objects/tor-hiddenservice.png" width="24" alt="tor-hiddenservice object" /> | `tor-hiddenservice.svg` | `misp-icon misp-icon-tor-hiddenservice misp-objects` |
-| `tor-node` | <img src="./exports/png/2x/objects/tor-node.png" width="24" alt="tor-node object" /> | `tor-node.svg` | `misp-icon misp-icon-tor-node misp-objects` |
-| `transaction` | <img src="./exports/png/2x/objects/transaction.png" width="24" alt="transaction object" /> | `transaction.svg` | `misp-icon misp-icon-transaction misp-objects` |
-| `translation` | <img src="./exports/png/2x/objects/translation.png" width="24" alt="translation object" /> | `translation.svg` | `misp-icon misp-icon-translation misp-objects` |
-| `transport-ticket` | <img src="./exports/png/2x/objects/transport-ticket.png" width="24" alt="transport-ticket object" /> | `transport-ticket.svg` | `misp-icon misp-icon-transport-ticket misp-objects` |
-| `twitter-account` | <img src="./exports/png/2x/objects/twitter-account.png" width="24" alt="twitter-account object" /> | `twitter-account.svg` | `misp-icon misp-icon-twitter-account misp-objects` |
-| `twitter-list` | <img src="./exports/png/2x/objects/twitter-list.png" width="24" alt="twitter-list object" /> | `twitter-list.svg` | `misp-icon misp-icon-twitter-list misp-objects` |
-| `twitter-post` | <img src="./exports/png/2x/objects/twitter-post.png" width="24" alt="twitter-post object" /> | `twitter-post.svg` | `misp-icon misp-icon-twitter-post misp-objects` |
-| `uav` | <img src="./exports/png/2x/objects/uav.png" width="24" alt="uav object" /> | `uav.svg` | `misp-icon misp-icon-uav misp-objects` |
-| `url` † | <img src="./exports/png/2x/objects/url.png" width="24" alt="url object" /> | `url.svg` | `misp-icon misp-icon-url misp-objects` |
-| `user-account` | <img src="./exports/png/2x/objects/user-account.png" width="24" alt="user-account object" /> | `user-account.svg` | `misp-icon misp-icon-user-account misp-objects` |
-| `user-action` | <img src="./exports/png/2x/objects/user-action.png" width="24" alt="user-action object" /> | `user-action.svg` | `misp-icon misp-icon-user-action misp-objects` |
-| `vehicle` | <img src="./exports/png/2x/objects/vehicle.png" width="24" alt="vehicle object" /> | `vehicle.svg` | `misp-icon misp-icon-vehicle misp-objects` |
-| `victim` | <img src="./exports/png/2x/objects/victim.png" width="24" alt="victim object" /> | `victim.svg` | `misp-icon misp-icon-victim misp-objects` |
-| `virustotal-graph` | <img src="./exports/png/2x/objects/virustotal-graph.png" width="24" alt="virustotal-graph object" /> | `virustotal-graph.svg` | `misp-icon misp-icon-virustotal-graph misp-objects` |
-| `virustotal-report` | <img src="./exports/png/2x/objects/virustotal-report.png" width="24" alt="virustotal-report object" /> | `virustotal-report.svg` | `misp-icon misp-icon-virustotal-report misp-objects` |
-| `virustotal-submission` | <img src="./exports/png/2x/objects/virustotal-submission.png" width="24" alt="virustotal-submission object" /> | `virustotal-submission.svg` | `misp-icon misp-icon-virustotal-submission misp-objects` |
-| `vulnerability` † | <img src="./exports/png/2x/objects/vulnerability.png" width="24" alt="vulnerability object" /> | `vulnerability.svg` | `misp-icon misp-icon-vulnerability misp-objects` |
-| `weakness` | <img src="./exports/png/2x/objects/weakness.png" width="24" alt="weakness object" /> | `weakness.svg` | `misp-icon misp-icon-weakness misp-objects` |
-| `whois` | <img src="./exports/png/2x/objects/whois.png" width="24" alt="whois object" /> | `whois.svg` | `misp-icon misp-icon-whois misp-objects` |
-| `wifi-connection` | <img src="./exports/png/2x/objects/wifi-connection.png" width="24" alt="wifi-connection object" /> | `wifi-connection.svg` | `misp-icon misp-icon-wifi-connection misp-objects` |
-| `windows-service` | <img src="./exports/png/2x/objects/windows-service.png" width="24" alt="windows-service object" /> | `windows-service.svg` | `misp-icon misp-icon-windows-service misp-objects` |
-| `x509` | <img src="./exports/png/2x/objects/x509.png" width="24" alt="x509 object" /> | `x509.svg` | `misp-icon misp-icon-x509 misp-objects` |
-| `x-header` | <img src="./exports/png/2x/objects/x-header.png" width="24" alt="x-header object" /> | `x-header.svg` | `misp-icon misp-icon-x-header misp-objects` |
-| `yara` † | <img src="./exports/png/2x/objects/yara.png" width="24" alt="yara object" /> | `yara.svg` | `misp-icon misp-icon-yara misp-objects` |
-| `youtube-channel` | <img src="./exports/png/2x/objects/youtube-channel.png" width="24" alt="youtube-channel object" /> | `youtube-channel.svg` | `misp-icon misp-icon-youtube-channel misp-objects` |
-| `youtube-comment` | <img src="./exports/png/2x/objects/youtube-comment.png" width="24" alt="youtube-comment object" /> | `youtube-comment.svg` | `misp-icon misp-icon-youtube-comment misp-objects` |
-| `youtube-playlist` | <img src="./exports/png/2x/objects/youtube-playlist.png" width="24" alt="youtube-playlist object" /> | `youtube-playlist.svg` | `misp-icon misp-icon-youtube-playlist misp-objects` |
-| `youtube-video` | <img src="./exports/png/2x/objects/youtube-video.png" width="24" alt="youtube-video object" /> | `youtube-video.svg` | `misp-icon misp-icon-youtube-video misp-objects` |
+| Object | Plain | Framed | File |
+|--------|-------|--------|------|
+| `android-app` | <img src="./exports/png/2x/objects/android-app.png" width="24" alt="android-app object" /> | <img src="./exports/png/2x/objects-framed/android-app.png" width="24" alt="android-app object framed" /> | `android-app.svg` |
+| `android-permission` | <img src="./exports/png/2x/objects/android-permission.png" width="24" alt="android-permission object" /> | <img src="./exports/png/2x/objects-framed/android-permission.png" width="24" alt="android-permission object framed" /> | `android-permission.svg` |
+| `annotation` | <img src="./exports/png/2x/objects/annotation.png" width="24" alt="annotation object" /> | <img src="./exports/png/2x/objects-framed/annotation.png" width="24" alt="annotation object framed" /> | `annotation.svg` |
+| `apk` | <img src="./exports/png/2x/objects/apk.png" width="24" alt="apk object" /> | <img src="./exports/png/2x/objects-framed/apk.png" width="24" alt="apk object framed" /> | `apk.svg` |
+| `artifact` | <img src="./exports/png/2x/objects/artifact.png" width="24" alt="artifact object" /> | <img src="./exports/png/2x/objects-framed/artifact.png" width="24" alt="artifact object framed" /> | `artifact.svg` |
+| `asn` | <img src="./exports/png/2x/objects/asn.png" width="24" alt="asn object" /> | <img src="./exports/png/2x/objects-framed/asn.png" width="24" alt="asn object framed" /> | `asn.svg` |
+| `attack-pattern` | <img src="./exports/png/2x/objects/attack-pattern.png" width="24" alt="attack-pattern object" /> | <img src="./exports/png/2x/objects-framed/attack-pattern.png" width="24" alt="attack-pattern object framed" /> | `attack-pattern.svg` |
+| `av-signature` | <img src="./exports/png/2x/objects/av-signature.png" width="24" alt="av-signature object" /> | <img src="./exports/png/2x/objects-framed/av-signature.png" width="24" alt="av-signature object framed" /> | `av-signature.svg` |
+| `bank-account` | <img src="./exports/png/2x/objects/bank-account.png" width="24" alt="bank-account object" /> | <img src="./exports/png/2x/objects-framed/bank-account.png" width="24" alt="bank-account object framed" /> | `bank-account.svg` |
+| `blog` | <img src="./exports/png/2x/objects/blog.png" width="24" alt="blog object" /> | <img src="./exports/png/2x/objects-framed/blog.png" width="24" alt="blog object framed" /> | `blog.svg` |
+| `btc-transaction` | <img src="./exports/png/2x/objects/btc-transaction.png" width="24" alt="btc-transaction object" /> | <img src="./exports/png/2x/objects-framed/btc-transaction.png" width="24" alt="btc-transaction object framed" /> | `btc-transaction.svg` |
+| `btc-wallet` | <img src="./exports/png/2x/objects/btc-wallet.png" width="24" alt="btc-wallet object" /> | <img src="./exports/png/2x/objects-framed/btc-wallet.png" width="24" alt="btc-wallet object framed" /> | `btc-wallet.svg` |
+| `c2-list` | <img src="./exports/png/2x/objects/c2-list.png" width="24" alt="c2-list object" /> | <img src="./exports/png/2x/objects-framed/c2-list.png" width="24" alt="c2-list object framed" /> | `c2-list.svg` |
+| `chat-message` | <img src="./exports/png/2x/objects/chat-message.png" width="24" alt="chat-message object" /> | <img src="./exports/png/2x/objects-framed/chat-message.png" width="24" alt="chat-message object framed" /> | `chat-message.svg` |
+| `coin-address` | <img src="./exports/png/2x/objects/coin-address.png" width="24" alt="coin-address object" /> | <img src="./exports/png/2x/objects-framed/coin-address.png" width="24" alt="coin-address object framed" /> | `coin-address.svg` |
+| `command-line` | <img src="./exports/png/2x/objects/command-line.png" width="24" alt="command-line object" /> | <img src="./exports/png/2x/objects-framed/command-line.png" width="24" alt="command-line object framed" /> | `command-line.svg` |
+| `command` | <img src="./exports/png/2x/objects/command.png" width="24" alt="command object" /> | <img src="./exports/png/2x/objects-framed/command.png" width="24" alt="command object framed" /> | `command.svg` |
+| `cookie` † | <img src="./exports/png/2x/objects/cookie.png" width="24" alt="cookie object" /> | <img src="./exports/png/2x/objects-framed/cookie.png" width="24" alt="cookie object framed" /> | `cookie.svg` |
+| `course-of-action` | <img src="./exports/png/2x/objects/course-of-action.png" width="24" alt="course-of-action object" /> | <img src="./exports/png/2x/objects-framed/course-of-action.png" width="24" alt="course-of-action object framed" /> | `course-of-action.svg` |
+| `cpe-asset` | <img src="./exports/png/2x/objects/cpe-asset.png" width="24" alt="cpe-asset object" /> | <img src="./exports/png/2x/objects-framed/cpe-asset.png" width="24" alt="cpe-asset object framed" /> | `cpe-asset.svg` |
+| `credential` | <img src="./exports/png/2x/objects/credential.png" width="24" alt="credential object" /> | <img src="./exports/png/2x/objects-framed/credential.png" width="24" alt="credential object framed" /> | `credential.svg` |
+| `credit-card` | <img src="./exports/png/2x/objects/credit-card.png" width="24" alt="credit-card object" /> | <img src="./exports/png/2x/objects-framed/credit-card.png" width="24" alt="credit-card object framed" /> | `credit-card.svg` |
+| `crypto-material` | <img src="./exports/png/2x/objects/crypto-material.png" width="24" alt="crypto-material object" /> | <img src="./exports/png/2x/objects-framed/crypto-material.png" width="24" alt="crypto-material object framed" /> | `crypto-material.svg` |
+| `data-url` | <img src="./exports/png/2x/objects/data-url.png" width="24" alt="data-url object" /> | <img src="./exports/png/2x/objects-framed/data-url.png" width="24" alt="data-url object framed" /> | `data-url.svg` |
+| `ddos-config` | <img src="./exports/png/2x/objects/ddos-config.png" width="24" alt="ddos-config object" /> | <img src="./exports/png/2x/objects-framed/ddos-config.png" width="24" alt="ddos-config object framed" /> | `ddos-config.svg` |
+| `ddos` | <img src="./exports/png/2x/objects/ddos.png" width="24" alt="ddos object" /> | <img src="./exports/png/2x/objects-framed/ddos.png" width="24" alt="ddos object framed" /> | `ddos.svg` |
+| `decoded-barcode` | <img src="./exports/png/2x/objects/decoded-barcode.png" width="24" alt="decoded-barcode object" /> | <img src="./exports/png/2x/objects-framed/decoded-barcode.png" width="24" alt="decoded-barcode object framed" /> | `decoded-barcode.svg` |
+| `decoded-qrcode` | <img src="./exports/png/2x/objects/decoded-qrcode.png" width="24" alt="decoded-qrcode object" /> | <img src="./exports/png/2x/objects-framed/decoded-qrcode.png" width="24" alt="decoded-qrcode object framed" /> | `decoded-qrcode.svg` |
+| `device` | <img src="./exports/png/2x/objects/device.png" width="24" alt="device object" /> | <img src="./exports/png/2x/objects-framed/device.png" width="24" alt="device object framed" /> | `device.svg` |
+| `diamond` | <img src="./exports/png/2x/objects/diamond.png" width="24" alt="diamond object" /> | <img src="./exports/png/2x/objects-framed/diamond.png" width="24" alt="diamond object framed" /> | `diamond.svg` |
+| `directory` | <img src="./exports/png/2x/objects/directory.png" width="24" alt="directory object" /> | <img src="./exports/png/2x/objects-framed/directory.png" width="24" alt="directory object framed" /> | `directory.svg` |
+| `dkim` | <img src="./exports/png/2x/objects/dkim.png" width="24" alt="dkim object" /> | <img src="./exports/png/2x/objects-framed/dkim.png" width="24" alt="dkim object framed" /> | `dkim.svg` |
+| `dns-record` | <img src="./exports/png/2x/objects/dns-record.png" width="24" alt="dns-record object" /> | <img src="./exports/png/2x/objects-framed/dns-record.png" width="24" alt="dns-record object framed" /> | `dns-record.svg` |
+| `domain-ip` † | <img src="./exports/png/2x/objects/domain-ip.png" width="24" alt="domain-ip object" /> | <img src="./exports/png/2x/objects-framed/domain-ip.png" width="24" alt="domain-ip object framed" /> | `domain-ip.svg` |
+| `elf` | <img src="./exports/png/2x/objects/elf.png" width="24" alt="elf object" /> | <img src="./exports/png/2x/objects-framed/elf.png" width="24" alt="elf object framed" /> | `elf.svg` |
+| `email` † | <img src="./exports/png/2x/objects/email.png" width="24" alt="email object" /> | <img src="./exports/png/2x/objects-framed/email.png" width="24" alt="email object framed" /> | `email.svg` |
+| `employee` | <img src="./exports/png/2x/objects/employee.png" width="24" alt="employee object" /> | <img src="./exports/png/2x/objects-framed/employee.png" width="24" alt="employee object framed" /> | `employee.svg` |
+| `event` † | <img src="./exports/png/2x/objects/event.png" width="24" alt="event object" /> | <img src="./exports/png/2x/objects-framed/event.png" width="24" alt="event object framed" /> | `event.svg` |
+| `exploit-poc` | <img src="./exports/png/2x/objects/exploit-poc.png" width="24" alt="exploit-poc object" /> | <img src="./exports/png/2x/objects-framed/exploit-poc.png" width="24" alt="exploit-poc object framed" /> | `exploit-poc.svg` |
+| `exploit` | <img src="./exports/png/2x/objects/exploit.png" width="24" alt="exploit object" /> | <img src="./exports/png/2x/objects-framed/exploit.png" width="24" alt="exploit object framed" /> | `exploit.svg` |
+| `facebook-account` | <img src="./exports/png/2x/objects/facebook-account.png" width="24" alt="facebook-account object" /> | <img src="./exports/png/2x/objects-framed/facebook-account.png" width="24" alt="facebook-account object framed" /> | `facebook-account.svg` |
+| `facebook-group` | <img src="./exports/png/2x/objects/facebook-group.png" width="24" alt="facebook-group object" /> | <img src="./exports/png/2x/objects-framed/facebook-group.png" width="24" alt="facebook-group object framed" /> | `facebook-group.svg` |
+| `facebook-page` | <img src="./exports/png/2x/objects/facebook-page.png" width="24" alt="facebook-page object" /> | <img src="./exports/png/2x/objects-framed/facebook-page.png" width="24" alt="facebook-page object framed" /> | `facebook-page.svg` |
+| `facebook-post` | <img src="./exports/png/2x/objects/facebook-post.png" width="24" alt="facebook-post object" /> | <img src="./exports/png/2x/objects-framed/facebook-post.png" width="24" alt="facebook-post object framed" /> | `facebook-post.svg` |
+| `facebook-reaction` | <img src="./exports/png/2x/objects/facebook-reaction.png" width="24" alt="facebook-reaction object" /> | <img src="./exports/png/2x/objects-framed/facebook-reaction.png" width="24" alt="facebook-reaction object framed" /> | `facebook-reaction.svg` |
+| `favicon` | <img src="./exports/png/2x/objects/favicon.png" width="24" alt="favicon object" /> | <img src="./exports/png/2x/objects-framed/favicon.png" width="24" alt="favicon object framed" /> | `favicon.svg` |
+| `file-7z` | <img src="./exports/png/2x/objects/file-7z.png" width="24" alt="file-7z object" /> | <img src="./exports/png/2x/objects-framed/file-7z.png" width="24" alt="file-7z object framed" /> | `file-7z.svg` |
+| `file-apk` | <img src="./exports/png/2x/objects/file-apk.png" width="24" alt="file-apk object" /> | <img src="./exports/png/2x/objects-framed/file-apk.png" width="24" alt="file-apk object framed" /> | `file-apk.svg` |
+| `file-bat` | <img src="./exports/png/2x/objects/file-bat.png" width="24" alt="file-bat object" /> | <img src="./exports/png/2x/objects-framed/file-bat.png" width="24" alt="file-bat object framed" /> | `file-bat.svg` |
+| `file-css` | <img src="./exports/png/2x/objects/file-css.png" width="24" alt="file-css object" /> | <img src="./exports/png/2x/objects-framed/file-css.png" width="24" alt="file-css object framed" /> | `file-css.svg` |
+| `file-csv` | <img src="./exports/png/2x/objects/file-csv.png" width="24" alt="file-csv object" /> | <img src="./exports/png/2x/objects-framed/file-csv.png" width="24" alt="file-csv object framed" /> | `file-csv.svg` |
+| `file-dll` | <img src="./exports/png/2x/objects/file-dll.png" width="24" alt="file-dll object" /> | <img src="./exports/png/2x/objects-framed/file-dll.png" width="24" alt="file-dll object framed" /> | `file-dll.svg` |
+| `file-doc` | <img src="./exports/png/2x/objects/file-doc.png" width="24" alt="file-doc object" /> | <img src="./exports/png/2x/objects-framed/file-doc.png" width="24" alt="file-doc object framed" /> | `file-doc.svg` |
+| `file-docx` | <img src="./exports/png/2x/objects/file-docx.png" width="24" alt="file-docx object" /> | <img src="./exports/png/2x/objects-framed/file-docx.png" width="24" alt="file-docx object framed" /> | `file-docx.svg` |
+| `file-elf` | <img src="./exports/png/2x/objects/file-elf.png" width="24" alt="file-elf object" /> | <img src="./exports/png/2x/objects-framed/file-elf.png" width="24" alt="file-elf object framed" /> | `file-elf.svg` |
+| `file-eml` | <img src="./exports/png/2x/objects/file-eml.png" width="24" alt="file-eml object" /> | <img src="./exports/png/2x/objects-framed/file-eml.png" width="24" alt="file-eml object framed" /> | `file-eml.svg` |
+| `file-exe` | <img src="./exports/png/2x/objects/file-exe.png" width="24" alt="file-exe object" /> | <img src="./exports/png/2x/objects-framed/file-exe.png" width="24" alt="file-exe object framed" /> | `file-exe.svg` |
+| `file-gif` | <img src="./exports/png/2x/objects/file-gif.png" width="24" alt="file-gif object" /> | <img src="./exports/png/2x/objects-framed/file-gif.png" width="24" alt="file-gif object framed" /> | `file-gif.svg` |
+| `file-gz` | <img src="./exports/png/2x/objects/file-gz.png" width="24" alt="file-gz object" /> | <img src="./exports/png/2x/objects-framed/file-gz.png" width="24" alt="file-gz object framed" /> | `file-gz.svg` |
+| `file-html` | <img src="./exports/png/2x/objects/file-html.png" width="24" alt="file-html object" /> | <img src="./exports/png/2x/objects-framed/file-html.png" width="24" alt="file-html object framed" /> | `file-html.svg` |
+| `file-iso` | <img src="./exports/png/2x/objects/file-iso.png" width="24" alt="file-iso object" /> | <img src="./exports/png/2x/objects-framed/file-iso.png" width="24" alt="file-iso object framed" /> | `file-iso.svg` |
+| `file-jar` | <img src="./exports/png/2x/objects/file-jar.png" width="24" alt="file-jar object" /> | <img src="./exports/png/2x/objects-framed/file-jar.png" width="24" alt="file-jar object framed" /> | `file-jar.svg` |
+| `file-jpg` | <img src="./exports/png/2x/objects/file-jpg.png" width="24" alt="file-jpg object" /> | <img src="./exports/png/2x/objects-framed/file-jpg.png" width="24" alt="file-jpg object framed" /> | `file-jpg.svg` |
+| `file-json` | <img src="./exports/png/2x/objects/file-json.png" width="24" alt="file-json object" /> | <img src="./exports/png/2x/objects-framed/file-json.png" width="24" alt="file-json object framed" /> | `file-json.svg` |
+| `file-js` | <img src="./exports/png/2x/objects/file-js.png" width="24" alt="file-js object" /> | <img src="./exports/png/2x/objects-framed/file-js.png" width="24" alt="file-js object framed" /> | `file-js.svg` |
+| `file-lnk` | <img src="./exports/png/2x/objects/file-lnk.png" width="24" alt="file-lnk object" /> | <img src="./exports/png/2x/objects-framed/file-lnk.png" width="24" alt="file-lnk object framed" /> | `file-lnk.svg` |
+| `file-mp3` | <img src="./exports/png/2x/objects/file-mp3.png" width="24" alt="file-mp3 object" /> | <img src="./exports/png/2x/objects-framed/file-mp3.png" width="24" alt="file-mp3 object framed" /> | `file-mp3.svg` |
+| `file-mp4` | <img src="./exports/png/2x/objects/file-mp4.png" width="24" alt="file-mp4 object" /> | <img src="./exports/png/2x/objects-framed/file-mp4.png" width="24" alt="file-mp4 object framed" /> | `file-mp4.svg` |
+| `file-msg` | <img src="./exports/png/2x/objects/file-msg.png" width="24" alt="file-msg object" /> | <img src="./exports/png/2x/objects-framed/file-msg.png" width="24" alt="file-msg object framed" /> | `file-msg.svg` |
+| `file-pcap` | <img src="./exports/png/2x/objects/file-pcap.png" width="24" alt="file-pcap object" /> | <img src="./exports/png/2x/objects-framed/file-pcap.png" width="24" alt="file-pcap object framed" /> | `file-pcap.svg` |
+| `file-pdf` | <img src="./exports/png/2x/objects/file-pdf.png" width="24" alt="file-pdf object" /> | <img src="./exports/png/2x/objects-framed/file-pdf.png" width="24" alt="file-pdf object framed" /> | `file-pdf.svg` |
+| `file-png` | <img src="./exports/png/2x/objects/file-png.png" width="24" alt="file-png object" /> | <img src="./exports/png/2x/objects-framed/file-png.png" width="24" alt="file-png object framed" /> | `file-png.svg` |
+| `file-ppt` | <img src="./exports/png/2x/objects/file-ppt.png" width="24" alt="file-ppt object" /> | <img src="./exports/png/2x/objects-framed/file-ppt.png" width="24" alt="file-ppt object framed" /> | `file-ppt.svg` |
+| `file-pptx` | <img src="./exports/png/2x/objects/file-pptx.png" width="24" alt="file-pptx object" /> | <img src="./exports/png/2x/objects-framed/file-pptx.png" width="24" alt="file-pptx object framed" /> | `file-pptx.svg` |
+| `file-ps1` | <img src="./exports/png/2x/objects/file-ps1.png" width="24" alt="file-ps1 object" /> | <img src="./exports/png/2x/objects-framed/file-ps1.png" width="24" alt="file-ps1 object framed" /> | `file-ps1.svg` |
+| `file-py` | <img src="./exports/png/2x/objects/file-py.png" width="24" alt="file-py object" /> | <img src="./exports/png/2x/objects-framed/file-py.png" width="24" alt="file-py object framed" /> | `file-py.svg` |
+| `file-rar` | <img src="./exports/png/2x/objects/file-rar.png" width="24" alt="file-rar object" /> | <img src="./exports/png/2x/objects-framed/file-rar.png" width="24" alt="file-rar object framed" /> | `file-rar.svg` |
+| `file-rtf` | <img src="./exports/png/2x/objects/file-rtf.png" width="24" alt="file-rtf object" /> | <img src="./exports/png/2x/objects-framed/file-rtf.png" width="24" alt="file-rtf object framed" /> | `file-rtf.svg` |
+| `file-sh` | <img src="./exports/png/2x/objects/file-sh.png" width="24" alt="file-sh object" /> | <img src="./exports/png/2x/objects-framed/file-sh.png" width="24" alt="file-sh object framed" /> | `file-sh.svg` |
+| `file` | <img src="./exports/png/2x/objects/file.png" width="24" alt="file object" /> | <img src="./exports/png/2x/objects-framed/file.png" width="24" alt="file object framed" /> | `file.svg` |
+| `file-svg` | <img src="./exports/png/2x/objects/file-svg.png" width="24" alt="file-svg object" /> | <img src="./exports/png/2x/objects-framed/file-svg.png" width="24" alt="file-svg object framed" /> | `file-svg.svg` |
+| `file-txt` | <img src="./exports/png/2x/objects/file-txt.png" width="24" alt="file-txt object" /> | <img src="./exports/png/2x/objects-framed/file-txt.png" width="24" alt="file-txt object framed" /> | `file-txt.svg` |
+| `file-vbs` | <img src="./exports/png/2x/objects/file-vbs.png" width="24" alt="file-vbs object" /> | <img src="./exports/png/2x/objects-framed/file-vbs.png" width="24" alt="file-vbs object framed" /> | `file-vbs.svg` |
+| `file-xls` | <img src="./exports/png/2x/objects/file-xls.png" width="24" alt="file-xls object" /> | <img src="./exports/png/2x/objects-framed/file-xls.png" width="24" alt="file-xls object framed" /> | `file-xls.svg` |
+| `file-xlsx` | <img src="./exports/png/2x/objects/file-xlsx.png" width="24" alt="file-xlsx object" /> | <img src="./exports/png/2x/objects-framed/file-xlsx.png" width="24" alt="file-xlsx object framed" /> | `file-xlsx.svg` |
+| `file-xml` | <img src="./exports/png/2x/objects/file-xml.png" width="24" alt="file-xml object" /> | <img src="./exports/png/2x/objects-framed/file-xml.png" width="24" alt="file-xml object framed" /> | `file-xml.svg` |
+| `file-zip` | <img src="./exports/png/2x/objects/file-zip.png" width="24" alt="file-zip object" /> | <img src="./exports/png/2x/objects-framed/file-zip.png" width="24" alt="file-zip object framed" /> | `file-zip.svg` |
+| `forensic-case` | <img src="./exports/png/2x/objects/forensic-case.png" width="24" alt="forensic-case object" /> | <img src="./exports/png/2x/objects-framed/forensic-case.png" width="24" alt="forensic-case object framed" /> | `forensic-case.svg` |
+| `forensic-evidence` | <img src="./exports/png/2x/objects/forensic-evidence.png" width="24" alt="forensic-evidence object" /> | <img src="./exports/png/2x/objects-framed/forensic-evidence.png" width="24" alt="forensic-evidence object framed" /> | `forensic-evidence.svg` |
+| `forged-document` | <img src="./exports/png/2x/objects/forged-document.png" width="24" alt="forged-document object" /> | <img src="./exports/png/2x/objects-framed/forged-document.png" width="24" alt="forged-document object framed" /> | `forged-document.svg` |
+| `geojson` | <img src="./exports/png/2x/objects/geojson.png" width="24" alt="geojson object" /> | <img src="./exports/png/2x/objects-framed/geojson.png" width="24" alt="geojson object framed" /> | `geojson.svg` |
+| `geolocation` | <img src="./exports/png/2x/objects/geolocation.png" width="24" alt="geolocation object" /> | <img src="./exports/png/2x/objects-framed/geolocation.png" width="24" alt="geolocation object framed" /> | `geolocation.svg` |
+| `ghidra-function` | <img src="./exports/png/2x/objects/ghidra-function.png" width="24" alt="ghidra-function object" /> | <img src="./exports/png/2x/objects-framed/ghidra-function.png" width="24" alt="ghidra-function object framed" /> | `ghidra-function.svg` |
+| `github-action` | <img src="./exports/png/2x/objects/github-action.png" width="24" alt="github-action object" /> | <img src="./exports/png/2x/objects-framed/github-action.png" width="24" alt="github-action object framed" /> | `github-action.svg` |
+| `github-repo` | <img src="./exports/png/2x/objects/github-repo.png" width="24" alt="github-repo object" /> | <img src="./exports/png/2x/objects-framed/github-repo.png" width="24" alt="github-repo object framed" /> | `github-repo.svg` |
+| `github-user` | <img src="./exports/png/2x/objects/github-user.png" width="24" alt="github-user object" /> | <img src="./exports/png/2x/objects-framed/github-user.png" width="24" alt="github-user object framed" /> | `github-user.svg` |
+| `gitlab-user` | <img src="./exports/png/2x/objects/gitlab-user.png" width="24" alt="gitlab-user object" /> | <img src="./exports/png/2x/objects-framed/gitlab-user.png" width="24" alt="gitlab-user object framed" /> | `gitlab-user.svg` |
+| `google-account` | <img src="./exports/png/2x/objects/google-account.png" width="24" alt="google-account object" /> | <img src="./exports/png/2x/objects-framed/google-account.png" width="24" alt="google-account object framed" /> | `google-account.svg` |
+| `google-threat-intelligence-report` | <img src="./exports/png/2x/objects/google-threat-intelligence-report.png" width="24" alt="google-threat-intelligence-report object" /> | <img src="./exports/png/2x/objects-framed/google-threat-intelligence-report.png" width="24" alt="google-threat-intelligence-report object framed" /> | `google-threat-intelligence-report.svg` |
+| `gpx` | <img src="./exports/png/2x/objects/gpx.png" width="24" alt="gpx object" /> | <img src="./exports/png/2x/objects-framed/gpx.png" width="24" alt="gpx object framed" /> | `gpx.svg` |
+| `http-request` | <img src="./exports/png/2x/objects/http-request.png" width="24" alt="http-request object" /> | <img src="./exports/png/2x/objects-framed/http-request.png" width="24" alt="http-request object framed" /> | `http-request.svg` |
+| `identity` | <img src="./exports/png/2x/objects/identity.png" width="24" alt="identity object" /> | <img src="./exports/png/2x/objects-framed/identity.png" width="24" alt="identity object framed" /> | `identity.svg` |
+| `image` | <img src="./exports/png/2x/objects/image.png" width="24" alt="image object" /> | <img src="./exports/png/2x/objects-framed/image.png" width="24" alt="image object framed" /> | `image.svg` |
+| `impersonation` | <img src="./exports/png/2x/objects/impersonation.png" width="24" alt="impersonation object" /> | <img src="./exports/png/2x/objects-framed/impersonation.png" width="24" alt="impersonation object framed" /> | `impersonation.svg` |
+| `incident` | <img src="./exports/png/2x/objects/incident.png" width="24" alt="incident object" /> | <img src="./exports/png/2x/objects-framed/incident.png" width="24" alt="incident object framed" /> | `incident.svg` |
+| `infrastructure` | <img src="./exports/png/2x/objects/infrastructure.png" width="24" alt="infrastructure object" /> | <img src="./exports/png/2x/objects-framed/infrastructure.png" width="24" alt="infrastructure object framed" /> | `infrastructure.svg` |
+| `instagram-account` | <img src="./exports/png/2x/objects/instagram-account.png" width="24" alt="instagram-account object" /> | <img src="./exports/png/2x/objects-framed/instagram-account.png" width="24" alt="instagram-account object framed" /> | `instagram-account.svg` |
+| `instant-message` | <img src="./exports/png/2x/objects/instant-message.png" width="24" alt="instant-message object" /> | <img src="./exports/png/2x/objects-framed/instant-message.png" width="24" alt="instant-message object framed" /> | `instant-message.svg` |
+| `intelligence-report` | <img src="./exports/png/2x/objects/intelligence-report.png" width="24" alt="intelligence-report object" /> | <img src="./exports/png/2x/objects-framed/intelligence-report.png" width="24" alt="intelligence-report object framed" /> | `intelligence-report.svg` |
+| `intrusion-set` | <img src="./exports/png/2x/objects/intrusion-set.png" width="24" alt="intrusion-set object" /> | <img src="./exports/png/2x/objects-framed/intrusion-set.png" width="24" alt="intrusion-set object framed" /> | `intrusion-set.svg` |
+| `iot-device` | <img src="./exports/png/2x/objects/iot-device.png" width="24" alt="iot-device object" /> | <img src="./exports/png/2x/objects-framed/iot-device.png" width="24" alt="iot-device object framed" /> | `iot-device.svg` |
+| `iot-firmware` | <img src="./exports/png/2x/objects/iot-firmware.png" width="24" alt="iot-firmware object" /> | <img src="./exports/png/2x/objects-framed/iot-firmware.png" width="24" alt="iot-firmware object framed" /> | `iot-firmware.svg` |
+| `ip-port` | <img src="./exports/png/2x/objects/ip-port.png" width="24" alt="ip-port object" /> | <img src="./exports/png/2x/objects-framed/ip-port.png" width="24" alt="ip-port object framed" /> | `ip-port.svg` |
+| `irc` | <img src="./exports/png/2x/objects/irc.png" width="24" alt="irc object" /> | <img src="./exports/png/2x/objects-framed/irc.png" width="24" alt="irc object framed" /> | `irc.svg` |
+| `ja3` | <img src="./exports/png/2x/objects/ja3.png" width="24" alt="ja3 object" /> | <img src="./exports/png/2x/objects-framed/ja3.png" width="24" alt="ja3 object framed" /> | `ja3.svg` |
+| `keybase-account` | <img src="./exports/png/2x/objects/keybase-account.png" width="24" alt="keybase-account object" /> | <img src="./exports/png/2x/objects-framed/keybase-account.png" width="24" alt="keybase-account object framed" /> | `keybase-account.svg` |
+| `leaked-document` | <img src="./exports/png/2x/objects/leaked-document.png" width="24" alt="leaked-document object" /> | <img src="./exports/png/2x/objects-framed/leaked-document.png" width="24" alt="leaked-document object framed" /> | `leaked-document.svg` |
+| `legal-entity` | <img src="./exports/png/2x/objects/legal-entity.png" width="24" alt="legal-entity object" /> | <img src="./exports/png/2x/objects-framed/legal-entity.png" width="24" alt="legal-entity object framed" /> | `legal-entity.svg` |
+| `lnk` | <img src="./exports/png/2x/objects/lnk.png" width="24" alt="lnk object" /> | <img src="./exports/png/2x/objects-framed/lnk.png" width="24" alt="lnk object framed" /> | `lnk.svg` |
+| `macho` | <img src="./exports/png/2x/objects/macho.png" width="24" alt="macho object" /> | <img src="./exports/png/2x/objects-framed/macho.png" width="24" alt="macho object framed" /> | `macho.svg` |
+| `malicious-website` | <img src="./exports/png/2x/objects/malicious-website.png" width="24" alt="malicious-website object" /> | <img src="./exports/png/2x/objects-framed/malicious-website.png" width="24" alt="malicious-website object framed" /> | `malicious-website.svg` |
+| `malware-analysis` | <img src="./exports/png/2x/objects/malware-analysis.png" width="24" alt="malware-analysis object" /> | <img src="./exports/png/2x/objects-framed/malware-analysis.png" width="24" alt="malware-analysis object framed" /> | `malware-analysis.svg` |
+| `malware-config` | <img src="./exports/png/2x/objects/malware-config.png" width="24" alt="malware-config object" /> | <img src="./exports/png/2x/objects-framed/malware-config.png" width="24" alt="malware-config object framed" /> | `malware-config.svg` |
+| `malware` | <img src="./exports/png/2x/objects/malware.png" width="24" alt="malware object" /> | <img src="./exports/png/2x/objects-framed/malware.png" width="24" alt="malware object framed" /> | `malware.svg` |
+| `microblog` | <img src="./exports/png/2x/objects/microblog.png" width="24" alt="microblog object" /> | <img src="./exports/png/2x/objects-framed/microblog.png" width="24" alt="microblog object framed" /> | `microblog.svg` |
+| `mutex` † | <img src="./exports/png/2x/objects/mutex.png" width="24" alt="mutex object" /> | <img src="./exports/png/2x/objects-framed/mutex.png" width="24" alt="mutex object framed" /> | `mutex.svg` |
+| `netflow` | <img src="./exports/png/2x/objects/netflow.png" width="24" alt="netflow object" /> | <img src="./exports/png/2x/objects-framed/netflow.png" width="24" alt="netflow object framed" /> | `netflow.svg` |
+| `network-connection` | <img src="./exports/png/2x/objects/network-connection.png" width="24" alt="network-connection object" /> | <img src="./exports/png/2x/objects-framed/network-connection.png" width="24" alt="network-connection object framed" /> | `network-connection.svg` |
+| `network-data` | <img src="./exports/png/2x/objects/network-data.png" width="24" alt="network-data object" /> | <img src="./exports/png/2x/objects-framed/network-data.png" width="24" alt="network-data object framed" /> | `network-data.svg` |
+| `network-profile` | <img src="./exports/png/2x/objects/network-profile.png" width="24" alt="network-profile object" /> | <img src="./exports/png/2x/objects-framed/network-profile.png" width="24" alt="network-profile object framed" /> | `network-profile.svg` |
+| `network-socket` | <img src="./exports/png/2x/objects/network-socket.png" width="24" alt="network-socket object" /> | <img src="./exports/png/2x/objects-framed/network-socket.png" width="24" alt="network-socket object framed" /> | `network-socket.svg` |
+| `network-traffic` | <img src="./exports/png/2x/objects/network-traffic.png" width="24" alt="network-traffic object" /> | <img src="./exports/png/2x/objects-framed/network-traffic.png" width="24" alt="network-traffic object framed" /> | `network-traffic.svg` |
+| `news-agency` | <img src="./exports/png/2x/objects/news-agency.png" width="24" alt="news-agency object" /> | <img src="./exports/png/2x/objects-framed/news-agency.png" width="24" alt="news-agency object framed" /> | `news-agency.svg` |
+| `news-media` | <img src="./exports/png/2x/objects/news-media.png" width="24" alt="news-media object" /> | <img src="./exports/png/2x/objects-framed/news-media.png" width="24" alt="news-media object framed" /> | `news-media.svg` |
+| `nse-script` | <img src="./exports/png/2x/objects/nse-script.png" width="24" alt="nse-script object" /> | <img src="./exports/png/2x/objects-framed/nse-script.png" width="24" alt="nse-script object framed" /> | `nse-script.svg` |
+| `organization` | <img src="./exports/png/2x/objects/organization.png" width="24" alt="organization object" /> | <img src="./exports/png/2x/objects-framed/organization.png" width="24" alt="organization object framed" /> | `organization.svg` |
+| `passive-dns-dnsdbflex` | <img src="./exports/png/2x/objects/passive-dns-dnsdbflex.png" width="24" alt="passive-dns-dnsdbflex object" /> | <img src="./exports/png/2x/objects-framed/passive-dns-dnsdbflex.png" width="24" alt="passive-dns-dnsdbflex object framed" /> | `passive-dns-dnsdbflex.svg` |
+| `passive-dns` | <img src="./exports/png/2x/objects/passive-dns.png" width="24" alt="passive-dns object" /> | <img src="./exports/png/2x/objects-framed/passive-dns.png" width="24" alt="passive-dns object framed" /> | `passive-dns.svg` |
+| `passive-ssh` | <img src="./exports/png/2x/objects/passive-ssh.png" width="24" alt="passive-ssh object" /> | <img src="./exports/png/2x/objects-framed/passive-ssh.png" width="24" alt="passive-ssh object framed" /> | `passive-ssh.svg` |
+| `paste` | <img src="./exports/png/2x/objects/paste.png" width="24" alt="paste object" /> | <img src="./exports/png/2x/objects-framed/paste.png" width="24" alt="paste object framed" /> | `paste.svg` |
+| `personification` | <img src="./exports/png/2x/objects/personification.png" width="24" alt="personification object" /> | <img src="./exports/png/2x/objects-framed/personification.png" width="24" alt="personification object framed" /> | `personification.svg` |
+| `person` | <img src="./exports/png/2x/objects/person.png" width="24" alt="person object" /> | <img src="./exports/png/2x/objects-framed/person.png" width="24" alt="person object framed" /> | `person.svg` |
+| `pe-section` | <img src="./exports/png/2x/objects/pe-section.png" width="24" alt="pe-section object" /> | <img src="./exports/png/2x/objects-framed/pe-section.png" width="24" alt="pe-section object framed" /> | `pe-section.svg` |
+| `pe` | <img src="./exports/png/2x/objects/pe.png" width="24" alt="pe object" /> | <img src="./exports/png/2x/objects-framed/pe.png" width="24" alt="pe object framed" /> | `pe.svg` |
+| `phishing-kit` | <img src="./exports/png/2x/objects/phishing-kit.png" width="24" alt="phishing-kit object" /> | <img src="./exports/png/2x/objects-framed/phishing-kit.png" width="24" alt="phishing-kit object framed" /> | `phishing-kit.svg` |
+| `phishing` | <img src="./exports/png/2x/objects/phishing.png" width="24" alt="phishing object" /> | <img src="./exports/png/2x/objects-framed/phishing.png" width="24" alt="phishing object framed" /> | `phishing.svg` |
+| `phone-number` † | <img src="./exports/png/2x/objects/phone-number.png" width="24" alt="phone-number object" /> | <img src="./exports/png/2x/objects-framed/phone-number.png" width="24" alt="phone-number object framed" /> | `phone-number.svg` |
+| `phone` | <img src="./exports/png/2x/objects/phone.png" width="24" alt="phone object" /> | <img src="./exports/png/2x/objects-framed/phone.png" width="24" alt="phone object framed" /> | `phone.svg` |
+| `physical-impact` | <img src="./exports/png/2x/objects/physical-impact.png" width="24" alt="physical-impact object" /> | <img src="./exports/png/2x/objects-framed/physical-impact.png" width="24" alt="physical-impact object framed" /> | `physical-impact.svg` |
+| `postal-address` | <img src="./exports/png/2x/objects/postal-address.png" width="24" alt="postal-address object" /> | <img src="./exports/png/2x/objects-framed/postal-address.png" width="24" alt="postal-address object framed" /> | `postal-address.svg` |
+| `process` | <img src="./exports/png/2x/objects/process.png" width="24" alt="process object" /> | <img src="./exports/png/2x/objects-framed/process.png" width="24" alt="process object framed" /> | `process.svg` |
+| `query` | <img src="./exports/png/2x/objects/query.png" width="24" alt="query object" /> | <img src="./exports/png/2x/objects-framed/query.png" width="24" alt="query object framed" /> | `query.svg` |
+| `reddit-account` | <img src="./exports/png/2x/objects/reddit-account.png" width="24" alt="reddit-account object" /> | <img src="./exports/png/2x/objects-framed/reddit-account.png" width="24" alt="reddit-account object framed" /> | `reddit-account.svg` |
+| `reddit-comment` | <img src="./exports/png/2x/objects/reddit-comment.png" width="24" alt="reddit-comment object" /> | <img src="./exports/png/2x/objects-framed/reddit-comment.png" width="24" alt="reddit-comment object framed" /> | `reddit-comment.svg` |
+| `reddit-post` | <img src="./exports/png/2x/objects/reddit-post.png" width="24" alt="reddit-post object" /> | <img src="./exports/png/2x/objects-framed/reddit-post.png" width="24" alt="reddit-post object framed" /> | `reddit-post.svg` |
+| `reddit-subreddit` | <img src="./exports/png/2x/objects/reddit-subreddit.png" width="24" alt="reddit-subreddit object" /> | <img src="./exports/png/2x/objects-framed/reddit-subreddit.png" width="24" alt="reddit-subreddit object framed" /> | `reddit-subreddit.svg` |
+| `regexp` | <img src="./exports/png/2x/objects/regexp.png" width="24" alt="regexp object" /> | <img src="./exports/png/2x/objects-framed/regexp.png" width="24" alt="regexp object framed" /> | `regexp.svg` |
+| `registry-key` | <img src="./exports/png/2x/objects/registry-key.png" width="24" alt="registry-key object" /> | <img src="./exports/png/2x/objects-framed/registry-key.png" width="24" alt="registry-key object framed" /> | `registry-key.svg` |
+| `registry-key-value` | <img src="./exports/png/2x/objects/registry-key-value.png" width="24" alt="registry-key-value object" /> | <img src="./exports/png/2x/objects-framed/registry-key-value.png" width="24" alt="registry-key-value object framed" /> | `registry-key-value.svg` |
+| `report` † | <img src="./exports/png/2x/objects/report.png" width="24" alt="report object" /> | <img src="./exports/png/2x/objects-framed/report.png" width="24" alt="report object framed" /> | `report.svg` |
+| `risk-assessment-report` | <img src="./exports/png/2x/objects/risk-assessment-report.png" width="24" alt="risk-assessment-report object" /> | <img src="./exports/png/2x/objects-framed/risk-assessment-report.png" width="24" alt="risk-assessment-report object framed" /> | `risk-assessment-report.svg` |
+| `sandbox-report` | <img src="./exports/png/2x/objects/sandbox-report.png" width="24" alt="sandbox-report object" /> | <img src="./exports/png/2x/objects-framed/sandbox-report.png" width="24" alt="sandbox-report object framed" /> | `sandbox-report.svg` |
+| `scan-result` | <img src="./exports/png/2x/objects/scan-result.png" width="24" alt="scan-result object" /> | <img src="./exports/png/2x/objects-framed/scan-result.png" width="24" alt="scan-result object framed" /> | `scan-result.svg` |
+| `scheduled-event` | <img src="./exports/png/2x/objects/scheduled-event.png" width="24" alt="scheduled-event object" /> | <img src="./exports/png/2x/objects-framed/scheduled-event.png" width="24" alt="scheduled-event object framed" /> | `scheduled-event.svg` |
+| `scheduled-task` | <img src="./exports/png/2x/objects/scheduled-task.png" width="24" alt="scheduled-task object" /> | <img src="./exports/png/2x/objects-framed/scheduled-task.png" width="24" alt="scheduled-task object framed" /> | `scheduled-task.svg` |
+| `script` | <img src="./exports/png/2x/objects/script.png" width="24" alt="script object" /> | <img src="./exports/png/2x/objects-framed/script.png" width="24" alt="script object framed" /> | `script.svg` |
+| `service` | <img src="./exports/png/2x/objects/service.png" width="24" alt="service object" /> | <img src="./exports/png/2x/objects-framed/service.png" width="24" alt="service object framed" /> | `service.svg` |
+| `shell-commands` | <img src="./exports/png/2x/objects/shell-commands.png" width="24" alt="shell-commands object" /> | <img src="./exports/png/2x/objects-framed/shell-commands.png" width="24" alt="shell-commands object framed" /> | `shell-commands.svg` |
+| `shortened-link` | <img src="./exports/png/2x/objects/shortened-link.png" width="24" alt="shortened-link object" /> | <img src="./exports/png/2x/objects-framed/shortened-link.png" width="24" alt="shortened-link object framed" /> | `shortened-link.svg` |
+| `software-package` | <img src="./exports/png/2x/objects/software-package.png" width="24" alt="software-package object" /> | <img src="./exports/png/2x/objects-framed/software-package.png" width="24" alt="software-package object framed" /> | `software-package.svg` |
+| `software` | <img src="./exports/png/2x/objects/software.png" width="24" alt="software object" /> | <img src="./exports/png/2x/objects-framed/software.png" width="24" alt="software object framed" /> | `software.svg` |
+| `spearphishing-attachment` | <img src="./exports/png/2x/objects/spearphishing-attachment.png" width="24" alt="spearphishing-attachment object" /> | <img src="./exports/png/2x/objects-framed/spearphishing-attachment.png" width="24" alt="spearphishing-attachment object framed" /> | `spearphishing-attachment.svg` |
+| `spearphishing-campaign` | <img src="./exports/png/2x/objects/spearphishing-campaign.png" width="24" alt="spearphishing-campaign object" /> | <img src="./exports/png/2x/objects-framed/spearphishing-campaign.png" width="24" alt="spearphishing-campaign object framed" /> | `spearphishing-campaign.svg` |
+| `spearphishing-link` | <img src="./exports/png/2x/objects/spearphishing-link.png" width="24" alt="spearphishing-link object" /> | <img src="./exports/png/2x/objects-framed/spearphishing-link.png" width="24" alt="spearphishing-link object framed" /> | `spearphishing-link.svg` |
+| `splunk` | <img src="./exports/png/2x/objects/splunk.png" width="24" alt="splunk object" /> | <img src="./exports/png/2x/objects-framed/splunk.png" width="24" alt="splunk object framed" /> | `splunk.svg` |
+| `ssh-authorized-keys` | <img src="./exports/png/2x/objects/ssh-authorized-keys.png" width="24" alt="ssh-authorized-keys object" /> | <img src="./exports/png/2x/objects-framed/ssh-authorized-keys.png" width="24" alt="ssh-authorized-keys object framed" /> | `ssh-authorized-keys.svg` |
+| `stix2-pattern` | <img src="./exports/png/2x/objects/stix2-pattern.png" width="24" alt="stix2-pattern object" /> | <img src="./exports/png/2x/objects-framed/stix2-pattern.png" width="24" alt="stix2-pattern object framed" /> | `stix2-pattern.svg` |
+| `suricata` | <img src="./exports/png/2x/objects/suricata.png" width="24" alt="suricata object" /> | <img src="./exports/png/2x/objects-framed/suricata.png" width="24" alt="suricata object framed" /> | `suricata.svg` |
+| `task` | <img src="./exports/png/2x/objects/task.png" width="24" alt="task object" /> | <img src="./exports/png/2x/objects-framed/task.png" width="24" alt="task object framed" /> | `task.svg` |
+| `telegram-account` | <img src="./exports/png/2x/objects/telegram-account.png" width="24" alt="telegram-account object" /> | <img src="./exports/png/2x/objects-framed/telegram-account.png" width="24" alt="telegram-account object framed" /> | `telegram-account.svg` |
+| `telegram-bot` | <img src="./exports/png/2x/objects/telegram-bot.png" width="24" alt="telegram-bot object" /> | <img src="./exports/png/2x/objects-framed/telegram-bot.png" width="24" alt="telegram-bot object framed" /> | `telegram-bot.svg` |
+| `temporal-event` | <img src="./exports/png/2x/objects/temporal-event.png" width="24" alt="temporal-event object" /> | <img src="./exports/png/2x/objects-framed/temporal-event.png" width="24" alt="temporal-event object framed" /> | `temporal-event.svg` |
+| `terminal-output` | <img src="./exports/png/2x/objects/terminal-output.png" width="24" alt="terminal-output object" /> | <img src="./exports/png/2x/objects-framed/terminal-output.png" width="24" alt="terminal-output object framed" /> | `terminal-output.svg` |
+| `timestamp` | <img src="./exports/png/2x/objects/timestamp.png" width="24" alt="timestamp object" /> | <img src="./exports/png/2x/objects-framed/timestamp.png" width="24" alt="timestamp object framed" /> | `timestamp.svg` |
+| `tor-hiddenservice` | <img src="./exports/png/2x/objects/tor-hiddenservice.png" width="24" alt="tor-hiddenservice object" /> | <img src="./exports/png/2x/objects-framed/tor-hiddenservice.png" width="24" alt="tor-hiddenservice object framed" /> | `tor-hiddenservice.svg` |
+| `tor-node` | <img src="./exports/png/2x/objects/tor-node.png" width="24" alt="tor-node object" /> | <img src="./exports/png/2x/objects-framed/tor-node.png" width="24" alt="tor-node object framed" /> | `tor-node.svg` |
+| `transaction` | <img src="./exports/png/2x/objects/transaction.png" width="24" alt="transaction object" /> | <img src="./exports/png/2x/objects-framed/transaction.png" width="24" alt="transaction object framed" /> | `transaction.svg` |
+| `translation` | <img src="./exports/png/2x/objects/translation.png" width="24" alt="translation object" /> | <img src="./exports/png/2x/objects-framed/translation.png" width="24" alt="translation object framed" /> | `translation.svg` |
+| `transport-ticket` | <img src="./exports/png/2x/objects/transport-ticket.png" width="24" alt="transport-ticket object" /> | <img src="./exports/png/2x/objects-framed/transport-ticket.png" width="24" alt="transport-ticket object framed" /> | `transport-ticket.svg` |
+| `twitter-account` | <img src="./exports/png/2x/objects/twitter-account.png" width="24" alt="twitter-account object" /> | <img src="./exports/png/2x/objects-framed/twitter-account.png" width="24" alt="twitter-account object framed" /> | `twitter-account.svg` |
+| `twitter-list` | <img src="./exports/png/2x/objects/twitter-list.png" width="24" alt="twitter-list object" /> | <img src="./exports/png/2x/objects-framed/twitter-list.png" width="24" alt="twitter-list object framed" /> | `twitter-list.svg` |
+| `twitter-post` | <img src="./exports/png/2x/objects/twitter-post.png" width="24" alt="twitter-post object" /> | <img src="./exports/png/2x/objects-framed/twitter-post.png" width="24" alt="twitter-post object framed" /> | `twitter-post.svg` |
+| `uav` | <img src="./exports/png/2x/objects/uav.png" width="24" alt="uav object" /> | <img src="./exports/png/2x/objects-framed/uav.png" width="24" alt="uav object framed" /> | `uav.svg` |
+| `url` † | <img src="./exports/png/2x/objects/url.png" width="24" alt="url object" /> | <img src="./exports/png/2x/objects-framed/url.png" width="24" alt="url object framed" /> | `url.svg` |
+| `user-account` | <img src="./exports/png/2x/objects/user-account.png" width="24" alt="user-account object" /> | <img src="./exports/png/2x/objects-framed/user-account.png" width="24" alt="user-account object framed" /> | `user-account.svg` |
+| `user-action` | <img src="./exports/png/2x/objects/user-action.png" width="24" alt="user-action object" /> | <img src="./exports/png/2x/objects-framed/user-action.png" width="24" alt="user-action object framed" /> | `user-action.svg` |
+| `vehicle` | <img src="./exports/png/2x/objects/vehicle.png" width="24" alt="vehicle object" /> | <img src="./exports/png/2x/objects-framed/vehicle.png" width="24" alt="vehicle object framed" /> | `vehicle.svg` |
+| `victim` | <img src="./exports/png/2x/objects/victim.png" width="24" alt="victim object" /> | <img src="./exports/png/2x/objects-framed/victim.png" width="24" alt="victim object framed" /> | `victim.svg` |
+| `virustotal-graph` | <img src="./exports/png/2x/objects/virustotal-graph.png" width="24" alt="virustotal-graph object" /> | <img src="./exports/png/2x/objects-framed/virustotal-graph.png" width="24" alt="virustotal-graph object framed" /> | `virustotal-graph.svg` |
+| `virustotal-report` | <img src="./exports/png/2x/objects/virustotal-report.png" width="24" alt="virustotal-report object" /> | <img src="./exports/png/2x/objects-framed/virustotal-report.png" width="24" alt="virustotal-report object framed" /> | `virustotal-report.svg` |
+| `virustotal-submission` | <img src="./exports/png/2x/objects/virustotal-submission.png" width="24" alt="virustotal-submission object" /> | <img src="./exports/png/2x/objects-framed/virustotal-submission.png" width="24" alt="virustotal-submission object framed" /> | `virustotal-submission.svg` |
+| `vulnerability` † | <img src="./exports/png/2x/objects/vulnerability.png" width="24" alt="vulnerability object" /> | <img src="./exports/png/2x/objects-framed/vulnerability.png" width="24" alt="vulnerability object framed" /> | `vulnerability.svg` |
+| `weakness` | <img src="./exports/png/2x/objects/weakness.png" width="24" alt="weakness object" /> | <img src="./exports/png/2x/objects-framed/weakness.png" width="24" alt="weakness object framed" /> | `weakness.svg` |
+| `whois` | <img src="./exports/png/2x/objects/whois.png" width="24" alt="whois object" /> | <img src="./exports/png/2x/objects-framed/whois.png" width="24" alt="whois object framed" /> | `whois.svg` |
+| `wifi-connection` | <img src="./exports/png/2x/objects/wifi-connection.png" width="24" alt="wifi-connection object" /> | <img src="./exports/png/2x/objects-framed/wifi-connection.png" width="24" alt="wifi-connection object framed" /> | `wifi-connection.svg` |
+| `windows-service` | <img src="./exports/png/2x/objects/windows-service.png" width="24" alt="windows-service object" /> | <img src="./exports/png/2x/objects-framed/windows-service.png" width="24" alt="windows-service object framed" /> | `windows-service.svg` |
+| `x509` | <img src="./exports/png/2x/objects/x509.png" width="24" alt="x509 object" /> | <img src="./exports/png/2x/objects-framed/x509.png" width="24" alt="x509 object framed" /> | `x509.svg` |
+| `x-header` | <img src="./exports/png/2x/objects/x-header.png" width="24" alt="x-header object" /> | <img src="./exports/png/2x/objects-framed/x-header.png" width="24" alt="x-header object framed" /> | `x-header.svg` |
+| `yara` † | <img src="./exports/png/2x/objects/yara.png" width="24" alt="yara object" /> | <img src="./exports/png/2x/objects-framed/yara.png" width="24" alt="yara object framed" /> | `yara.svg` |
+| `youtube-channel` | <img src="./exports/png/2x/objects/youtube-channel.png" width="24" alt="youtube-channel object" /> | <img src="./exports/png/2x/objects-framed/youtube-channel.png" width="24" alt="youtube-channel object framed" /> | `youtube-channel.svg` |
+| `youtube-comment` | <img src="./exports/png/2x/objects/youtube-comment.png" width="24" alt="youtube-comment object" /> | <img src="./exports/png/2x/objects-framed/youtube-comment.png" width="24" alt="youtube-comment object framed" /> | `youtube-comment.svg` |
+| `youtube-playlist` | <img src="./exports/png/2x/objects/youtube-playlist.png" width="24" alt="youtube-playlist object" /> | <img src="./exports/png/2x/objects-framed/youtube-playlist.png" width="24" alt="youtube-playlist object framed" /> | `youtube-playlist.svg` |
+| `youtube-video` | <img src="./exports/png/2x/objects/youtube-video.png" width="24" alt="youtube-video object" /> | <img src="./exports/png/2x/objects-framed/youtube-video.png" width="24" alt="youtube-video object framed" /> | `youtube-video.svg` |
 
 <!-- OBJECT_ICONS_END -->
 

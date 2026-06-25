@@ -1,6 +1,6 @@
-.PHONY: all clean validate optimize fit-ratio png metadata catalog webp css fetch-objects
+.PHONY: all clean validate optimize fit-ratio frame-objects png metadata catalog webp css fetch-objects
 
-all: clean validate optimize fit-ratio metadata catalog attribution png webp css
+all: clean validate optimize fit-ratio frame-objects metadata catalog attribution png webp css
 
 clean:
 	@rm -rf exports
@@ -21,6 +21,11 @@ optimize:
 
 fit-ratio:
 	@bash src/scripts/fit-to-ratio.sh
+
+# Add the object container marker (thin rounded frame) to src/svg/objects.
+# Runs after fit-ratio so it frames the already content-cropped glyphs.
+frame-objects:
+	@bash src/scripts/frame-objects.sh
 
 catalog:
 	@bash src/scripts/generate-catalog.sh

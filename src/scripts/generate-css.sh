@@ -52,12 +52,13 @@ echo "" >> "$OUTPUT_FILE"
 # stays stable and append-only as new sets are added; icons within a variant are
 # sorted by name.
 #
-for variant in hexagone simple attributes objects; do
+for variant in hexagone simple attributes objects objects-framed; do
   [[ -d "$SVG_DIR/$variant" ]] || continue
 
   case "$variant" in
-    attributes) printf '\n/* --- attribute type icons --- */\n\n' >> "$OUTPUT_FILE" ;;
-    objects)    printf '\n/* --- object icons --- */\n\n' >> "$OUTPUT_FILE" ;;
+    attributes)     printf '\n/* --- attribute type icons --- */\n\n' >> "$OUTPUT_FILE" ;;
+    objects)        printf '\n/* --- object icons --- */\n\n' >> "$OUTPUT_FILE" ;;
+    objects-framed) printf '\n/* --- object icons (framed variant) --- */\n\n' >> "$OUTPUT_FILE" ;;
   esac
 
   while IFS= read -r file; do

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g transform="translate(9.6429 5.4000) scale(0.62857)">
+  
+  <defs
+     id="defs2" />
+  <g
+     fill="none"
+     stroke="currentColor"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     stroke-width="2"
+     id="g2"
+     transform="translate(-9.25,-2)">
+    <path
+       d="M 8,5 H 6 A 2,2 0 0 0 4,7 v 12 a 2,2 0 0 0 2,2 h 5.697 M 18,14 v 4 h 4 M 18,11 V 7 A 2,2 0 0 0 16,5 h -2"
+       id="path1" />
+    <path
+       d="m 8,5 a 2,2 0 0 1 2,-2 h 2 a 2,2 0 0 1 2,2 2,2 0 0 1 -2,2 H 10 A 2,2 0 0 1 8,5 m 6,13 a 4,4 0 1 0 8,0 4,4 0 1 0 -8,0 M 8,11 h 4 m -4,4 h 3"
+       id="path2" />
+  </g>
+</g><rect x="1.6" y="1.6" width="20.8" height="20.8" rx="4.2" fill="none" stroke="currentColor" stroke-width="1.6" id="misp-object-frame"/></svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g transform="translate(8.7000 5.4000) scale(0.55000)">
+  
+  <defs
+     id="defs1" />
+  <path
+     fill="none"
+     stroke="currentColor"
+     stroke-width="2"
+     d="M 6,0 V 24 Z M -6,12 h 24 z m 17,0 C 11,9.243 8.757,7 6,7 3.243,7 1,9.243 1,12 c 0,2.757 2.243,5 5,5 2.757,0 5,-2.243 5,-5 z m -5,9 c -4.962,0 -9,-4.037 -9,-9 0,-4.963 4.038,-9 9,-9 4.962,0 9,4.037 9,9 0,4.963 -4.038,9 -9,9 z"
+     id="path1" />
+</g><rect x="1.6" y="1.6" width="20.8" height="20.8" rx="4.2" fill="none" stroke="currentColor" stroke-width="1.6" id="misp-object-frame"/></svg>
