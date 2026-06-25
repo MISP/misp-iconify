@@ -55,8 +55,12 @@ while IFS= read -r file; do
   # Apply new viewBox
   sed -i "s/viewBox=\"[^\"]*\"/viewBox=\"$new_viewbox\"/" "$tmp"
 
-  # Remove width/height attributes inkscape may have added
-  sed -i -E 's/\s(width|height)="[^"]*"//g' "$tmp"
+  # Remove width/height that inkscape adds to the *root* <svg> only. A global
+  # strip would also delete width/height on inner elements — e.g. the <rect>
+  # pixels that draw the file-type glyphs inside a <mask> — blanking those icons.
+  perl -0777 -i -pe \
+    's{<svg\b[^>]*?>}{ (my $t=$&) =~ s/\s+(?:width|height)="[^"]*"//g; $t }se' \
+    "$tmp"
 
   mv "$tmp" "$file"
 
