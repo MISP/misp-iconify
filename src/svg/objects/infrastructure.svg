@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="-4.4926 0.0000 32.4970 25.9976"
+   version="1.1"
+   id="svg2"
+   sodipodi:docname="infrastructure.svg"
+  
+  
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <defs
+     id="defs2" />
+  <path
+     fill="currentColor"
+     d="m 13.758097,23.997618 h 12 v 2 h -12 z m 0,-5 h 12 v 2 h -12 z m 0,-5 h 12 v 2 h -12 z"
+     id="path1" />
+  <path
+     fill="currentColor"
+     d="M 9.7580973,22.997618 H 5.2580977 a 7.496,7.496 0 0 1 -1.322,-14.8759998 10,10 0 0 1 19.8219993,1.876 h -2 a 7.999,7.999 0 0 0 -15.9499993,-0.87 l -0.09,0.834 -0.837,0.056 a 5.496,5.496 0 0 0 0.377,10.98 h 4.4999996 z"
+     id="path2" />
+</svg>

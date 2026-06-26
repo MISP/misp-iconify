@@ -41,6 +41,1284 @@
     "license": "BSD-2-Clause",
     "url": "https://github.com/MISP"
   },
+  "objects/android-app": {
+    "source": "MISP Project",
+    "original": "misp-objects:android-app",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/android-permission": {
+    "source": "MISP Project",
+    "original": "misp-objects:android-permission",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/annotation": {
+    "source": "MISP Project",
+    "original": "misp-objects:annotation",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/apk": {
+    "source": "MISP Project",
+    "original": "misp-objects:apk",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/artifact": {
+    "source": "MISP Project",
+    "original": "misp-objects:artifact",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/asn": {
+    "source": "MISP Project",
+    "original": "misp-objects:asn",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/attack-pattern": {
+    "source": "MISP Project",
+    "original": "misp-objects:attack-pattern",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/av-signature": {
+    "source": "MISP Project",
+    "original": "misp-objects:av-signature",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/bank-account": {
+    "source": "MISP Project",
+    "original": "misp-objects:bank-account",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/blog": {
+    "source": "MISP Project",
+    "original": "misp-objects:blog",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/btc-transaction": {
+    "source": "MISP Project",
+    "original": "misp-objects:btc-transaction",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/btc-wallet": {
+    "source": "MISP Project",
+    "original": "misp-objects:btc-wallet",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/c2-list": {
+    "source": "MISP Project",
+    "original": "misp-objects:c2-list",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/chat-message": {
+    "source": "MISP Project",
+    "original": "misp-objects:chat-message",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/coin-address": {
+    "source": "MISP Project",
+    "original": "misp-objects:coin-address",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/command": {
+    "source": "MISP Project",
+    "original": "misp-objects:command",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/command-line": {
+    "source": "MISP Project",
+    "original": "misp-objects:command-line",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/cookie": {
+    "source": "MISP Project",
+    "original": "misp-objects:cookie",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/course-of-action": {
+    "source": "MISP Project",
+    "original": "misp-objects:course-of-action",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/cpe-asset": {
+    "source": "MISP Project",
+    "original": "misp-objects:cpe-asset",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/credential": {
+    "source": "MISP Project",
+    "original": "misp-objects:credential",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/credit-card": {
+    "source": "MISP Project",
+    "original": "misp-objects:credit-card",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/crypto-material": {
+    "source": "MISP Project",
+    "original": "misp-objects:crypto-material",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/data-url": {
+    "source": "MISP Project",
+    "original": "misp-objects:data-url",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/ddos": {
+    "source": "MISP Project",
+    "original": "misp-objects:ddos",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/ddos-config": {
+    "source": "MISP Project",
+    "original": "misp-objects:ddos-config",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/decoded-barcode": {
+    "source": "MISP Project",
+    "original": "misp-objects:decoded-barcode",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/decoded-qrcode": {
+    "source": "MISP Project",
+    "original": "misp-objects:decoded-qrcode",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/device": {
+    "source": "MISP Project",
+    "original": "misp-objects:device",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/diamond": {
+    "source": "MISP Project",
+    "original": "misp-objects:diamond",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/directory": {
+    "source": "MISP Project",
+    "original": "misp-objects:directory",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/dkim": {
+    "source": "MISP Project",
+    "original": "misp-objects:dkim",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/dns-record": {
+    "source": "MISP Project",
+    "original": "misp-objects:dns-record",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/domain-ip": {
+    "source": "MISP Project",
+    "original": "misp-objects:domain-ip",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/elf": {
+    "source": "MISP Project",
+    "original": "misp-objects:elf",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/email": {
+    "source": "MISP Project",
+    "original": "misp-objects:email",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/employee": {
+    "source": "MISP Project",
+    "original": "misp-objects:employee",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/event": {
+    "source": "MISP Project",
+    "original": "misp-objects:event",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/exploit": {
+    "source": "MISP Project",
+    "original": "misp-objects:exploit",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/exploit-poc": {
+    "source": "MISP Project",
+    "original": "misp-objects:exploit-poc",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/facebook-account": {
+    "source": "MISP Project",
+    "original": "misp-objects:facebook-account",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/facebook-group": {
+    "source": "MISP Project",
+    "original": "misp-objects:facebook-group",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/facebook-page": {
+    "source": "MISP Project",
+    "original": "misp-objects:facebook-page",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/facebook-post": {
+    "source": "MISP Project",
+    "original": "misp-objects:facebook-post",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/facebook-reaction": {
+    "source": "MISP Project",
+    "original": "misp-objects:facebook-reaction",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/favicon": {
+    "source": "MISP Project",
+    "original": "misp-objects:favicon",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/file": {
+    "source": "MISP Project",
+    "original": "misp-objects:file",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/file-7z": {
+    "source": "MISP Project",
+    "original": "misp-objects:file-7z",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/file-apk": {
+    "source": "MISP Project",
+    "original": "misp-objects:file-apk",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/file-bat": {
+    "source": "MISP Project",
+    "original": "misp-objects:file-bat",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/file-css": {
+    "source": "MISP Project",
+    "original": "misp-objects:file-css",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/file-csv": {
+    "source": "MISP Project",
+    "original": "misp-objects:file-csv",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/file-dll": {
+    "source": "MISP Project",
+    "original": "misp-objects:file-dll",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/file-doc": {
+    "source": "MISP Project",
+    "original": "misp-objects:file-doc",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/file-docx": {
+    "source": "MISP Project",
+    "original": "misp-objects:file-docx",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/file-elf": {
+    "source": "MISP Project",
+    "original": "misp-objects:file-elf",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/file-eml": {
+    "source": "MISP Project",
+    "original": "misp-objects:file-eml",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/file-exe": {
+    "source": "MISP Project",
+    "original": "misp-objects:file-exe",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/file-gif": {
+    "source": "MISP Project",
+    "original": "misp-objects:file-gif",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/file-gz": {
+    "source": "MISP Project",
+    "original": "misp-objects:file-gz",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/file-html": {
+    "source": "MISP Project",
+    "original": "misp-objects:file-html",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/file-iso": {
+    "source": "MISP Project",
+    "original": "misp-objects:file-iso",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/file-jar": {
+    "source": "MISP Project",
+    "original": "misp-objects:file-jar",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/file-jpg": {
+    "source": "MISP Project",
+    "original": "misp-objects:file-jpg",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/file-js": {
+    "source": "MISP Project",
+    "original": "misp-objects:file-js",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/file-json": {
+    "source": "MISP Project",
+    "original": "misp-objects:file-json",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/file-lnk": {
+    "source": "MISP Project",
+    "original": "misp-objects:file-lnk",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/file-mp3": {
+    "source": "MISP Project",
+    "original": "misp-objects:file-mp3",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/file-mp4": {
+    "source": "MISP Project",
+    "original": "misp-objects:file-mp4",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/file-msg": {
+    "source": "MISP Project",
+    "original": "misp-objects:file-msg",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/file-pcap": {
+    "source": "MISP Project",
+    "original": "misp-objects:file-pcap",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/file-pdf": {
+    "source": "MISP Project",
+    "original": "misp-objects:file-pdf",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/file-png": {
+    "source": "MISP Project",
+    "original": "misp-objects:file-png",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/file-ppt": {
+    "source": "MISP Project",
+    "original": "misp-objects:file-ppt",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/file-pptx": {
+    "source": "MISP Project",
+    "original": "misp-objects:file-pptx",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/file-ps1": {
+    "source": "MISP Project",
+    "original": "misp-objects:file-ps1",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/file-py": {
+    "source": "MISP Project",
+    "original": "misp-objects:file-py",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/file-rar": {
+    "source": "MISP Project",
+    "original": "misp-objects:file-rar",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/file-rtf": {
+    "source": "MISP Project",
+    "original": "misp-objects:file-rtf",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/file-sh": {
+    "source": "MISP Project",
+    "original": "misp-objects:file-sh",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/file-svg": {
+    "source": "MISP Project",
+    "original": "misp-objects:file-svg",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/file-txt": {
+    "source": "MISP Project",
+    "original": "misp-objects:file-txt",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/file-vbs": {
+    "source": "MISP Project",
+    "original": "misp-objects:file-vbs",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/file-xls": {
+    "source": "MISP Project",
+    "original": "misp-objects:file-xls",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/file-xlsx": {
+    "source": "MISP Project",
+    "original": "misp-objects:file-xlsx",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/file-xml": {
+    "source": "MISP Project",
+    "original": "misp-objects:file-xml",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/file-zip": {
+    "source": "MISP Project",
+    "original": "misp-objects:file-zip",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/forensic-case": {
+    "source": "MISP Project",
+    "original": "misp-objects:forensic-case",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/forensic-evidence": {
+    "source": "MISP Project",
+    "original": "misp-objects:forensic-evidence",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/forged-document": {
+    "source": "MISP Project",
+    "original": "misp-objects:forged-document",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/geojson": {
+    "source": "MISP Project",
+    "original": "misp-objects:geojson",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/geolocation": {
+    "source": "MISP Project",
+    "original": "misp-objects:geolocation",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/ghidra-function": {
+    "source": "MISP Project",
+    "original": "misp-objects:ghidra-function",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/github-action": {
+    "source": "MISP Project",
+    "original": "misp-objects:github-action",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/github-repo": {
+    "source": "MISP Project",
+    "original": "misp-objects:github-repo",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/github-user": {
+    "source": "MISP Project",
+    "original": "misp-objects:github-user",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/gitlab-user": {
+    "source": "MISP Project",
+    "original": "misp-objects:gitlab-user",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/google-account": {
+    "source": "MISP Project",
+    "original": "misp-objects:google-account",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/google-threat-intelligence-report": {
+    "source": "MISP Project",
+    "original": "misp-objects:google-threat-intelligence-report",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/gpx": {
+    "source": "MISP Project",
+    "original": "misp-objects:gpx",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/http-request": {
+    "source": "MISP Project",
+    "original": "misp-objects:http-request",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/identity": {
+    "source": "MISP Project",
+    "original": "misp-objects:identity",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/image": {
+    "source": "MISP Project",
+    "original": "misp-objects:image",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/impersonation": {
+    "source": "MISP Project",
+    "original": "misp-objects:impersonation",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/incident": {
+    "source": "MISP Project",
+    "original": "misp-objects:incident",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/infrastructure": {
+    "source": "MISP Project",
+    "original": "misp-objects:infrastructure",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/instagram-account": {
+    "source": "MISP Project",
+    "original": "misp-objects:instagram-account",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/instant-message": {
+    "source": "MISP Project",
+    "original": "misp-objects:instant-message",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/intelligence-report": {
+    "source": "MISP Project",
+    "original": "misp-objects:intelligence-report",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/intrusion-set": {
+    "source": "MISP Project",
+    "original": "misp-objects:intrusion-set",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/iot-device": {
+    "source": "MISP Project",
+    "original": "misp-objects:iot-device",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/iot-firmware": {
+    "source": "MISP Project",
+    "original": "misp-objects:iot-firmware",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/ip-port": {
+    "source": "MISP Project",
+    "original": "misp-objects:ip-port",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/irc": {
+    "source": "MISP Project",
+    "original": "misp-objects:irc",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/ja3": {
+    "source": "MISP Project",
+    "original": "misp-objects:ja3",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/keybase-account": {
+    "source": "MISP Project",
+    "original": "misp-objects:keybase-account",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/leaked-document": {
+    "source": "MISP Project",
+    "original": "misp-objects:leaked-document",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/legal-entity": {
+    "source": "MISP Project",
+    "original": "misp-objects:legal-entity",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/lnk": {
+    "source": "MISP Project",
+    "original": "misp-objects:lnk",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/macho": {
+    "source": "MISP Project",
+    "original": "misp-objects:macho",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/malicious-website": {
+    "source": "MISP Project",
+    "original": "misp-objects:malicious-website",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/malware": {
+    "source": "MISP Project",
+    "original": "misp-objects:malware",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/malware-analysis": {
+    "source": "MISP Project",
+    "original": "misp-objects:malware-analysis",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/malware-config": {
+    "source": "MISP Project",
+    "original": "misp-objects:malware-config",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/microblog": {
+    "source": "MISP Project",
+    "original": "misp-objects:microblog",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/mutex": {
+    "source": "MISP Project",
+    "original": "misp-objects:mutex",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/netflow": {
+    "source": "MISP Project",
+    "original": "misp-objects:netflow",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/network-connection": {
+    "source": "MISP Project",
+    "original": "misp-objects:network-connection",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/network-data": {
+    "source": "MISP Project",
+    "original": "misp-objects:network-data",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/network-profile": {
+    "source": "MISP Project",
+    "original": "misp-objects:network-profile",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/network-socket": {
+    "source": "MISP Project",
+    "original": "misp-objects:network-socket",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/network-traffic": {
+    "source": "MISP Project",
+    "original": "misp-objects:network-traffic",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/news-agency": {
+    "source": "MISP Project",
+    "original": "misp-objects:news-agency",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/news-media": {
+    "source": "MISP Project",
+    "original": "misp-objects:news-media",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/nse-script": {
+    "source": "MISP Project",
+    "original": "misp-objects:nse-script",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/organization": {
+    "source": "MISP Project",
+    "original": "misp-objects:organization",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/passive-dns": {
+    "source": "MISP Project",
+    "original": "misp-objects:passive-dns",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/passive-dns-dnsdbflex": {
+    "source": "MISP Project",
+    "original": "misp-objects:passive-dns-dnsdbflex",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/passive-ssh": {
+    "source": "MISP Project",
+    "original": "misp-objects:passive-ssh",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/paste": {
+    "source": "MISP Project",
+    "original": "misp-objects:paste",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/pe": {
+    "source": "MISP Project",
+    "original": "misp-objects:pe",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/pe-section": {
+    "source": "MISP Project",
+    "original": "misp-objects:pe-section",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/person": {
+    "source": "MISP Project",
+    "original": "misp-objects:person",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/personification": {
+    "source": "MISP Project",
+    "original": "misp-objects:personification",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/phishing": {
+    "source": "MISP Project",
+    "original": "misp-objects:phishing",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/phishing-kit": {
+    "source": "MISP Project",
+    "original": "misp-objects:phishing-kit",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/phone": {
+    "source": "MISP Project",
+    "original": "misp-objects:phone",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/phone-number": {
+    "source": "MISP Project",
+    "original": "misp-objects:phone-number",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/physical-impact": {
+    "source": "MISP Project",
+    "original": "misp-objects:physical-impact",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/postal-address": {
+    "source": "MISP Project",
+    "original": "misp-objects:postal-address",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/process": {
+    "source": "MISP Project",
+    "original": "misp-objects:process",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/query": {
+    "source": "MISP Project",
+    "original": "misp-objects:query",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/reddit-account": {
+    "source": "MISP Project",
+    "original": "misp-objects:reddit-account",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/reddit-comment": {
+    "source": "MISP Project",
+    "original": "misp-objects:reddit-comment",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/reddit-post": {
+    "source": "MISP Project",
+    "original": "misp-objects:reddit-post",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/reddit-subreddit": {
+    "source": "MISP Project",
+    "original": "misp-objects:reddit-subreddit",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/regexp": {
+    "source": "MISP Project",
+    "original": "misp-objects:regexp",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/registry-key": {
+    "source": "MISP Project",
+    "original": "misp-objects:registry-key",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/registry-key-value": {
+    "source": "MISP Project",
+    "original": "misp-objects:registry-key-value",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/report": {
+    "source": "MISP Project",
+    "original": "misp-objects:report",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/risk-assessment-report": {
+    "source": "MISP Project",
+    "original": "misp-objects:risk-assessment-report",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/sandbox-report": {
+    "source": "MISP Project",
+    "original": "misp-objects:sandbox-report",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/scan-result": {
+    "source": "MISP Project",
+    "original": "misp-objects:scan-result",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/scheduled-event": {
+    "source": "MISP Project",
+    "original": "misp-objects:scheduled-event",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/scheduled-task": {
+    "source": "MISP Project",
+    "original": "misp-objects:scheduled-task",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/script": {
+    "source": "MISP Project",
+    "original": "misp-objects:script",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/service": {
+    "source": "MISP Project",
+    "original": "misp-objects:service",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/shell-commands": {
+    "source": "MISP Project",
+    "original": "misp-objects:shell-commands",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/shortened-link": {
+    "source": "MISP Project",
+    "original": "misp-objects:shortened-link",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/software": {
+    "source": "MISP Project",
+    "original": "misp-objects:software",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/software-package": {
+    "source": "MISP Project",
+    "original": "misp-objects:software-package",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/spearphishing-attachment": {
+    "source": "MISP Project",
+    "original": "misp-objects:spearphishing-attachment",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/spearphishing-campaign": {
+    "source": "MISP Project",
+    "original": "misp-objects:spearphishing-campaign",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/spearphishing-link": {
+    "source": "MISP Project",
+    "original": "misp-objects:spearphishing-link",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/splunk": {
+    "source": "MISP Project",
+    "original": "misp-objects:splunk",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/ssh-authorized-keys": {
+    "source": "MISP Project",
+    "original": "misp-objects:ssh-authorized-keys",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/stix2-pattern": {
+    "source": "MISP Project",
+    "original": "misp-objects:stix2-pattern",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/suricata": {
+    "source": "MISP Project",
+    "original": "misp-objects:suricata",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/task": {
+    "source": "MISP Project",
+    "original": "misp-objects:task",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/telegram-account": {
+    "source": "MISP Project",
+    "original": "misp-objects:telegram-account",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/telegram-bot": {
+    "source": "MISP Project",
+    "original": "misp-objects:telegram-bot",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/temporal-event": {
+    "source": "MISP Project",
+    "original": "misp-objects:temporal-event",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/terminal-output": {
+    "source": "MISP Project",
+    "original": "misp-objects:terminal-output",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/timestamp": {
+    "source": "MISP Project",
+    "original": "misp-objects:timestamp",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/tor-hiddenservice": {
+    "source": "MISP Project",
+    "original": "misp-objects:tor-hiddenservice",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/tor-node": {
+    "source": "MISP Project",
+    "original": "misp-objects:tor-node",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/transaction": {
+    "source": "MISP Project",
+    "original": "misp-objects:transaction",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/translation": {
+    "source": "MISP Project",
+    "original": "misp-objects:translation",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/transport-ticket": {
+    "source": "MISP Project",
+    "original": "misp-objects:transport-ticket",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/twitter-account": {
+    "source": "MISP Project",
+    "original": "misp-objects:twitter-account",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/twitter-list": {
+    "source": "MISP Project",
+    "original": "misp-objects:twitter-list",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/twitter-post": {
+    "source": "MISP Project",
+    "original": "misp-objects:twitter-post",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/uav": {
+    "source": "MISP Project",
+    "original": "misp-objects:uav",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/url": {
+    "source": "MISP Project",
+    "original": "misp-objects:url",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/user-account": {
+    "source": "MISP Project",
+    "original": "misp-objects:user-account",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/user-action": {
+    "source": "MISP Project",
+    "original": "misp-objects:user-action",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/vehicle": {
+    "source": "MISP Project",
+    "original": "misp-objects:vehicle",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/victim": {
+    "source": "MISP Project",
+    "original": "misp-objects:victim",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/virustotal-graph": {
+    "source": "MISP Project",
+    "original": "misp-objects:virustotal-graph",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/virustotal-report": {
+    "source": "MISP Project",
+    "original": "misp-objects:virustotal-report",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/virustotal-submission": {
+    "source": "MISP Project",
+    "original": "misp-objects:virustotal-submission",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/vulnerability": {
+    "source": "MISP Project",
+    "original": "misp-objects:vulnerability",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/weakness": {
+    "source": "MISP Project",
+    "original": "misp-objects:weakness",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/whois": {
+    "source": "MISP Project",
+    "original": "misp-objects:whois",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/wifi-connection": {
+    "source": "MISP Project",
+    "original": "misp-objects:wifi-connection",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/windows-service": {
+    "source": "MISP Project",
+    "original": "misp-objects:windows-service",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/x-header": {
+    "source": "MISP Project",
+    "original": "misp-objects:x-header",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/x509": {
+    "source": "MISP Project",
+    "original": "misp-objects:x509",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/yara": {
+    "source": "MISP Project",
+    "original": "misp-objects:yara",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/youtube-channel": {
+    "source": "MISP Project",
+    "original": "misp-objects:youtube-channel",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/youtube-comment": {
+    "source": "MISP Project",
+    "original": "misp-objects:youtube-comment",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/youtube-playlist": {
+    "source": "MISP Project",
+    "original": "misp-objects:youtube-playlist",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
+  "objects/youtube-video": {
+    "source": "MISP Project",
+    "original": "misp-objects:youtube-video",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP/misp-objects"
+  },
   "organisation": {
     "source": "MISP Project",
     "original": "misp-project:organisation",
@@ -94,5 +1372,1091 @@
     "original": "misp-project:user3",
     "license": "BSD-2-Clause",
     "url": "https://github.com/MISP"
+  },
+  "as": {
+    "source": "Tabler Icons",
+    "original": "tabler:affiliate",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "attachment": {
+    "source": "Tabler Icons",
+    "original": "tabler:paperclip",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "btc": {
+    "source": "Tabler Icons",
+    "original": "tabler:currency-bitcoin",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "campaign-name": {
+    "source": "Tabler Icons",
+    "original": "tabler:flag",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "cc-number": {
+    "source": "Tabler Icons",
+    "original": "tabler:credit-card",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "comment": {
+    "source": "Tabler Icons",
+    "original": "tabler:message",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "cookie": {
+    "source": "Tabler Icons",
+    "original": "tabler:cookie",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "cpe": {
+    "source": "Tabler Icons",
+    "original": "tabler:package",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "datetime": {
+    "source": "Tabler Icons",
+    "original": "tabler:clock",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "domain": {
+    "source": "Tabler Icons",
+    "original": "tabler:world",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "domain-ip": {
+    "source": "Tabler Icons",
+    "original": "tabler:route",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "email": {
+    "source": "Tabler Icons",
+    "original": "tabler:mail",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "email-dst": {
+    "source": "Tabler Icons",
+    "original": "tabler:mail-down",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "email-src": {
+    "source": "Tabler Icons",
+    "original": "tabler:mail-forward",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "filename": {
+    "source": "Tabler Icons",
+    "original": "tabler:file",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "filename-md5": {
+    "source": "Tabler Icons",
+    "original": "tabler:file-digit",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "filename-sha256": {
+    "source": "Tabler Icons",
+    "original": "tabler:file-digit",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "full-name": {
+    "source": "Tabler Icons",
+    "original": "tabler:user",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "galaxies/360net": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-secret",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/agent-threat-rules": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:shield-virus",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/ammunitions": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:battery-full",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/android": {
+    "source": "Font Awesome Free",
+    "original": "fa-brands:android",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/atrm": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/attck4fraud": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/backdoor": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:door-open",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/banker": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:dollar-sign",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/bhadra-framework": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:mobile",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/bitns": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-tie",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/botnet": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:sitemap",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/branded-vulnerability": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:bug",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/cancer": {
+    "source": "Font Awesome Free",
+    "original": "fa-brands:android",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/cert-eu-govsector": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:globe",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/china-defence-universities": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:globe",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/cloak": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-secret",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/cmtmf-attack-pattern": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:mobile",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/country": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:globe",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/cryptominers": {
+    "source": "Font Awesome Free",
+    "original": "fa-brands:optin-monster",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/cti-cmm-1-3": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/cyfun-assurance-requirements-2023": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/cyfun-control-catalogue-2023": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:list",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/dima-techniques": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:project-diagram",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/disarm-actortypes": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-secret",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/disarm-countermeasures": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:shield-alt",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/disarm-detections": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:bell",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/disarm-techniques": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/election-guidelines": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/entity": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/exercise-world": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:globe",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/exploit-kit": {
+    "source": "Font Awesome Free",
+    "original": "fa-brands:internet-explorer",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/firearms": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:fire",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/first-csirt-services-framework": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/first-dns": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:database",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/gsma-motif": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-shield",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/handicap": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:wheelchair",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/human-kill-chain": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:people-arrows",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/intelligence-agencies": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-ninja",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/interpol-dwva": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-secret",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/it-infrastructure-equipment": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:server",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/malpedia": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:shield-virus",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/microsoft-activity-group": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-secret",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/misinfosec-amitt-misinformation-pattern": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-analytic": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:shield-alt",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-atlas-attack-pattern": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-atlas-course-of-action": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:link",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-attack-pattern": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-course-of-action": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:link",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-d3fend": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-shield",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-data-component": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:sitemap",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-data-source": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:sitemap",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-detection-strategy": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:shield-alt",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-engage-framework": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-secret",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-enterprise-attack-attack-pattern": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-enterprise-attack-course-of-action": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:link",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-enterprise-attack-intrusion-set": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-secret",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-enterprise-attack-malware": {
+    "source": "Font Awesome Free",
+    "original": "fa-brands:optin-monster",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-enterprise-attack-tool": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:gavel",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-fraud-framework": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-ics-assets": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:certificate",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-ics-groups": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:skull-crossbones",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-ics-levels": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:layer-group",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-ics-software": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:file-code",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-ics-tactics": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:chess-pawn",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-ics-techniques": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-ninja",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-intrusion-set": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-secret",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-malware": {
+    "source": "Font Awesome Free",
+    "original": "fa-brands:optin-monster",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-mobile-attack-attack-pattern": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-mobile-attack-course-of-action": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:link",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-mobile-attack-intrusion-set": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-secret",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-mobile-attack-malware": {
+    "source": "Font Awesome Free",
+    "original": "fa-brands:optin-monster",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-mobile-attack-tool": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:gavel",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-pre-attack-attack-pattern": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-pre-attack-intrusion-set": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-secret",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-tool": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:gavel",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/nace": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:industry",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/naics": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:industry",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/nato": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:industry",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/nice-framework-competency-areas": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/nice-framework-knowledges": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/nice-framework-opm-codes": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/nice-framework-skills": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/nice-framework-tasks": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/nice-framework-work-roles": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/o365-exchange-techniques": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/online-service": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:cloud",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/operating-system": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:laptop",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/plot4ai": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:brain",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/preventive-measure": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:shield-alt",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/producer": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:book",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/ransomware": {
+    "source": "Font Awesome Free",
+    "original": "fa-brands:btc",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/rat": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:eye",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/region": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:globe-europe",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/rmm-tool": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-secret",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/rsit": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/scor-about": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:info",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/scor-attack-paths": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:project-diagram",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/scor-detection-signatures": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:search",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/scor-exposure-domain": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:shield-alt",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/scor-incidents": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:exclamation-triangle",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/scor-resilience-measures": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:shield-virus",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/scor-tens": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:atom",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/sector": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:industry",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/sigma-rules": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:link",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/social-dark-patterns": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:link",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/sod-matrix": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/software-vendor": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:building",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/sparta-mitigations": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:shield-alt",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/sparta-tactics": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/sparta-techniques": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/stalkerware": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:eye",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/stealer": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:key",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/surveillance-vendor": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-shield",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/target-information": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:bullseye",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/taxonomy-of-fraud": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:money-bill-wave",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/tds": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:cart-arrow-down",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/tea-matrix": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/terrorist-groups": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-secret",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/threat-actor": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-secret",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/tidal-campaigns": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:bullhorn",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/tidal-groups": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-secret",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/tidal-references": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:list",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/tidal-software": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:file-code",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/tidal-tactic": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/tidal-technique": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-ninja",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/tmss": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/tool": {
+    "source": "Font Awesome Free",
+    "original": "fa-brands:optin-monster",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/uavs": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:plane",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/ukhsa-culture-collections": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:virus",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/veris-framework": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:sitemap",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/wiper": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:trash",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "github-username": {
+    "source": "Tabler Icons",
+    "original": "tabler:brand-github",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "hostname": {
+    "source": "Tabler Icons",
+    "original": "tabler:server",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "iban": {
+    "source": "Tabler Icons",
+    "original": "tabler:building-bank",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "ip-dst": {
+    "source": "Tabler Icons",
+    "original": "tabler:world-download",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "ip-dst-port": {
+    "source": "Tabler Icons",
+    "original": "tabler:plug-connected",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "ip-src": {
+    "source": "Tabler Icons",
+    "original": "tabler:world-upload",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "link": {
+    "source": "Tabler Icons",
+    "original": "tabler:external-link",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "mac-address": {
+    "source": "Tabler Icons",
+    "original": "tabler:id",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "malware-sample": {
+    "source": "Tabler Icons",
+    "original": "tabler:bug",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "md5": {
+    "source": "Tabler Icons",
+    "original": "tabler:hash",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "mutex": {
+    "source": "Tabler Icons",
+    "original": "tabler:lock",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "pattern-in-file": {
+    "source": "Tabler Icons",
+    "original": "tabler:file-search",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "pgp-public-key": {
+    "source": "Tabler Icons",
+    "original": "tabler:shield-lock",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "phone-number": {
+    "source": "Tabler Icons",
+    "original": "tabler:phone",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "port": {
+    "source": "Tabler Icons",
+    "original": "tabler:plug",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "regkey": {
+    "source": "Tabler Icons",
+    "original": "tabler:key",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "sha1": {
+    "source": "Tabler Icons",
+    "original": "tabler:hash",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "sha256": {
+    "source": "Tabler Icons",
+    "original": "tabler:hash",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "sigma": {
+    "source": "Tabler Icons",
+    "original": "tabler:sum",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "snort": {
+    "source": "Tabler Icons",
+    "original": "tabler:radar",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "ssh-fingerprint": {
+    "source": "Tabler Icons",
+    "original": "tabler:fingerprint",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "text": {
+    "source": "Tabler Icons",
+    "original": "tabler:file-text",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "threat-actor": {
+    "source": "Tabler Icons",
+    "original": "tabler:spy",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "twitter-id": {
+    "source": "Tabler Icons",
+    "original": "tabler:brand-x",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "uri": {
+    "source": "Tabler Icons",
+    "original": "tabler:link",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "url": {
+    "source": "Tabler Icons",
+    "original": "tabler:link",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "user-agent": {
+    "source": "Tabler Icons",
+    "original": "tabler:browser",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "vulnerability": {
+    "source": "Tabler Icons",
+    "original": "tabler:shield-exclamation",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "windows-scheduled-task": {
+    "source": "Tabler Icons",
+    "original": "tabler:calendar-time",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "windows-service-name": {
+    "source": "Tabler Icons",
+    "original": "tabler:settings",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "x509-fingerprint-sha1": {
+    "source": "Tabler Icons",
+    "original": "tabler:certificate",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
+  },
+  "yara": {
+    "source": "Tabler Icons",
+    "original": "tabler:file-code",
+    "license": "MIT",
+    "url": "https://tabler.io/icons"
   }
 }

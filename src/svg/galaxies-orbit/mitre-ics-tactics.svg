@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g transform="translate(8.2667 6.4000) scale(0.02333)">
+  
+  <defs
+     id="defs1" />
+  <path
+     fill="currentColor"
+     d="M 105.1,192 H 80 a 16,16 0 0 0 -16,16 v 32 a 16,16 0 0 0 16,16 h 16 v 5.49 c 0,44 -4.14,86.6 -24,122.51 H 248 C 228.11,348.09 224,305.49 224,261.49 V 256 h 16 a 16,16 0 0 0 16,-16 V 208 A 16,16 0 0 0 240,192 H 214.9 C 244.29,173.62 264,141.22 264,104 a 104,104 0 0 0 -208,0 c 0,37.22 19.71,69.62 49.1,88 M 304,416 H 16 A 16,16 0 0 0 0,432 v 32 a 16,16 0 0 0 16,16 h 288 a 16,16 0 0 0 16,-16 v -32 a 16,16 0 0 0 -16,-16"
+     id="path1" />
+</g><path id="misp-galaxy-orbit" d="M 22.367 8.632 A 10.9 10.9 0 1 1 16.433 2.042" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-dasharray="1.7 1.9"/><path d="M20.10,1.96 L21.04,3.77 L22.85,4.71 L21.04,5.64 L20.10,7.46 L19.17,5.64 L17.35,4.71 L19.17,3.77 Z" fill="currentColor"/></svg>

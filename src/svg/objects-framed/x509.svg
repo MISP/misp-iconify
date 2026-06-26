@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g transform="translate(6.5000 5.4000) scale(0.36667)">
+  
+  <defs
+     id="defs3">
+    <mask
+       id="SVG91XdkcRe">
+      <g
+         fill="none"
+         stroke="#ffffff"
+         stroke-width="4"
+         id="g3">
+        <path
+           stroke-linecap="round"
+           stroke-linejoin="round"
+           d="M 26,36 H 6 A 2,2 0 0 1 4,34 V 8 A 2,2 0 0 1 6,6 h 36 a 2,2 0 0 1 2,2 v 26 a 2,2 0 0 1 -2,2 H 34 M 12,14 h 24 m -24,7 h 6 m -6,7 h 4"
+           id="path1" />
+        <path
+           fill="#555555"
+           d="m 30,33 a 6,6 0 1 0 0,-12 6,6 0 0 0 0,12 z"
+           id="path2" />
+        <path
+           fill="#555555"
+           stroke-linecap="round"
+           stroke-linejoin="round"
+           d="m 30,40 4,2 V 31.472 c 0,0 -1.14,1.528 -4,1.528 -2.86,0 -4,-1.5 -4,-1.5 V 42 Z"
+           id="path3" />
+      </g>
+    </mask>
+  </defs>
+  <path
+     fill="currentColor"
+     d="M 0,0 H 48 V 48 H 0 Z"
+     mask="url(#SVG91XdkcRe)"
+     id="path4"
+     transform="translate(-9,-6)" />
+</g><rect x="1.6" y="1.6" width="20.8" height="20.8" rx="4.2" fill="none" stroke="currentColor" stroke-width="1.6" id="misp-object-frame"/></svg>

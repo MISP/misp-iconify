@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="-14.2500 0.0000 27.5000 22.0000"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="suricata.svg"
+  
+  
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <defs
+     id="defs1" />
+  <path
+     fill="currentColor"
+     d="m -0.5,8 a 3,3 0 0 1 3,3 3,3 0 0 1 -3,3 3,3 0 0 1 -3,-3 3,3 0 0 1 3,-3 M 5.36,18.31 C 3.73,20.22 1.78,21.45 -0.5,22 -3.06,21.39 -5.2,19.93 -6.92,17.63 -8.64,15.34 -9.5,12.8 -9.5,10 V 4 l 9,-4 9,4 v 6 c 0,2.39 -0.64,4.61 -1.92,6.67 L 3.67,13.76 C 4.19,12.97 4.5,12 4.5,11 a 5,5 0 0 0 -5,-5 5,5 0 0 0 -5,5 5,5 0 0 0 5,5 c 1,0 1.97,-0.31 2.76,-0.83 z"
+     id="path1" />
+</svg>

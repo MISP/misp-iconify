@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g transform="translate(8.7000 5.4000) scale(0.66000)">
+  
+  <defs
+     id="defs2" />
+  <path
+     fill="currentColor"
+     d="M 5,0 C -0.51,0 -5,4.49 -5,10 -5,15.51 -0.51,20 5,20 10.51,20 15,15.51 15,10 15,4.49 10.51,0 5,0 m 0,18 c -4.41,0 -8,-3.59 -8,-8 0,-4.41 3.59,-8 8,-8 4.41,0 8,3.59 8,8 0,4.41 -3.59,8 -8,8"
+     id="path1" />
+  <path
+     fill="currentColor"
+     d="M 1,10 5,16 9,10 5,4 Z"
+     id="path2" />
+</g><rect x="1.6" y="1.6" width="20.8" height="20.8" rx="4.2" fill="none" stroke="currentColor" stroke-width="1.6" id="misp-object-frame"/></svg>

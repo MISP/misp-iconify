@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0.0000 0.0000 640.0000 511.9990"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="backdoor.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <defs
+     id="defs1" />
+  <path
+     fill="currentColor"
+     d="m 624,447.99903 h -80 v -334.55 C 544,86.189026 522.47,63.999026 496,63.999026 H 384 v 64.000004 h 96 v 384 h 144 c 8.84,0 16,-7.16 16,-16 v -32 c 0,-8.84 -7.16,-16 -16,-16 M 312.24,1.0090259 120.24,50.749026 c -14.25,3.69 -24.24,16.95 -24.24,32.17 V 447.99903 H 16 c -8.84,0 -16,7.16 -16,16 v 32 c 0,8.84 7.16,16 16,16 H 352 V 33.179026 c 0,-21.58 -19.56,-37.4100001 -39.76,-32.1700001 M 264,287.99903 c -13.25,0 -24,-14.33 -24,-32 0,-17.67 10.75,-32 24,-32 13.25,0 24,14.33 24,32 0,17.67 -10.75,32 -24,32"
+     id="path1" />
+</svg>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="-179.9460 0.0000 599.9451 479.9561"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="transport-ticket.svg"
+  
+  
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <defs
+     id="defs1" />
+  <path
+     fill="currentColor"
+     d="m 354.21402,165.39802 -44.13,-44.13 a 20,20 0 0 0 -27,-1 30.81,30.81 0 0 1 -41.68,-1.6 30.81,30.81 0 0 1 -1.6,-41.669999 20,20 0 0 0 -1,-27 l -44.17,-44.1800001 a 19.91,19.91 0 0 0 -28.13,0 l -70.35,70.3400001 a 39.9,39.9 0 0 0 -9.57,15.5 7.71,7.71 0 0 1 -4.83,4.83 39.8,39.8 0 0 0 -15.5,9.579999 l -180.4,180.4 a 19.91,19.91 0 0 0 0,28.13 l 44.180001,44.13 a 20,20 0 0 0 27,1 30.69,30.69 0 0 1 43.2799989,43.28 20,20 0 0 0 1,27 l 44.1300001,44.13 a 19.91,19.91 0 0 0 28.13,0 l 180.4,-180.4 a 39.8,39.8 0 0 0 9.58,-15.49 7.69,7.69 0 0 1 4.84,-4.84 39.84,39.84 0 0 0 15.49,-9.57 l 70.34,-70.35 a 19.91,19.91 0 0 0 -0.01,-28.09 m -228.37,-29.65 a 16,16 0 0 1 -22.63,0 l -11.51,-11.51 a 16,16 0 0 1 22.63,-22.62 l 11.51,11.5 a 16,16 0 0 1 0,22.63 m 44,44 a 16,16 0 0 1 -22.62,0 l -11,-11 a 16.001826,16.001826 0 1 1 22.63,-22.63 l 11,11 a 16,16 0 0 1 0.01,22.66 z m 44,44 a 16,16 0 0 1 -22.63,0 l -11,-11 a 16,16 0 0 1 22.63,-22.62 l 11,11 a 16,16 0 0 1 0.05,22.67 z m 44.43,44.54 a 16,16 0 0 1 -22.63,0 l -11.44,-11.5 a 16,16 0 1 1 22.68,-22.57 l 11.45,11.49 a 16,16 0 0 1 -0.01,22.63 z"
+     id="path1" />
+</svg>

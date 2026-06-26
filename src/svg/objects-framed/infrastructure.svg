@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g transform="translate(6.0311 5.4000) scale(0.50774)">
+  
+  <defs
+     id="defs2" />
+  <path
+     fill="currentColor"
+     d="m 13.758097,23.997618 h 12 v 2 h -12 z m 0,-5 h 12 v 2 h -12 z m 0,-5 h 12 v 2 h -12 z"
+     id="path1" />
+  <path
+     fill="currentColor"
+     d="M 9.7580973,22.997618 H 5.2580977 a 7.496,7.496 0 0 1 -1.322,-14.8759998 10,10 0 0 1 19.8219993,1.876 h -2 a 7.999,7.999 0 0 0 -15.9499993,-0.87 l -0.09,0.834 -0.837,0.056 a 5.496,5.496 0 0 0 0.377,10.98 h 4.4999996 z"
+     id="path2" />
+</g><rect x="1.6" y="1.6" width="20.8" height="20.8" rx="4.2" fill="none" stroke="currentColor" stroke-width="1.6" id="misp-object-frame"/></svg>

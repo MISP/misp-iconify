@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g transform="translate(8.7000 5.4000) scale(0.79990)">
+  
+  <defs
+     id="defs4" />
+  <path
+     fill="currentColor"
+     d="m 10.8765,8.2512867 a 6.75,6.75 0 1 0 -3.375,5.8460003 0.75,0.75 0 0 1 0.75,1.299 8.251,8.251 0 1 1 4.125,-7.1450003 0.75,0.75 0 0 1 -1.5,0"
+     id="path1" />
+  <path
+     fill="currentColor"
+     d="m 7.8765,9.2512867 a 1.5,1.5 0 0 0 3,0 h 1.5 a 3,3 0 0 1 -6,0 z"
+     id="path2" />
+  <path
+     fill="currentColor"
+     d="m 6.3765,8.2512867 a 2.25,2.25 0 1 0 -4.5,0 2.25,2.25 0 0 0 4.5,0 m 1.5,0 a 3.75,3.75 0 1 1 -7.5,0 3.75,3.75 0 0 1 7.5,0 m 4.5,-0.75 v 1.75 h -1.5 v -1.75 z"
+     id="path3" />
+  <path
+     fill="currentColor"
+     d="M 6.3765,10.251287 V 5.2512867 a 0.75,0.75 0 0 1 1.5,0 v 5.0000003 a 0.75,0.75 0 0 1 -1.5,0"
+     id="path4" />
+</g><rect x="1.6" y="1.6" width="20.8" height="20.8" rx="4.2" fill="none" stroke="currentColor" stroke-width="1.6" id="misp-object-frame"/></svg>

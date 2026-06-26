@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g transform="translate(8.7000 5.4000) scale(0.36667)">
+  
+  <defs
+     id="defs7" />
+  <path
+     fill="currentColor"
+     d="m 1,17 h 14 v 2 H 1 Z"
+     class="clr-i-outline--alerted clr-i-outline-path-1--alerted"
+     id="path1" />
+  <path
+     fill="currentColor"
+     d="m -3,25 h 2 v 2 h -2 z"
+     class="clr-i-outline--alerted clr-i-outline-path-2--alerted"
+     id="path2" />
+  <path
+     fill="currentColor"
+     d="m 1,25 h 14 v 2 H 1 Z"
+     class="clr-i-outline--alerted clr-i-outline-path-3--alerted"
+     id="path3" />
+  <path
+     fill="currentColor"
+     d="M 9.64,11 A 3.7,3.7 0 0 1 10,9.89 L 10.56,9 H 1 v 2 z"
+     class="clr-i-outline--alerted clr-i-outline-path-4--alerted"
+     id="path4" />
+  <path
+     fill="currentColor"
+     d="M 24.68,15.4 H 23 V 21 H -5 V 15 H 11.58 A 3.67,3.67 0 0 1 10,13.56 3.6,3.6 0 0 1 9.74,13 H -5 V 7 H 11.71 L 12.86,5 H -5 a 2,2 0 0 0 -2,2 v 22 a 2,2 0 0 0 2,2 h 28 a 2,2 0 0 0 2,-2 V 15.38 Z M -5,29 v -6 h 28 v 6 z"
+     class="clr-i-outline--alerted clr-i-outline-path-5--alerted"
+     id="path5" />
+  <path
+     fill="currentColor"
+     d="M 17.85,1.14 12.13,11 a 1.28,1.28 0 0 0 1.1,2 h 11.45 a 1.28,1.28 0 0 0 1.1,-2 L 20.06,1.14 a 1.28,1.28 0 0 0 -2.21,0"
+     class="clr-i-outline--alerted clr-i-outline-path-6--alerted clr-i-alert"
+     id="path6" />
+  <path
+     fill="none"
+     d="M -9,0 H 27 V 36 H -9 Z"
+     id="path7" />
+</g><rect x="1.6" y="1.6" width="20.8" height="20.8" rx="4.2" fill="none" stroke="currentColor" stroke-width="1.6" id="misp-object-frame"/></svg>

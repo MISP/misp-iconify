@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="-48.0000 0.0000 2080.0000 1664.0000"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="spearphishing-campaign.svg"
+  
+  
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <defs
+     id="defs1" />
+  <path
+     fill="currentColor"
+     d="M 2016,0 V 1280 L 1888,1050 V 264 L 992,711 96,264 v 888 h 845 l -64,128 H -32 V 0 Z M 992,569 1873,128 H 111 Z m 384,455 h 128 v 320 h -128 z m 0,384 h 128 v 128 h -128 z m 64,-896 576,1152 H 864 Z m 395,1040 -395,-790 -395,790 z"
+     id="path1" />
+</svg>

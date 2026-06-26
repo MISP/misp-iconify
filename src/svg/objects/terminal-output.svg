@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="-4.8752 0.0000 24.3761 19.5009"
+   version="1.1"
+   id="svg2"
+   sodipodi:docname="terminal-output.svg"
+  
+  
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <defs
+     id="defs2" />
+  <g
+     fill="none"
+     stroke="currentColor"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     stroke-width="1.5"
+     id="g2"
+     transform="translate(-4.6871558,-2.2495558)">
+    <path
+       d="M 7,7 8.227,8.057 C 8.742,8.502 9,8.724 9,9 9,9.276 8.742,9.498 8.227,9.943 L 7,11 m 4,0 h 3"
+       id="path1" />
+    <path
+       d="m 12,21 c 3.75,0 5.625,0 6.939,-0.955 a 5,5 0 0 0 1.106,-1.106 C 21,17.625 21,15.749 21,12 21,8.251 21,6.375 20.045,5.061 A 5,5 0 0 0 18.939,3.955 C 17.625,3 15.749,3 12,3 8.251,3 6.375,3 5.061,3.955 A 5,5 0 0 0 3.955,5.06 C 3,6.375 3,8.251 3,12 c 0,3.749 0,5.625 0.955,6.939 a 5,5 0 0 0 1.106,1.106 C 6.375,21 8.251,21 12,21"
+       id="path2" />
+  </g>
+</svg>

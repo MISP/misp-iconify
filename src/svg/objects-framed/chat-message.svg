@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g transform="translate(8.7000 5.4000) scale(0.66000)">
+  
+  <defs
+     id="defs1" />
+  <path
+     fill="currentColor"
+     d="M -5,20 V 2 Q -5,1.175 -4.412,0.588 -3.824,0.001 -3,0 H 13 Q 13.825,0 14.413,0.588 15.001,1.176 15,2 v 12 q 0,0.825 -0.587,1.413 Q 13.826,16.001 13,16 H -1 Z m 4,-8 H 7 V 10 H -1 Z M -1,9 H 11 V 7 H -1 Z M -1,6 H 11 V 4 H -1 Z"
+     id="path1" />
+</g><rect x="1.6" y="1.6" width="20.8" height="20.8" rx="4.2" fill="none" stroke="currentColor" stroke-width="1.6" id="misp-object-frame"/></svg>

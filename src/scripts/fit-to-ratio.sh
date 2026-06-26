@@ -9,6 +9,16 @@ echo "Fitting SVGs to content bbox with ${RATIO}:1 ratio..."
 
 while IFS= read -r file; do
   relative="${file#$SVG_DIR/}"
+
+  # Framed object / orbit galaxy icons are already normalised to a 0 0 24 24
+  # canvas; re-cropping to their content box would clip the marker and break the
+  # square layout. Leave them untouched (keeps the build idempotent — see
+  # frame-objects.sh / frame-galaxies.sh).
+  if grep -qE "misp-object-frame|misp-galaxy-orbit" "$file"; then
+    echo "→ $relative (marked, skip)"
+    continue
+  fi
+
   echo "→ $relative"
 
   tmp="$(mktemp --suffix=.svg)"
@@ -55,12 +65,16 @@ while IFS= read -r file; do
   # Apply new viewBox
   sed -i "s/viewBox=\"[^\"]*\"/viewBox=\"$new_viewbox\"/" "$tmp"
 
-  # Remove width/height attributes inkscape may have added
-  sed -i -E 's/\s(width|height)="[^"]*"//g' "$tmp"
+  # Remove width/height that inkscape adds to the *root* <svg> only. A global
+  # strip would also delete width/height on inner elements — e.g. the <rect>
+  # pixels that draw the file-type glyphs inside a <mask> — blanking those icons.
+  perl -0777 -i -pe \
+    's{<svg\b[^>]*?>}{ (my $t=$&) =~ s/\s+(?:width|height)="[^"]*"//g; $t }se' \
+    "$tmp"
 
   mv "$tmp" "$file"
 
-done < <(find "$SVG_DIR" -type f -name "*.svg")
+done < <(find "$SVG_DIR${ONLY:+/$ONLY}" -type f -name "*.svg")
 
 echo ""
 echo "Done."
