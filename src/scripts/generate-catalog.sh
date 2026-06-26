@@ -268,23 +268,32 @@ if [[ -d "$GAL_DIR" ]]; then
     echo "submodule. A galaxy definition only references a [Font Awesome](https://fontawesome.com)"
     echo "glyph by name (its \`icon\` key), so the glyph is downloaded from that set and"
     echo "stored as \`src/svg/galaxies/<galaxy>.svg\` by \`src/scripts/fetch-galaxy-icons.sh\`."
-    echo "Several galaxies share the same glyph."
+    echo "Several galaxies share the same glyph. Each galaxy ships in **two variants**"
+    echo "under the same name:"
     echo ""
-    echo "Address a galaxy icon with the \`misp-galaxies\` variant class:"
-    echo "\`<i class=\"misp-icon misp-icon-<galaxy> misp-galaxies\"></i>\`."
+    echo "- \`misp-galaxies\` — the plain glyph."
+    echo "- \`misp-galaxies-orbit\` — the glyph inside a dashed **orbital ring carrying a"
+    echo "  star**. Because a galaxy clusters related entities, the orbit is a"
+    echo "  \`currentColor\` cue (legible even at 16px) that marks an icon as a galaxy —"
+    echo "  echoing MISP's galaxy swirl — without crowding the glyph."
+    echo ""
+    echo "Use whichever fits: \`<i class=\"misp-icon misp-icon-<galaxy> misp-galaxies\"></i>\` or"
+    echo "\`<i class=\"misp-icon misp-icon-<galaxy> misp-galaxies-orbit\"></i>\`. The orbit"
+    echo "variant is derived from the plain one by \`src/scripts/frame-galaxies.sh\`."
     echo ""
 
-    echo "| Galaxy | Icon | Font Awesome glyph | File |"
-    echo "|--------|------|--------------------|------|"
+    echo "| Galaxy | Plain | Orbit | Font Awesome glyph | File |"
+    echo "|--------|-------|-------|--------------------|------|"
 
     while IFS= read -r file; do
       relative="${file#$GAL_DIR/}"
       name="${relative%.svg}"
 
       png="./exports/png/2x/galaxies/${name}.png"
+      png_orbit="./exports/png/2x/galaxies-orbit/${name}.png"
       glyph="$(jq -r --arg k "galaxies/$name" '.[$k].original // "?"' "$META")"
 
-      echo "| \`$name\` | <img src=\"$png\" width=\"24\" alt=\"$name galaxy\" /> | \`$glyph\` | \`$name.svg\` |"
+      echo "| \`$name\` | <img src=\"$png\" width=\"24\" alt=\"$name galaxy\" /> | <img src=\"$png_orbit\" width=\"24\" alt=\"$name galaxy orbit\" /> | \`$glyph\` | \`$name.svg\` |"
 
     done < <(find "$GAL_DIR" -type f -name "*.svg" | sort)
 
