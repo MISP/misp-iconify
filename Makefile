@@ -1,4 +1,4 @@
-.PHONY: all clean validate optimize fit-ratio frame-objects png metadata catalog webp css fetch-objects
+.PHONY: all clean validate optimize fit-ratio frame-objects png metadata catalog webp css fetch-objects fetch-galaxies
 
 all: clean validate optimize fit-ratio frame-objects metadata catalog attribution png webp css
 
@@ -11,6 +11,9 @@ clean:
 # of the tracked submodule branch.
 fetch-objects:
 	@bash src/scripts/fetch-object-icons.sh
+
+fetch-galaxies:
+	@bash src/scripts/fetch-galaxy-icons.sh
 
 validate:
 	@bash src/scripts/validate-icons.sh

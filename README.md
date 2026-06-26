@@ -7,10 +7,12 @@ Icons and related visual elements for MISP and MISP standard.
 - [Catalog](#catalog)
   - [Attribute type icons](#attribute-type-icons)
   - [Object icons](#object-icons)
+  - [Galaxy icons](#galaxy-icons)
 - [Usage](#usage)
   - [SVG (direct file)](#svg-direct-file)
   - [CSS](#css)
 - [Object icons (misp-objects submodule)](#object-icons-misp-objects-submodule)
+- [Galaxy icons (misp-galaxy submodule)](#galaxy-icons-misp-galaxy-submodule)
 - [Contribution Rules](#contribution-rules)
 - [Attribution](#attribution)
 
@@ -348,6 +350,156 @@ thanks to the variant class, so both render independently.
 
 <!-- OBJECT_ICONS_END -->
 
+### Galaxy icons
+
+<!-- GALAXY_ICONS_START -->
+
+
+Icons for **MISP galaxies**, derived from the [`misp-galaxy`](https://github.com/MISP/misp-galaxy)
+submodule. A galaxy definition only references a [Font Awesome](https://fontawesome.com)
+glyph by name (its `icon` key), so the glyph is downloaded from that set and
+stored as `src/svg/galaxies/<galaxy>.svg` by `src/scripts/fetch-galaxy-icons.sh`.
+Several galaxies share the same glyph.
+
+Address a galaxy icon with the `misp-galaxies` variant class:
+`<i class="misp-icon misp-icon-<galaxy> misp-galaxies"></i>`.
+
+| Galaxy | Icon | Font Awesome glyph | File |
+|--------|------|--------------------|------|
+| `360net` | <img src="./exports/png/2x/galaxies/360net.png" width="24" alt="360net galaxy" /> | `fa-solid:user-secret` | `360net.svg` |
+| `agent-threat-rules` | <img src="./exports/png/2x/galaxies/agent-threat-rules.png" width="24" alt="agent-threat-rules galaxy" /> | `fa-solid:shield-virus` | `agent-threat-rules.svg` |
+| `ammunitions` | <img src="./exports/png/2x/galaxies/ammunitions.png" width="24" alt="ammunitions galaxy" /> | `fa-solid:battery-full` | `ammunitions.svg` |
+| `android` | <img src="./exports/png/2x/galaxies/android.png" width="24" alt="android galaxy" /> | `fa-brands:android` | `android.svg` |
+| `atrm` | <img src="./exports/png/2x/galaxies/atrm.png" width="24" alt="atrm galaxy" /> | `fa-solid:map` | `atrm.svg` |
+| `attck4fraud` | <img src="./exports/png/2x/galaxies/attck4fraud.png" width="24" alt="attck4fraud galaxy" /> | `fa-solid:map` | `attck4fraud.svg` |
+| `backdoor` | <img src="./exports/png/2x/galaxies/backdoor.png" width="24" alt="backdoor galaxy" /> | `fa-solid:door-open` | `backdoor.svg` |
+| `banker` | <img src="./exports/png/2x/galaxies/banker.png" width="24" alt="banker galaxy" /> | `fa-solid:dollar-sign` | `banker.svg` |
+| `bhadra-framework` | <img src="./exports/png/2x/galaxies/bhadra-framework.png" width="24" alt="bhadra-framework galaxy" /> | `fa-solid:mobile` | `bhadra-framework.svg` |
+| `bitns` | <img src="./exports/png/2x/galaxies/bitns.png" width="24" alt="bitns galaxy" /> | `fa-solid:user-tie` | `bitns.svg` |
+| `botnet` | <img src="./exports/png/2x/galaxies/botnet.png" width="24" alt="botnet galaxy" /> | `fa-solid:sitemap` | `botnet.svg` |
+| `branded-vulnerability` | <img src="./exports/png/2x/galaxies/branded-vulnerability.png" width="24" alt="branded-vulnerability galaxy" /> | `fa-solid:bug` | `branded-vulnerability.svg` |
+| `cancer` | <img src="./exports/png/2x/galaxies/cancer.png" width="24" alt="cancer galaxy" /> | `fa-brands:android` | `cancer.svg` |
+| `cert-eu-govsector` | <img src="./exports/png/2x/galaxies/cert-eu-govsector.png" width="24" alt="cert-eu-govsector galaxy" /> | `fa-solid:globe` | `cert-eu-govsector.svg` |
+| `china-defence-universities` | <img src="./exports/png/2x/galaxies/china-defence-universities.png" width="24" alt="china-defence-universities galaxy" /> | `fa-solid:globe` | `china-defence-universities.svg` |
+| `cloak` | <img src="./exports/png/2x/galaxies/cloak.png" width="24" alt="cloak galaxy" /> | `fa-solid:user-secret` | `cloak.svg` |
+| `cmtmf-attack-pattern` | <img src="./exports/png/2x/galaxies/cmtmf-attack-pattern.png" width="24" alt="cmtmf-attack-pattern galaxy" /> | `fa-solid:mobile` | `cmtmf-attack-pattern.svg` |
+| `country` | <img src="./exports/png/2x/galaxies/country.png" width="24" alt="country galaxy" /> | `fa-solid:globe` | `country.svg` |
+| `cryptominers` | <img src="./exports/png/2x/galaxies/cryptominers.png" width="24" alt="cryptominers galaxy" /> | `fa-brands:optin-monster` | `cryptominers.svg` |
+| `cti-cmm-1-3` | <img src="./exports/png/2x/galaxies/cti-cmm-1-3.png" width="24" alt="cti-cmm-1-3 galaxy" /> | `fa-solid:map` | `cti-cmm-1-3.svg` |
+| `cyfun-assurance-requirements-2023` | <img src="./exports/png/2x/galaxies/cyfun-assurance-requirements-2023.png" width="24" alt="cyfun-assurance-requirements-2023 galaxy" /> | `fa-solid:map` | `cyfun-assurance-requirements-2023.svg` |
+| `cyfun-control-catalogue-2023` | <img src="./exports/png/2x/galaxies/cyfun-control-catalogue-2023.png" width="24" alt="cyfun-control-catalogue-2023 galaxy" /> | `fa-solid:list` | `cyfun-control-catalogue-2023.svg` |
+| `dima-techniques` | <img src="./exports/png/2x/galaxies/dima-techniques.png" width="24" alt="dima-techniques galaxy" /> | `fa-solid:project-diagram` | `dima-techniques.svg` |
+| `disarm-actortypes` | <img src="./exports/png/2x/galaxies/disarm-actortypes.png" width="24" alt="disarm-actortypes galaxy" /> | `fa-solid:user-secret` | `disarm-actortypes.svg` |
+| `disarm-countermeasures` | <img src="./exports/png/2x/galaxies/disarm-countermeasures.png" width="24" alt="disarm-countermeasures galaxy" /> | `fa-solid:shield-alt` | `disarm-countermeasures.svg` |
+| `disarm-detections` | <img src="./exports/png/2x/galaxies/disarm-detections.png" width="24" alt="disarm-detections galaxy" /> | `fa-solid:bell` | `disarm-detections.svg` |
+| `disarm-techniques` | <img src="./exports/png/2x/galaxies/disarm-techniques.png" width="24" alt="disarm-techniques galaxy" /> | `fa-solid:map` | `disarm-techniques.svg` |
+| `election-guidelines` | <img src="./exports/png/2x/galaxies/election-guidelines.png" width="24" alt="election-guidelines galaxy" /> | `fa-solid:map` | `election-guidelines.svg` |
+| `entity` | <img src="./exports/png/2x/galaxies/entity.png" width="24" alt="entity galaxy" /> | `fa-solid:user` | `entity.svg` |
+| `exercise-world` | <img src="./exports/png/2x/galaxies/exercise-world.png" width="24" alt="exercise-world galaxy" /> | `fa-solid:globe` | `exercise-world.svg` |
+| `exploit-kit` | <img src="./exports/png/2x/galaxies/exploit-kit.png" width="24" alt="exploit-kit galaxy" /> | `fa-brands:internet-explorer` | `exploit-kit.svg` |
+| `firearms` | <img src="./exports/png/2x/galaxies/firearms.png" width="24" alt="firearms galaxy" /> | `fa-solid:fire` | `firearms.svg` |
+| `first-csirt-services-framework` | <img src="./exports/png/2x/galaxies/first-csirt-services-framework.png" width="24" alt="first-csirt-services-framework galaxy" /> | `fa-solid:user` | `first-csirt-services-framework.svg` |
+| `first-dns` | <img src="./exports/png/2x/galaxies/first-dns.png" width="24" alt="first-dns galaxy" /> | `fa-solid:database` | `first-dns.svg` |
+| `gsma-motif` | <img src="./exports/png/2x/galaxies/gsma-motif.png" width="24" alt="gsma-motif galaxy" /> | `fa-solid:user-shield` | `gsma-motif.svg` |
+| `handicap` | <img src="./exports/png/2x/galaxies/handicap.png" width="24" alt="handicap galaxy" /> | `fa-solid:wheelchair` | `handicap.svg` |
+| `human-kill-chain` | <img src="./exports/png/2x/galaxies/human-kill-chain.png" width="24" alt="human-kill-chain galaxy" /> | `fa-solid:people-arrows` | `human-kill-chain.svg` |
+| `intelligence-agencies` | <img src="./exports/png/2x/galaxies/intelligence-agencies.png" width="24" alt="intelligence-agencies galaxy" /> | `fa-solid:user-ninja` | `intelligence-agencies.svg` |
+| `interpol-dwva` | <img src="./exports/png/2x/galaxies/interpol-dwva.png" width="24" alt="interpol-dwva galaxy" /> | `fa-solid:user-secret` | `interpol-dwva.svg` |
+| `it-infrastructure-equipment` | <img src="./exports/png/2x/galaxies/it-infrastructure-equipment.png" width="24" alt="it-infrastructure-equipment galaxy" /> | `fa-solid:server` | `it-infrastructure-equipment.svg` |
+| `malpedia` | <img src="./exports/png/2x/galaxies/malpedia.png" width="24" alt="malpedia galaxy" /> | `fa-solid:shield-virus` | `malpedia.svg` |
+| `microsoft-activity-group` | <img src="./exports/png/2x/galaxies/microsoft-activity-group.png" width="24" alt="microsoft-activity-group galaxy" /> | `fa-solid:user-secret` | `microsoft-activity-group.svg` |
+| `misinfosec-amitt-misinformation-pattern` | <img src="./exports/png/2x/galaxies/misinfosec-amitt-misinformation-pattern.png" width="24" alt="misinfosec-amitt-misinformation-pattern galaxy" /> | `fa-solid:map` | `misinfosec-amitt-misinformation-pattern.svg` |
+| `mitre-analytic` | <img src="./exports/png/2x/galaxies/mitre-analytic.png" width="24" alt="mitre-analytic galaxy" /> | `fa-solid:shield-alt` | `mitre-analytic.svg` |
+| `mitre-atlas-attack-pattern` | <img src="./exports/png/2x/galaxies/mitre-atlas-attack-pattern.png" width="24" alt="mitre-atlas-attack-pattern galaxy" /> | `fa-solid:map` | `mitre-atlas-attack-pattern.svg` |
+| `mitre-atlas-course-of-action` | <img src="./exports/png/2x/galaxies/mitre-atlas-course-of-action.png" width="24" alt="mitre-atlas-course-of-action galaxy" /> | `fa-solid:link` | `mitre-atlas-course-of-action.svg` |
+| `mitre-attack-pattern` | <img src="./exports/png/2x/galaxies/mitre-attack-pattern.png" width="24" alt="mitre-attack-pattern galaxy" /> | `fa-solid:map` | `mitre-attack-pattern.svg` |
+| `mitre-course-of-action` | <img src="./exports/png/2x/galaxies/mitre-course-of-action.png" width="24" alt="mitre-course-of-action galaxy" /> | `fa-solid:link` | `mitre-course-of-action.svg` |
+| `mitre-d3fend` | <img src="./exports/png/2x/galaxies/mitre-d3fend.png" width="24" alt="mitre-d3fend galaxy" /> | `fa-solid:user-shield` | `mitre-d3fend.svg` |
+| `mitre-data-component` | <img src="./exports/png/2x/galaxies/mitre-data-component.png" width="24" alt="mitre-data-component galaxy" /> | `fa-solid:sitemap` | `mitre-data-component.svg` |
+| `mitre-data-source` | <img src="./exports/png/2x/galaxies/mitre-data-source.png" width="24" alt="mitre-data-source galaxy" /> | `fa-solid:sitemap` | `mitre-data-source.svg` |
+| `mitre-detection-strategy` | <img src="./exports/png/2x/galaxies/mitre-detection-strategy.png" width="24" alt="mitre-detection-strategy galaxy" /> | `fa-solid:shield-alt` | `mitre-detection-strategy.svg` |
+| `mitre-engage-framework` | <img src="./exports/png/2x/galaxies/mitre-engage-framework.png" width="24" alt="mitre-engage-framework galaxy" /> | `fa-solid:user-secret` | `mitre-engage-framework.svg` |
+| `mitre-enterprise-attack-attack-pattern` | <img src="./exports/png/2x/galaxies/mitre-enterprise-attack-attack-pattern.png" width="24" alt="mitre-enterprise-attack-attack-pattern galaxy" /> | `fa-solid:map` | `mitre-enterprise-attack-attack-pattern.svg` |
+| `mitre-enterprise-attack-course-of-action` | <img src="./exports/png/2x/galaxies/mitre-enterprise-attack-course-of-action.png" width="24" alt="mitre-enterprise-attack-course-of-action galaxy" /> | `fa-solid:link` | `mitre-enterprise-attack-course-of-action.svg` |
+| `mitre-enterprise-attack-intrusion-set` | <img src="./exports/png/2x/galaxies/mitre-enterprise-attack-intrusion-set.png" width="24" alt="mitre-enterprise-attack-intrusion-set galaxy" /> | `fa-solid:user-secret` | `mitre-enterprise-attack-intrusion-set.svg` |
+| `mitre-enterprise-attack-malware` | <img src="./exports/png/2x/galaxies/mitre-enterprise-attack-malware.png" width="24" alt="mitre-enterprise-attack-malware galaxy" /> | `fa-brands:optin-monster` | `mitre-enterprise-attack-malware.svg` |
+| `mitre-enterprise-attack-tool` | <img src="./exports/png/2x/galaxies/mitre-enterprise-attack-tool.png" width="24" alt="mitre-enterprise-attack-tool galaxy" /> | `fa-solid:gavel` | `mitre-enterprise-attack-tool.svg` |
+| `mitre-fraud-framework` | <img src="./exports/png/2x/galaxies/mitre-fraud-framework.png" width="24" alt="mitre-fraud-framework galaxy" /> | `fa-solid:map` | `mitre-fraud-framework.svg` |
+| `mitre-ics-assets` | <img src="./exports/png/2x/galaxies/mitre-ics-assets.png" width="24" alt="mitre-ics-assets galaxy" /> | `fa-solid:certificate` | `mitre-ics-assets.svg` |
+| `mitre-ics-groups` | <img src="./exports/png/2x/galaxies/mitre-ics-groups.png" width="24" alt="mitre-ics-groups galaxy" /> | `fa-solid:skull-crossbones` | `mitre-ics-groups.svg` |
+| `mitre-ics-levels` | <img src="./exports/png/2x/galaxies/mitre-ics-levels.png" width="24" alt="mitre-ics-levels galaxy" /> | `fa-solid:layer-group` | `mitre-ics-levels.svg` |
+| `mitre-ics-software` | <img src="./exports/png/2x/galaxies/mitre-ics-software.png" width="24" alt="mitre-ics-software galaxy" /> | `fa-solid:file-code` | `mitre-ics-software.svg` |
+| `mitre-ics-tactics` | <img src="./exports/png/2x/galaxies/mitre-ics-tactics.png" width="24" alt="mitre-ics-tactics galaxy" /> | `fa-solid:chess-pawn` | `mitre-ics-tactics.svg` |
+| `mitre-ics-techniques` | <img src="./exports/png/2x/galaxies/mitre-ics-techniques.png" width="24" alt="mitre-ics-techniques galaxy" /> | `fa-solid:user-ninja` | `mitre-ics-techniques.svg` |
+| `mitre-intrusion-set` | <img src="./exports/png/2x/galaxies/mitre-intrusion-set.png" width="24" alt="mitre-intrusion-set galaxy" /> | `fa-solid:user-secret` | `mitre-intrusion-set.svg` |
+| `mitre-malware` | <img src="./exports/png/2x/galaxies/mitre-malware.png" width="24" alt="mitre-malware galaxy" /> | `fa-brands:optin-monster` | `mitre-malware.svg` |
+| `mitre-mobile-attack-attack-pattern` | <img src="./exports/png/2x/galaxies/mitre-mobile-attack-attack-pattern.png" width="24" alt="mitre-mobile-attack-attack-pattern galaxy" /> | `fa-solid:map` | `mitre-mobile-attack-attack-pattern.svg` |
+| `mitre-mobile-attack-course-of-action` | <img src="./exports/png/2x/galaxies/mitre-mobile-attack-course-of-action.png" width="24" alt="mitre-mobile-attack-course-of-action galaxy" /> | `fa-solid:link` | `mitre-mobile-attack-course-of-action.svg` |
+| `mitre-mobile-attack-intrusion-set` | <img src="./exports/png/2x/galaxies/mitre-mobile-attack-intrusion-set.png" width="24" alt="mitre-mobile-attack-intrusion-set galaxy" /> | `fa-solid:user-secret` | `mitre-mobile-attack-intrusion-set.svg` |
+| `mitre-mobile-attack-malware` | <img src="./exports/png/2x/galaxies/mitre-mobile-attack-malware.png" width="24" alt="mitre-mobile-attack-malware galaxy" /> | `fa-brands:optin-monster` | `mitre-mobile-attack-malware.svg` |
+| `mitre-mobile-attack-tool` | <img src="./exports/png/2x/galaxies/mitre-mobile-attack-tool.png" width="24" alt="mitre-mobile-attack-tool galaxy" /> | `fa-solid:gavel` | `mitre-mobile-attack-tool.svg` |
+| `mitre-pre-attack-attack-pattern` | <img src="./exports/png/2x/galaxies/mitre-pre-attack-attack-pattern.png" width="24" alt="mitre-pre-attack-attack-pattern galaxy" /> | `fa-solid:map` | `mitre-pre-attack-attack-pattern.svg` |
+| `mitre-pre-attack-intrusion-set` | <img src="./exports/png/2x/galaxies/mitre-pre-attack-intrusion-set.png" width="24" alt="mitre-pre-attack-intrusion-set galaxy" /> | `fa-solid:user-secret` | `mitre-pre-attack-intrusion-set.svg` |
+| `mitre-tool` | <img src="./exports/png/2x/galaxies/mitre-tool.png" width="24" alt="mitre-tool galaxy" /> | `fa-solid:gavel` | `mitre-tool.svg` |
+| `nace` | <img src="./exports/png/2x/galaxies/nace.png" width="24" alt="nace galaxy" /> | `fa-solid:industry` | `nace.svg` |
+| `naics` | <img src="./exports/png/2x/galaxies/naics.png" width="24" alt="naics galaxy" /> | `fa-solid:industry` | `naics.svg` |
+| `nato` | <img src="./exports/png/2x/galaxies/nato.png" width="24" alt="nato galaxy" /> | `fa-solid:industry` | `nato.svg` |
+| `nice-framework-competency-areas` | <img src="./exports/png/2x/galaxies/nice-framework-competency-areas.png" width="24" alt="nice-framework-competency-areas galaxy" /> | `fa-solid:user` | `nice-framework-competency-areas.svg` |
+| `nice-framework-knowledges` | <img src="./exports/png/2x/galaxies/nice-framework-knowledges.png" width="24" alt="nice-framework-knowledges galaxy" /> | `fa-solid:user` | `nice-framework-knowledges.svg` |
+| `nice-framework-opm-codes` | <img src="./exports/png/2x/galaxies/nice-framework-opm-codes.png" width="24" alt="nice-framework-opm-codes galaxy" /> | `fa-solid:user` | `nice-framework-opm-codes.svg` |
+| `nice-framework-skills` | <img src="./exports/png/2x/galaxies/nice-framework-skills.png" width="24" alt="nice-framework-skills galaxy" /> | `fa-solid:user` | `nice-framework-skills.svg` |
+| `nice-framework-tasks` | <img src="./exports/png/2x/galaxies/nice-framework-tasks.png" width="24" alt="nice-framework-tasks galaxy" /> | `fa-solid:user` | `nice-framework-tasks.svg` |
+| `nice-framework-work-roles` | <img src="./exports/png/2x/galaxies/nice-framework-work-roles.png" width="24" alt="nice-framework-work-roles galaxy" /> | `fa-solid:user` | `nice-framework-work-roles.svg` |
+| `o365-exchange-techniques` | <img src="./exports/png/2x/galaxies/o365-exchange-techniques.png" width="24" alt="o365-exchange-techniques galaxy" /> | `fa-solid:map` | `o365-exchange-techniques.svg` |
+| `online-service` | <img src="./exports/png/2x/galaxies/online-service.png" width="24" alt="online-service galaxy" /> | `fa-solid:cloud` | `online-service.svg` |
+| `operating-system` | <img src="./exports/png/2x/galaxies/operating-system.png" width="24" alt="operating-system galaxy" /> | `fa-solid:laptop` | `operating-system.svg` |
+| `plot4ai` | <img src="./exports/png/2x/galaxies/plot4ai.png" width="24" alt="plot4ai galaxy" /> | `fa-solid:brain` | `plot4ai.svg` |
+| `preventive-measure` | <img src="./exports/png/2x/galaxies/preventive-measure.png" width="24" alt="preventive-measure galaxy" /> | `fa-solid:shield-alt` | `preventive-measure.svg` |
+| `producer` | <img src="./exports/png/2x/galaxies/producer.png" width="24" alt="producer galaxy" /> | `fa-solid:book` | `producer.svg` |
+| `ransomware` | <img src="./exports/png/2x/galaxies/ransomware.png" width="24" alt="ransomware galaxy" /> | `fa-brands:btc` | `ransomware.svg` |
+| `rat` | <img src="./exports/png/2x/galaxies/rat.png" width="24" alt="rat galaxy" /> | `fa-solid:eye` | `rat.svg` |
+| `region` | <img src="./exports/png/2x/galaxies/region.png" width="24" alt="region galaxy" /> | `fa-solid:globe-europe` | `region.svg` |
+| `rmm-tool` | <img src="./exports/png/2x/galaxies/rmm-tool.png" width="24" alt="rmm-tool galaxy" /> | `fa-solid:user-secret` | `rmm-tool.svg` |
+| `rsit` | <img src="./exports/png/2x/galaxies/rsit.png" width="24" alt="rsit galaxy" /> | `fa-solid:map` | `rsit.svg` |
+| `scor-about` | <img src="./exports/png/2x/galaxies/scor-about.png" width="24" alt="scor-about galaxy" /> | `fa-solid:info` | `scor-about.svg` |
+| `scor-attack-paths` | <img src="./exports/png/2x/galaxies/scor-attack-paths.png" width="24" alt="scor-attack-paths galaxy" /> | `fa-solid:project-diagram` | `scor-attack-paths.svg` |
+| `scor-detection-signatures` | <img src="./exports/png/2x/galaxies/scor-detection-signatures.png" width="24" alt="scor-detection-signatures galaxy" /> | `fa-solid:search` | `scor-detection-signatures.svg` |
+| `scor-exposure-domain` | <img src="./exports/png/2x/galaxies/scor-exposure-domain.png" width="24" alt="scor-exposure-domain galaxy" /> | `fa-solid:shield-alt` | `scor-exposure-domain.svg` |
+| `scor-incidents` | <img src="./exports/png/2x/galaxies/scor-incidents.png" width="24" alt="scor-incidents galaxy" /> | `fa-solid:exclamation-triangle` | `scor-incidents.svg` |
+| `scor-resilience-measures` | <img src="./exports/png/2x/galaxies/scor-resilience-measures.png" width="24" alt="scor-resilience-measures galaxy" /> | `fa-solid:shield-virus` | `scor-resilience-measures.svg` |
+| `scor-tens` | <img src="./exports/png/2x/galaxies/scor-tens.png" width="24" alt="scor-tens galaxy" /> | `fa-solid:atom` | `scor-tens.svg` |
+| `sector` | <img src="./exports/png/2x/galaxies/sector.png" width="24" alt="sector galaxy" /> | `fa-solid:industry` | `sector.svg` |
+| `sigma-rules` | <img src="./exports/png/2x/galaxies/sigma-rules.png" width="24" alt="sigma-rules galaxy" /> | `fa-solid:link` | `sigma-rules.svg` |
+| `social-dark-patterns` | <img src="./exports/png/2x/galaxies/social-dark-patterns.png" width="24" alt="social-dark-patterns galaxy" /> | `fa-solid:link` | `social-dark-patterns.svg` |
+| `sod-matrix` | <img src="./exports/png/2x/galaxies/sod-matrix.png" width="24" alt="sod-matrix galaxy" /> | `fa-solid:map` | `sod-matrix.svg` |
+| `software-vendor` | <img src="./exports/png/2x/galaxies/software-vendor.png" width="24" alt="software-vendor galaxy" /> | `fa-solid:building` | `software-vendor.svg` |
+| `sparta-mitigations` | <img src="./exports/png/2x/galaxies/sparta-mitigations.png" width="24" alt="sparta-mitigations galaxy" /> | `fa-solid:shield-alt` | `sparta-mitigations.svg` |
+| `sparta-tactics` | <img src="./exports/png/2x/galaxies/sparta-tactics.png" width="24" alt="sparta-tactics galaxy" /> | `fa-solid:map` | `sparta-tactics.svg` |
+| `sparta-techniques` | <img src="./exports/png/2x/galaxies/sparta-techniques.png" width="24" alt="sparta-techniques galaxy" /> | `fa-solid:map` | `sparta-techniques.svg` |
+| `stalkerware` | <img src="./exports/png/2x/galaxies/stalkerware.png" width="24" alt="stalkerware galaxy" /> | `fa-solid:eye` | `stalkerware.svg` |
+| `stealer` | <img src="./exports/png/2x/galaxies/stealer.png" width="24" alt="stealer galaxy" /> | `fa-solid:key` | `stealer.svg` |
+| `surveillance-vendor` | <img src="./exports/png/2x/galaxies/surveillance-vendor.png" width="24" alt="surveillance-vendor galaxy" /> | `fa-solid:user-shield` | `surveillance-vendor.svg` |
+| `target-information` | <img src="./exports/png/2x/galaxies/target-information.png" width="24" alt="target-information galaxy" /> | `fa-solid:bullseye` | `target-information.svg` |
+| `taxonomy-of-fraud` | <img src="./exports/png/2x/galaxies/taxonomy-of-fraud.png" width="24" alt="taxonomy-of-fraud galaxy" /> | `fa-solid:money-bill-wave` | `taxonomy-of-fraud.svg` |
+| `tds` | <img src="./exports/png/2x/galaxies/tds.png" width="24" alt="tds galaxy" /> | `fa-solid:cart-arrow-down` | `tds.svg` |
+| `tea-matrix` | <img src="./exports/png/2x/galaxies/tea-matrix.png" width="24" alt="tea-matrix galaxy" /> | `fa-solid:map` | `tea-matrix.svg` |
+| `terrorist-groups` | <img src="./exports/png/2x/galaxies/terrorist-groups.png" width="24" alt="terrorist-groups galaxy" /> | `fa-solid:user-secret` | `terrorist-groups.svg` |
+| `threat-actor` | <img src="./exports/png/2x/galaxies/threat-actor.png" width="24" alt="threat-actor galaxy" /> | `fa-solid:user-secret` | `threat-actor.svg` |
+| `tidal-campaigns` | <img src="./exports/png/2x/galaxies/tidal-campaigns.png" width="24" alt="tidal-campaigns galaxy" /> | `fa-solid:bullhorn` | `tidal-campaigns.svg` |
+| `tidal-groups` | <img src="./exports/png/2x/galaxies/tidal-groups.png" width="24" alt="tidal-groups galaxy" /> | `fa-solid:user-secret` | `tidal-groups.svg` |
+| `tidal-references` | <img src="./exports/png/2x/galaxies/tidal-references.png" width="24" alt="tidal-references galaxy" /> | `fa-solid:list` | `tidal-references.svg` |
+| `tidal-software` | <img src="./exports/png/2x/galaxies/tidal-software.png" width="24" alt="tidal-software galaxy" /> | `fa-solid:file-code` | `tidal-software.svg` |
+| `tidal-tactic` | <img src="./exports/png/2x/galaxies/tidal-tactic.png" width="24" alt="tidal-tactic galaxy" /> | `fa-solid:map` | `tidal-tactic.svg` |
+| `tidal-technique` | <img src="./exports/png/2x/galaxies/tidal-technique.png" width="24" alt="tidal-technique galaxy" /> | `fa-solid:user-ninja` | `tidal-technique.svg` |
+| `tmss` | <img src="./exports/png/2x/galaxies/tmss.png" width="24" alt="tmss galaxy" /> | `fa-solid:map` | `tmss.svg` |
+| `tool` | <img src="./exports/png/2x/galaxies/tool.png" width="24" alt="tool galaxy" /> | `fa-brands:optin-monster` | `tool.svg` |
+| `uavs` | <img src="./exports/png/2x/galaxies/uavs.png" width="24" alt="uavs galaxy" /> | `fa-solid:plane` | `uavs.svg` |
+| `ukhsa-culture-collections` | <img src="./exports/png/2x/galaxies/ukhsa-culture-collections.png" width="24" alt="ukhsa-culture-collections galaxy" /> | `fa-solid:virus` | `ukhsa-culture-collections.svg` |
+| `veris-framework` | <img src="./exports/png/2x/galaxies/veris-framework.png" width="24" alt="veris-framework galaxy" /> | `fa-solid:sitemap` | `veris-framework.svg` |
+| `wiper` | <img src="./exports/png/2x/galaxies/wiper.png" width="24" alt="wiper galaxy" /> | `fa-solid:trash` | `wiper.svg` |
+
+<!-- GALAXY_ICONS_END -->
+
 
 ## Usage
 
@@ -397,6 +549,29 @@ make all                                            # rebuild PNG/WebP/CSS/catal
 skipped automatically and listed in the command output.
 
 
+## Galaxy icons (misp-galaxy submodule)
+
+Galaxy icons are also **not** authored here. Each galaxy in the
+[`misp-galaxy`](https://github.com/MISP/misp-galaxy) repository (vendored as a
+git submodule at `vendor/misp-galaxy`, tracking `main`) only references a
+[Font Awesome](https://fontawesome.com) glyph *by name* in its `icon` key — the
+glyph itself is not shipped as a file. The import therefore downloads the glyph
+from the Font Awesome Free set (via the [Iconify](https://iconify.design) API).
+
+```bash
+git submodule update --init vendor/misp-galaxy   # first checkout
+make fetch-galaxies                               # download into src/svg/galaxies
+make all                                           # rebuild PNG/WebP/CSS/catalog
+```
+
+`fetch-galaxies` reads each `galaxies/<galaxy>.json`, resolves its `icon` name
+against the Font Awesome collections (`fa-solid`, then `fa-brands`, falling back
+to FA6), downloads the glyph as `src/svg/galaxies/<galaxy>.svg` (root `<svg>`
+dimensions stripped), and records provenance under `galaxies/<galaxy>` keys in
+`metadata/icons.json` — crediting Font Awesome Free (CC-BY-4.0). Glyphs shared by
+several galaxies are downloaded once and reused.
+
+
 ## Contribution Rules
 
 - `src/svg` is the source of truth
@@ -432,6 +607,137 @@ This project includes icons from third-party sources that require attribution.
 - **filename-md5** → tabler:file-digit (source: Tabler Icons, license: MIT, url: https://tabler.io/icons)
 - **filename-sha256** → tabler:file-digit (source: Tabler Icons, license: MIT, url: https://tabler.io/icons)
 - **full-name** → tabler:user (source: Tabler Icons, license: MIT, url: https://tabler.io/icons)
+- **galaxies/360net** → fa-solid:user-secret (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/agent-threat-rules** → fa-solid:shield-virus (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/ammunitions** → fa-solid:battery-full (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/android** → fa-brands:android (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/atrm** → fa-solid:map (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/attck4fraud** → fa-solid:map (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/backdoor** → fa-solid:door-open (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/banker** → fa-solid:dollar-sign (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/bhadra-framework** → fa-solid:mobile (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/bitns** → fa-solid:user-tie (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/botnet** → fa-solid:sitemap (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/branded-vulnerability** → fa-solid:bug (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/cancer** → fa-brands:android (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/cert-eu-govsector** → fa-solid:globe (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/china-defence-universities** → fa-solid:globe (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/cloak** → fa-solid:user-secret (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/cmtmf-attack-pattern** → fa-solid:mobile (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/country** → fa-solid:globe (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/cryptominers** → fa-brands:optin-monster (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/cti-cmm-1-3** → fa-solid:map (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/cyfun-assurance-requirements-2023** → fa-solid:map (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/cyfun-control-catalogue-2023** → fa-solid:list (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/dima-techniques** → fa-solid:project-diagram (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/disarm-actortypes** → fa-solid:user-secret (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/disarm-countermeasures** → fa-solid:shield-alt (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/disarm-detections** → fa-solid:bell (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/disarm-techniques** → fa-solid:map (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/election-guidelines** → fa-solid:map (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/entity** → fa-solid:user (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/exercise-world** → fa-solid:globe (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/exploit-kit** → fa-brands:internet-explorer (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/firearms** → fa-solid:fire (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/first-csirt-services-framework** → fa-solid:user (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/first-dns** → fa-solid:database (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/gsma-motif** → fa-solid:user-shield (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/handicap** → fa-solid:wheelchair (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/human-kill-chain** → fa-solid:people-arrows (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/intelligence-agencies** → fa-solid:user-ninja (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/interpol-dwva** → fa-solid:user-secret (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/it-infrastructure-equipment** → fa-solid:server (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/malpedia** → fa-solid:shield-virus (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/microsoft-activity-group** → fa-solid:user-secret (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/misinfosec-amitt-misinformation-pattern** → fa-solid:map (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/mitre-analytic** → fa-solid:shield-alt (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/mitre-atlas-attack-pattern** → fa-solid:map (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/mitre-atlas-course-of-action** → fa-solid:link (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/mitre-attack-pattern** → fa-solid:map (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/mitre-course-of-action** → fa-solid:link (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/mitre-d3fend** → fa-solid:user-shield (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/mitre-data-component** → fa-solid:sitemap (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/mitre-data-source** → fa-solid:sitemap (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/mitre-detection-strategy** → fa-solid:shield-alt (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/mitre-engage-framework** → fa-solid:user-secret (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/mitre-enterprise-attack-attack-pattern** → fa-solid:map (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/mitre-enterprise-attack-course-of-action** → fa-solid:link (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/mitre-enterprise-attack-intrusion-set** → fa-solid:user-secret (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/mitre-enterprise-attack-malware** → fa-brands:optin-monster (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/mitre-enterprise-attack-tool** → fa-solid:gavel (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/mitre-fraud-framework** → fa-solid:map (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/mitre-ics-assets** → fa-solid:certificate (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/mitre-ics-groups** → fa-solid:skull-crossbones (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/mitre-ics-levels** → fa-solid:layer-group (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/mitre-ics-software** → fa-solid:file-code (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/mitre-ics-tactics** → fa-solid:chess-pawn (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/mitre-ics-techniques** → fa-solid:user-ninja (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/mitre-intrusion-set** → fa-solid:user-secret (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/mitre-malware** → fa-brands:optin-monster (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/mitre-mobile-attack-attack-pattern** → fa-solid:map (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/mitre-mobile-attack-course-of-action** → fa-solid:link (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/mitre-mobile-attack-intrusion-set** → fa-solid:user-secret (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/mitre-mobile-attack-malware** → fa-brands:optin-monster (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/mitre-mobile-attack-tool** → fa-solid:gavel (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/mitre-pre-attack-attack-pattern** → fa-solid:map (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/mitre-pre-attack-intrusion-set** → fa-solid:user-secret (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/mitre-tool** → fa-solid:gavel (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/nace** → fa-solid:industry (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/naics** → fa-solid:industry (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/nato** → fa-solid:industry (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/nice-framework-competency-areas** → fa-solid:user (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/nice-framework-knowledges** → fa-solid:user (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/nice-framework-opm-codes** → fa-solid:user (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/nice-framework-skills** → fa-solid:user (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/nice-framework-tasks** → fa-solid:user (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/nice-framework-work-roles** → fa-solid:user (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/o365-exchange-techniques** → fa-solid:map (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/online-service** → fa-solid:cloud (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/operating-system** → fa-solid:laptop (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/plot4ai** → fa-solid:brain (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/preventive-measure** → fa-solid:shield-alt (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/producer** → fa-solid:book (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/ransomware** → fa-brands:btc (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/rat** → fa-solid:eye (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/region** → fa-solid:globe-europe (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/rmm-tool** → fa-solid:user-secret (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/rsit** → fa-solid:map (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/scor-about** → fa-solid:info (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/scor-attack-paths** → fa-solid:project-diagram (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/scor-detection-signatures** → fa-solid:search (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/scor-exposure-domain** → fa-solid:shield-alt (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/scor-incidents** → fa-solid:exclamation-triangle (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/scor-resilience-measures** → fa-solid:shield-virus (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/scor-tens** → fa-solid:atom (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/sector** → fa-solid:industry (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/sigma-rules** → fa-solid:link (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/social-dark-patterns** → fa-solid:link (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/sod-matrix** → fa-solid:map (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/software-vendor** → fa-solid:building (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/sparta-mitigations** → fa-solid:shield-alt (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/sparta-tactics** → fa-solid:map (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/sparta-techniques** → fa-solid:map (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/stalkerware** → fa-solid:eye (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/stealer** → fa-solid:key (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/surveillance-vendor** → fa-solid:user-shield (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/target-information** → fa-solid:bullseye (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/taxonomy-of-fraud** → fa-solid:money-bill-wave (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/tds** → fa-solid:cart-arrow-down (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/tea-matrix** → fa-solid:map (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/terrorist-groups** → fa-solid:user-secret (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/threat-actor** → fa-solid:user-secret (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/tidal-campaigns** → fa-solid:bullhorn (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/tidal-groups** → fa-solid:user-secret (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/tidal-references** → fa-solid:list (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/tidal-software** → fa-solid:file-code (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/tidal-tactic** → fa-solid:map (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/tidal-technique** → fa-solid:user-ninja (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/tmss** → fa-solid:map (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/tool** → fa-brands:optin-monster (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/uavs** → fa-solid:plane (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/ukhsa-culture-collections** → fa-solid:virus (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/veris-framework** → fa-solid:sitemap (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
+- **galaxies/wiper** → fa-solid:trash (source: Font Awesome Free, license: CC-BY-4.0, url: https://fontawesome.com)
 - **github-username** → tabler:brand-github (source: Tabler Icons, license: MIT, url: https://tabler.io/icons)
 - **hostname** → tabler:server (source: Tabler Icons, license: MIT, url: https://tabler.io/icons)
 - **iban** → tabler:building-bank (source: Tabler Icons, license: MIT, url: https://tabler.io/icons)

@@ -15,20 +15,21 @@ VARIANTS=(
   "hexagone"
   "attributes"
   "objects"
+  "galaxies"
 )
 
 #
-# Object icons (imported from the misp-objects submodule) are keyed with a
-# variant-qualified key ("objects/<name>") so their names never collide with the
-# bare-name keys used by the other sets. Map a (variant, name) pair to its key.
+# Imported icon sets (objects from misp-objects, galaxies from misp-galaxy) are
+# keyed with a variant-qualified key ("<variant>/<name>") so their names never
+# collide with the bare-name keys used by the core/attribute sets. Map a
+# (variant, name) pair to its key.
 #
 metadata_key() {
   local variant="$1" name="$2"
-  if [[ "$variant" == "objects" ]]; then
-    echo "objects/$name"
-  else
-    echo "$name"
-  fi
+  case "$variant" in
+    objects|galaxies) echo "$variant/$name" ;;
+    *)                echo "$name" ;;
+  esac
 }
 
 #

@@ -2,3 +2,7 @@
 	path = vendor/misp-objects
 	url = git@github.com:MISP/misp-objects.git
 	branch = main
+[submodule "vendor/misp-galaxy"]
+	path = vendor/misp-galaxy
+	url = git@github.com:MISP/misp-galaxy.git
+	branch = main

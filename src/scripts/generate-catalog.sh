@@ -245,3 +245,76 @@ if [[ -d "$OBJ_DIR" ]]; then
 
   echo "README object catalog updated."
 fi
+
+#
+# ---------------------------------------------------------------------------
+# Galaxy icons (imported from the misp-galaxy submodule, "galaxies" variant)
+# ---------------------------------------------------------------------------
+#
+GAL_START="<!-- GALAXY_ICONS_START -->"
+GAL_END="<!-- GALAXY_ICONS_END -->"
+
+GAL_DIR="./src/svg/galaxies"
+META="./metadata/icons.json"
+
+if [[ -d "$GAL_DIR" ]]; then
+  TMP_GAL="$(mktemp)"
+
+  {
+    echo "$GAL_START"
+    echo ""
+    echo ""
+    echo "Icons for **MISP galaxies**, derived from the [\`misp-galaxy\`](https://github.com/MISP/misp-galaxy)"
+    echo "submodule. A galaxy definition only references a [Font Awesome](https://fontawesome.com)"
+    echo "glyph by name (its \`icon\` key), so the glyph is downloaded from that set and"
+    echo "stored as \`src/svg/galaxies/<galaxy>.svg\` by \`src/scripts/fetch-galaxy-icons.sh\`."
+    echo "Several galaxies share the same glyph."
+    echo ""
+    echo "Address a galaxy icon with the \`misp-galaxies\` variant class:"
+    echo "\`<i class=\"misp-icon misp-icon-<galaxy> misp-galaxies\"></i>\`."
+    echo ""
+
+    echo "| Galaxy | Icon | Font Awesome glyph | File |"
+    echo "|--------|------|--------------------|------|"
+
+    while IFS= read -r file; do
+      relative="${file#$GAL_DIR/}"
+      name="${relative%.svg}"
+
+      png="./exports/png/2x/galaxies/${name}.png"
+      glyph="$(jq -r --arg k "galaxies/$name" '.[$k].original // "?"' "$META")"
+
+      echo "| \`$name\` | <img src=\"$png\" width=\"24\" alt=\"$name galaxy\" /> | \`$glyph\` | \`$name.svg\` |"
+
+    done < <(find "$GAL_DIR" -type f -name "*.svg" | sort)
+
+    echo ""
+    echo "$GAL_END"
+
+  } > "$TMP_GAL"
+
+  awk -v start="$GAL_START" -v end="$GAL_END" '
+  BEGIN { inside = 0 }
+
+  $0 == start {
+    inside = 1
+
+    while ((getline line < "'"$TMP_GAL"'") > 0)
+      print line
+
+    next
+  }
+
+  $0 == end {
+    inside = 0
+    next
+  }
+
+  !inside { print }
+  ' "$README" > "$README.tmp"
+
+  mv "$README.tmp" "$README"
+  rm "$TMP_GAL"
+
+  echo "README galaxy catalog updated."
+fi

@@ -1481,6 +1481,792 @@
     "license": "MIT",
     "url": "https://tabler.io/icons"
   },
+  "galaxies/360net": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-secret",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/agent-threat-rules": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:shield-virus",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/ammunitions": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:battery-full",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/android": {
+    "source": "Font Awesome Free",
+    "original": "fa-brands:android",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/atrm": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/attck4fraud": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/backdoor": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:door-open",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/banker": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:dollar-sign",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/bhadra-framework": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:mobile",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/bitns": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-tie",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/botnet": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:sitemap",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/branded-vulnerability": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:bug",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/cancer": {
+    "source": "Font Awesome Free",
+    "original": "fa-brands:android",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/cert-eu-govsector": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:globe",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/china-defence-universities": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:globe",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/cloak": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-secret",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/cmtmf-attack-pattern": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:mobile",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/country": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:globe",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/cryptominers": {
+    "source": "Font Awesome Free",
+    "original": "fa-brands:optin-monster",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/cti-cmm-1-3": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/cyfun-assurance-requirements-2023": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/cyfun-control-catalogue-2023": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:list",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/dima-techniques": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:project-diagram",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/disarm-actortypes": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-secret",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/disarm-countermeasures": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:shield-alt",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/disarm-detections": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:bell",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/disarm-techniques": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/election-guidelines": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/entity": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/exercise-world": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:globe",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/exploit-kit": {
+    "source": "Font Awesome Free",
+    "original": "fa-brands:internet-explorer",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/firearms": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:fire",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/first-csirt-services-framework": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/first-dns": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:database",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/gsma-motif": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-shield",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/handicap": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:wheelchair",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/human-kill-chain": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:people-arrows",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/intelligence-agencies": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-ninja",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/interpol-dwva": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-secret",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/it-infrastructure-equipment": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:server",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/malpedia": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:shield-virus",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/microsoft-activity-group": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-secret",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/misinfosec-amitt-misinformation-pattern": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-analytic": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:shield-alt",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-atlas-attack-pattern": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-atlas-course-of-action": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:link",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-attack-pattern": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-course-of-action": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:link",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-d3fend": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-shield",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-data-component": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:sitemap",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-data-source": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:sitemap",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-detection-strategy": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:shield-alt",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-engage-framework": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-secret",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-enterprise-attack-attack-pattern": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-enterprise-attack-course-of-action": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:link",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-enterprise-attack-intrusion-set": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-secret",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-enterprise-attack-malware": {
+    "source": "Font Awesome Free",
+    "original": "fa-brands:optin-monster",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-enterprise-attack-tool": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:gavel",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-fraud-framework": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-ics-assets": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:certificate",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-ics-groups": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:skull-crossbones",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-ics-levels": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:layer-group",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-ics-software": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:file-code",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-ics-tactics": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:chess-pawn",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-ics-techniques": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-ninja",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-intrusion-set": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-secret",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-malware": {
+    "source": "Font Awesome Free",
+    "original": "fa-brands:optin-monster",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-mobile-attack-attack-pattern": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-mobile-attack-course-of-action": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:link",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-mobile-attack-intrusion-set": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-secret",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-mobile-attack-malware": {
+    "source": "Font Awesome Free",
+    "original": "fa-brands:optin-monster",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-mobile-attack-tool": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:gavel",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-pre-attack-attack-pattern": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-pre-attack-intrusion-set": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-secret",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/mitre-tool": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:gavel",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/nace": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:industry",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/naics": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:industry",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/nato": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:industry",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/nice-framework-competency-areas": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/nice-framework-knowledges": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/nice-framework-opm-codes": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/nice-framework-skills": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/nice-framework-tasks": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/nice-framework-work-roles": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/o365-exchange-techniques": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/online-service": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:cloud",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/operating-system": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:laptop",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/plot4ai": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:brain",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/preventive-measure": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:shield-alt",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/producer": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:book",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/ransomware": {
+    "source": "Font Awesome Free",
+    "original": "fa-brands:btc",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/rat": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:eye",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/region": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:globe-europe",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/rmm-tool": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-secret",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/rsit": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/scor-about": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:info",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/scor-attack-paths": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:project-diagram",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/scor-detection-signatures": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:search",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/scor-exposure-domain": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:shield-alt",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/scor-incidents": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:exclamation-triangle",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/scor-resilience-measures": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:shield-virus",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/scor-tens": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:atom",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/sector": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:industry",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/sigma-rules": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:link",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/social-dark-patterns": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:link",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/sod-matrix": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/software-vendor": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:building",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/sparta-mitigations": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:shield-alt",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/sparta-tactics": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/sparta-techniques": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/stalkerware": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:eye",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/stealer": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:key",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/surveillance-vendor": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-shield",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/target-information": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:bullseye",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/taxonomy-of-fraud": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:money-bill-wave",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/tds": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:cart-arrow-down",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/tea-matrix": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/terrorist-groups": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-secret",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/threat-actor": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-secret",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/tidal-campaigns": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:bullhorn",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/tidal-groups": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-secret",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/tidal-references": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:list",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/tidal-software": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:file-code",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/tidal-tactic": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/tidal-technique": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:user-ninja",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/tmss": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:map",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/tool": {
+    "source": "Font Awesome Free",
+    "original": "fa-brands:optin-monster",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/uavs": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:plane",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/ukhsa-culture-collections": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:virus",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/veris-framework": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:sitemap",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
+  "galaxies/wiper": {
+    "source": "Font Awesome Free",
+    "original": "fa-solid:trash",
+    "license": "CC-BY-4.0",
+    "url": "https://fontawesome.com"
+  },
   "github-username": {
     "source": "Tabler Icons",
     "original": "tabler:brand-github",
