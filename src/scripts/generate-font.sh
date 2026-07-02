@@ -54,14 +54,17 @@ PUA_BASE=$((16#E000))
 # Variants baked into the font, in a fixed order (codepoints are assigned in this
 # order on first build, so keep it append-stable — new variants go at the end).
 # Phase 1 (PRD §8): hexagone/simple/attributes/objects-framed. Phase 2 appends
-# objects and galaxies. The Phase 1 sets are authored on a square canvas; the
-# Phase 2 sets are cropped to a non-square content box, so they are squared onto
-# the em first (see SQUARE_VARIANTS / square_pad).
-FONT_VARIANTS=(hexagone simple attributes objects-framed objects galaxies)
+# objects and galaxies. Phase 3 appends galaxies-orbit. The Phase 1 sets are
+# authored on a square canvas; the Phase 2 sets are cropped to a non-square
+# content box, so they are squared onto the em first (see SQUARE_VARIANTS /
+# square_pad). galaxies-orbit is already normalised to a square 0 0 24 24 canvas
+# by frame-galaxies.sh, so it needs no squaring — but its orbital ring is dashed,
+# which is flattened to a solid stroke before outlining (see outline_icon).
+FONT_VARIANTS=(hexagone simple attributes objects-framed objects galaxies galaxies-orbit)
 
-# Every variant that exists, so we can report what was deliberately left out.
-# Not (yet) in the font — the mask export still covers it:
-#   galaxies-orbit         -> Phase 3 (dashed ring outlines to many tiny contours)
+# Every variant that exists — used to report anything deliberately left out of the
+# font. All variants are now in scope (Phases 1–3), so nothing is skipped; the
+# list is kept so a newly-added variant is reported until it is folded in above.
 ALL_VARIANTS=(hexagone simple attributes objects objects-framed galaxies galaxies-orbit)
 
 # Variants whose source glyphs are cropped to a non-square content box. A font
@@ -150,16 +153,28 @@ square_pad() {
 outline_icon() {
   local src="$1" dst="$2"
 
-  # Drop invisible padding boxes first. A few icons carry a <path fill="none">
-  # with no stroke — a rectangle that only pads the viewBox for the mask/PNG
-  # export (it renders nothing there). But a glyph outline is pure geometry:
-  # path-union merges contours regardless of paint, so the rectangle would union
-  # over the artwork and the glyph would come out as a solid filled box. Removing
-  # these no-stroke fill="none" paths is safe — real stroked artwork always
-  # carries a stroke (kept), and filled artwork is fill="currentColor" (kept).
+  # Two geometry fixes before outlining, each scoped by what it matches:
+  #
+  # (a) Flatten dashed strokes to solid. Only galaxies-orbit is dashed (its
+  #     orbital ring — stroke-dasharray in frame-galaxies.sh). Outlining a dashed
+  #     stroke emits one tiny filled contour *per dash* (~16/glyph), which bloats
+  #     the font ~4x and renders as sub-pixel noise at text sizes. Dropping the
+  #     dasharray outlines the ring as a single clean solid contour; the ring, its
+  #     ±24° break and the star still read as "orbit". Font-only — the mask export
+  #     keeps the dashes.
+  #
+  # (b) Drop invisible padding boxes. A few icons carry a <path fill="none"> with
+  #     no stroke — a rectangle that only pads the viewBox for the mask/PNG export
+  #     (it renders nothing there). But a glyph outline is pure geometry: path-union
+  #     merges contours regardless of paint, so the rectangle would union over the
+  #     artwork and the glyph would come out as a solid box. Removing no-stroke
+  #     fill="none" paths is safe — real stroked artwork keeps its stroke, and
+  #     filled artwork is fill="currentColor".
   local clean="$BUILD/clean.svg"
-  perl -0777 -pe 's{(<path\b[^>]*/>)}{ my $p=$1; ($p =~ /\bfill="none"/ && $p !~ /\bstroke/) ? "" : $p }ge' \
-    "$src" > "$clean"
+  perl -0777 -pe '
+    s/\s*stroke-dasharray="[^"]*"//g;
+    s{(<path\b[^>]*/>)}{ my $p=$1; ($p =~ /\bfill="none"/ && $p !~ /\bstroke/) ? "" : $p }ge;
+  ' "$src" > "$clean"
   src="$clean"
 
   if ! grep -q 'mask="url(' "$src"; then
@@ -388,6 +403,7 @@ for variant in "${FONT_VARIANTS[@]}"; do
     objects-framed) printf '\n/* --- object icons (framed variant) --- */\n\n' >> "$CSS" ;;
     objects)        printf '\n/* --- object icons --- */\n\n'                  >> "$CSS" ;;
     galaxies)       printf '\n/* --- galaxy icons --- */\n\n'                  >> "$CSS" ;;
+    galaxies-orbit) printf '\n/* --- galaxy icons (orbit variant) --- */\n\n'  >> "$CSS" ;;
   esac
 
   for i in "${!KEYS[@]}"; do

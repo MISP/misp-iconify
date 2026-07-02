@@ -1,8 +1,10 @@
 # Feature — Webfont export (`.woff2` + `icons-font.css`) for FontAwesome-style consumption
 
-**Status:** Phases 1–2 implemented — `make font` builds the font for
-hexagone/simple/attributes/objects-framed (Phase 1, 2026-07-01) plus objects and
-galaxies (Phase 2, 2026-07-02): 639 glyphs. Only Phase 3 (galaxies-orbit) pending.
+**Status:** All phases implemented — `make font` builds the font for
+hexagone/simple/attributes/objects-framed (Phase 1, 2026-07-01), objects and
+galaxies (Phase 2, 2026-07-02), and galaxies-orbit (Phase 3, 2026-07-02):
+**770 glyphs** across all seven variants. The orbit ring is flattened dashed→solid
+for the font (see §8); the mask/PNG exports keep the dashes.
 **Owner:** Sami Mokaddem
 **Created:** 2026-07-01
 **Area:** `src/scripts/`, `Makefile`, `exports/font/` (new), `metadata/`, `.github/workflows/generate-assets.yml`
@@ -323,10 +325,15 @@ Outlining quality and font bloat vary by variant. Phase to de-risk:
   `path-union` merged over the whole glyph, so they shipped as solid squares in
   both `objects` and `objects-framed`. `outline_icon()` now strips no-stroke
   `fill="none"` paths before outlining.
-- **Phase 3 / evaluate:** `galaxies-orbit` — the dashed orbital ring outlines into
-  many tiny contours (§4). Assess font-size legibility and byte cost before
-  including; may be intentionally excluded from the font (masks remain available
-  for it regardless).
+- **Phase 3 — ✅ done (2026-07-02):** `galaxies-orbit`. The dashed orbital ring
+  outlines into ~16 tiny contours per glyph (§4) — measured at ~3.7× the SVG size
+  and contour count vs. a solid ring, and sub-pixel noise at 16px. Rather than
+  exclude the variant, `outline_icon()` strips the `stroke-dasharray` before
+  outlining so the ring becomes a **single solid contour**; the ring, its ±24°
+  break and the star still read unmistakably as "orbit" (verified rendering the
+  woff2 at 16/24/48px). The glyph is already square (frame-galaxies.sh normalises
+  to `0 0 24 24`), so it needs no `square_pad`. The mask/PNG exports keep the
+  dashes — only the font ring is solid.
 
 Whatever is excluded from a phase must be **logged explicitly** by
 `generate-font.sh` (which variants/icons were skipped and why) so a missing glyph
@@ -392,8 +399,9 @@ All resolved for Phase 1:
   library is deliberately not coupled to FontAwesome naming. Consequence: Pivotick's
   `faGlyph()` needs a small upstream change to read `--misp-icon` (README documents
   the exact JS decode). Tracked as upstream Pivotick work, not a blocker here.
-- **D-4 — galaxies-orbit inclusion.** ✅ **Excluded** from Phase 1 (Phase 3, still to
-  evaluate). Masks remain available for it.
+- **D-4 — galaxies-orbit inclusion.** ✅ **Included** (Phase 3, 2026-07-02) with the
+  ring flattened dashed→solid for the font (§8). Deferred out of Phases 1–2; masks
+  keep the dashes.
 - **D-5 — Ligatures.** ✅ **Deferred** to a future version.
 
 ## 12. Risks
