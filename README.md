@@ -10,7 +10,8 @@ Icons and related visual elements for MISP and MISP standard.
   - [Galaxy icons](#galaxy-icons)
 - [Usage](#usage)
   - [SVG (direct file)](#svg-direct-file)
-  - [CSS](#css)
+  - [CSS (mask)](#css-mask)
+  - [Webfont (text / SVG `<text>`)](#webfont-text--svg-text)
 - [Object icons (misp-objects submodule)](#object-icons-misp-objects-submodule)
 - [Galaxy icons (misp-galaxy submodule)](#galaxy-icons-misp-galaxy-submodule)
 - [Contribution Rules](#contribution-rules)
@@ -519,7 +520,7 @@ Icons inherit color and size from CSS (currentColor, font-size).
 <img src="./hexagone/event.svg" />
 ```
 
-### CSS
+### CSS (mask)
 ```html
 <link rel="stylesheet" href="./exports/css/icons.css" />
 ...
@@ -536,6 +537,72 @@ Icons inherit color and size from CSS (currentColor, font-size).
 Each icon is a compound selector `.misp-icon-<name>.misp-<variant>`, so the
 same name in different variants (e.g. the `vulnerability` attribute icon and the
 `vulnerability` object icon) never collides — pick one with its variant class.
+
+The mask CSS paints a `background-color: currentColor` through a `mask-image`.
+That needs a **filled HTML box** to cut into (a `<span>`, `<i>`, `<div>` …). It
+works everywhere HTML boxes render, but it **cannot** render into an SVG `<text>`
+element, because text has no background box for the mask to reveal. For that,
+use the webfont below.
+
+### Webfont (text / SVG `<text>`)
+
+`exports/font/` ships a FontAwesome-style webfont: every icon is a monochrome
+glyph at a stable [Private-Use](https://en.wikipedia.org/wiki/Private_Use_Areas)
+codepoint, so it renders anywhere **text** renders — including an SVG `<text>`
+node (e.g. a graph node label), which the mask CSS cannot do.
+
+```html
+<link rel="stylesheet" href="./exports/font/icons-font.css" />
+...
+<!-- Same class names as the mask CSS — markup is identical either way -->
+<span class="misp-icon misp-icon-domain misp-attributes" aria-hidden="true"></span>
+```
+
+The glyph is tinted with `color` (not `background-color`) and sized with
+`font-size`, exactly like FontAwesome. Each icon also exposes its codepoint as a
+`--misp-icon` custom property, for JS consumers that build an SVG `<text>` node
+and need the raw glyph:
+
+```css
+.misp-icon-domain.misp-attributes::before { content: "\e001"; }  /* HTML usage   */
+.misp-icon-domain.misp-attributes { --misp-icon: "\e001"; }       /* read from JS */
+```
+
+```js
+// --misp-icon is the codepoint as an authored CSS escape, e.g. the string "\e001".
+// Parse the hex out of it, build the glyph, and set it on an SVG <text> node.
+const raw = getComputedStyle(el).getPropertyValue('--misp-icon');           // "\e001"
+const glyph = String.fromCodePoint(parseInt(raw.replace(/[^0-9a-fA-F]/g, ''), 16));
+textNode.setAttribute('font-family', 'MISP Icons');
+textNode.textContent = glyph;
+```
+
+Codepoints are recorded in [`metadata/codepoints.json`](metadata/codepoints.json)
+and are **append-only**: a new icon takes the next free slot and an existing
+assignment is never changed, so consumers may cache or hardcode them safely.
+
+**Mask CSS vs. webfont — load exactly one.** Both stylesheets define the *same*
+class names with conflicting mechanics, so they are mutually exclusive; pick the
+one that fits the rendering context (consumer markup is identical either way):
+
+| Consumer context | Load |
+|---|---|
+| HTML boxes; needs `misp-fw`; broadest browser support | `exports/css/icons.css` (mask) — default |
+| Rendering into text / SVG `<text>` (e.g. graph nodes) | `exports/font/icons-font.css` (font) |
+
+**Accessibility.** Because the glyph is emitted via `::before`, it is not part of
+the accessible text tree by default. Mark **decorative** icons `aria-hidden="true"`;
+give **meaningful** icons an adjacent visually-hidden label, or
+`role="img"` + `aria-label="…"`.
+
+**Scope.** The font currently covers the `hexagone`, `simple`, `attributes` and
+`objects-framed` variants (295 glyphs). The `objects`, `galaxies` and
+`galaxies-orbit` variants are not in the font yet — use the mask CSS for those.
+
+Build it with `make font` (or `make all`). This step needs Node — it uses
+[`fantasticon`](https://github.com/tancredi/fantasticon) to compile the glyphs,
+installed on demand from `package.json` (`npm install`). The published assets
+stay plain files; Node is only a build-time tool.
 
 
 ## Object icons (misp-objects submodule)

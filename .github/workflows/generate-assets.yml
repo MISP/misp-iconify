@@ -1,4 +1,4 @@
-name: Generate PNG Icons
+name: Generate Assets
 
 on:
   push:
@@ -7,9 +7,11 @@ on:
     paths:
       - "src/**"
       - "Makefile"
+      - "package.json"
+      - "package-lock.json"
 
 jobs:
-  generate-pngs:
+  generate-assets:
     runs-on: ubuntu-latest
 
     permissions:
@@ -21,26 +23,35 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Install ImageMagick
+      - name: Install system tooling
         run: sudo apt-get update && sudo apt-get install -y imagemagick librsvg2-bin inkscape libxml2-utils
 
-      - name: Make script executable
-        run: chmod +x src/scripts/generate-pngs.sh
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
 
-      - name: Generate assets
+      - name: Install font tooling
+        run: npm ci
+
+      - name: Generate raster assets
         run: make assets
+
+      - name: Generate webfont
+        run: make font
 
       - name: Commit generated assets
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add exports
+          git add exports metadata/codepoints.json
 
           if git diff --cached --quiet; then
-            echo "No PNG changes."
+            echo "No asset changes."
             exit 0
           fi
 
-          git commit -m "chore: generate PNG icons [skip ci]"
+          git commit -m "chore: generate icon assets [skip ci]"
           git push

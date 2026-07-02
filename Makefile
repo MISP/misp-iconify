@@ -1,6 +1,6 @@
-.PHONY: all clean validate optimize fit-ratio frame-objects frame-galaxies png metadata catalog webp css fetch-objects fetch-galaxies
+.PHONY: all clean validate optimize fit-ratio frame-objects frame-galaxies png metadata catalog attribution webp css font fetch-objects fetch-galaxies
 
-all: clean validate optimize fit-ratio frame-objects frame-galaxies metadata catalog attribution png webp css
+all: clean validate optimize fit-ratio frame-objects frame-galaxies metadata catalog attribution png webp css font
 
 clean:
 	@rm -rf exports
@@ -51,3 +51,10 @@ png:
 
 css:
 	@bash src/scripts/generate-css.sh
+
+font: node_modules
+	@bash src/scripts/generate-font.sh
+
+node_modules: package.json package-lock.json
+	@npm install
+	@touch node_modules

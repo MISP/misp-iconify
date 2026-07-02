@@ -1,0 +1,10 @@
+{
+  "name": "misp-iconify",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Build-only tooling for misp-iconify. The published assets are plain files (SVG/CSS/PNG/WebP/webfont); Node is used solely to compile the icon webfont via fantasticon (invoked by src/scripts/generate-font.sh).",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "fantasticon": "^4.1.0"
+  }
+}
