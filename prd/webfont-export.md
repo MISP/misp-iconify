@@ -189,23 +189,22 @@ as the mask CSS so markup is portable:
 }
 .misp-fw { width: 1.25em; text-align: center; }
 
-/* Per-icon: expose the codepoint three ways */
+/* Per-icon: expose the codepoint two ways */
 .misp-icon-domain.misp-attributes::before { content: "\e001"; }
 .misp-icon-domain.misp-attributes {
   --misp-icon: "\e001";   /* canonical machine-readable property */
-  --fa: "\e001";          /* alias — zero-change Pivotick faGlyph() compat */
 }
 ```
 
-Rationale for exposing the codepoint three ways:
+Rationale for exposing the codepoint two ways:
 
 - `::before { content }` — the normal HTML usage (`<span class="misp-icon …">`).
-- `--misp-icon` — the canonical property a JS consumer should read.
-- `--fa` — a compatibility alias so Pivotick's current `faGlyph()`
-  (which reads `--fa` by name) works with **no change to Pivotick**. This coupling
-  is a deliberate shim; the cleaner long-term path is for Pivotick to read a
-  neutral property or be handed the codepoint via `iconUnicode` (tracked as an
-  upstream Pivotick change, not a blocker here).
+- `--misp-icon` — the canonical, FontAwesome-neutral property a JS consumer reads
+  to build an SVG `<text>` node. **No `--fa` alias** — the library is deliberately
+  not coupled to FontAwesome naming (resolved D-3, §11). Pivotick's current
+  `faGlyph()` reads `--fa` by name, so it needs a small upstream change to read
+  `--misp-icon` instead (README documents the exact JS decode); tracked as upstream
+  Pivotick work, not a blocker here.
 
 The icon is tinted by CSS `color` (not `background-color`) and sized by
 `font-size`, exactly like FontAwesome.
@@ -378,7 +377,8 @@ With the webfont (native text path, no foreignObject):
 
 ```js
 defaultNodeStyle: {
-  // Pivotick reads --fa off the class via faGlyph(); the font renders it as <text>.
+  // faGlyph() must read --misp-icon off the class (small upstream Pivotick change,
+  // per D-3); the font then renders that codepoint as <text>.
   iconClass: (node) => 'misp-icon ' + iconClassesForData(node.getData())
 }
 ```
