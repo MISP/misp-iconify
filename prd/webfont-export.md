@@ -1,7 +1,8 @@
 # Feature — Webfont export (`.woff2` + `icons-font.css`) for FontAwesome-style consumption
 
-**Status:** Phase 1 implemented (2026-07-01) — `make font` builds the font for
-hexagone/simple/attributes/objects-framed (295 glyphs). Phases 2–3 pending.
+**Status:** Phases 1–2 implemented — `make font` builds the font for
+hexagone/simple/attributes/objects-framed (Phase 1, 2026-07-01) plus objects and
+galaxies (Phase 2, 2026-07-02): 639 glyphs. Only Phase 3 (galaxies-orbit) pending.
 **Owner:** Sami Mokaddem
 **Created:** 2026-07-01
 **Area:** `src/scripts/`, `Makefile`, `exports/font/` (new), `metadata/`, `.github/workflows/generate-assets.yml`
@@ -308,10 +309,20 @@ codepoints are allocated and the CSS emitted with bash + `jq`.
 
 Outlining quality and font bloat vary by variant. Phase to de-risk:
 
-- **Phase 1 (covers the Pivotick driver):** `attributes`, `objects-framed`,
-  `simple`, `hexagone`. These are the sets a graph consumer needs, and they
-  outline cleanly (solid strokes, self-contained framed shapes).
-- **Phase 2:** `objects`, `galaxies`.
+- **Phase 1 (covers the Pivotick driver) — ✅ done:** `attributes`,
+  `objects-framed`, `simple`, `hexagone`. These are the sets a graph consumer
+  needs, and they outline cleanly (solid strokes, self-contained framed shapes).
+- **Phase 2 — ✅ done (2026-07-02):** `objects`, `galaxies`. Both are cropped to a
+  **non-square content box** (unlike the square Phase 1 sets), so `generate-font.sh`
+  first scales + centres each glyph onto a square 24-unit em (`square_pad()`),
+  reproducing the mask's `mask-size: contain`/centre. Galaxies are already filled
+  Font Awesome art (no strokes/masks); plain `objects` reuse the same masked-icon
+  show − hide path as `objects-framed`. Implementing this surfaced (and fixed) a
+  latent Phase 1 bug: 4 icons (`android-app`, `android-permission`, `c2-list`,
+  `crypto-material`) carry an invisible `fill="none"` padding rectangle that
+  `path-union` merged over the whole glyph, so they shipped as solid squares in
+  both `objects` and `objects-framed`. `outline_icon()` now strips no-stroke
+  `fill="none"` paths before outlining.
 - **Phase 3 / evaluate:** `galaxies-orbit` — the dashed orbital ring outlines into
   many tiny contours (§4). Assess font-size legibility and byte cost before
   including; may be intentionally excluded from the font (masks remain available

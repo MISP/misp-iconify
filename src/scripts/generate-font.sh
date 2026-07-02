@@ -16,6 +16,8 @@ set -euo pipefail
 #
 #   1. Select the in-scope (variant, name) icons — see FONT_VARIANTS below. Icons
 #      of other variants are logged as explicitly skipped, never silently dropped.
+#      Variants cropped to a non-square box (SQUARE_VARIANTS) are first scaled +
+#      centred onto a square em so they render like the mask's contain/centre.
 #   2. Outline each icon's strokes into filled contours (a glyph is filled
 #      contours; a `fill="none"` stroke contributes nothing to a glyph). Masked
 #      "file-type" icons (the Tabler mask idiom) are resolved to show − hide so
@@ -50,15 +52,28 @@ VARIANT_PREFIX="misp"
 PUA_BASE=$((16#E000))
 
 # Variants baked into the font, in a fixed order (codepoints are assigned in this
-# order on first build, so keep it append-stable). Phase 1 (PRD §8): the sets a
-# graph consumer needs, all of which outline cleanly.
-FONT_VARIANTS=(hexagone simple attributes objects-framed)
+# order on first build, so keep it append-stable — new variants go at the end).
+# Phase 1 (PRD §8): hexagone/simple/attributes/objects-framed. Phase 2 appends
+# objects and galaxies. The Phase 1 sets are authored on a square canvas; the
+# Phase 2 sets are cropped to a non-square content box, so they are squared onto
+# the em first (see SQUARE_VARIANTS / square_pad).
+FONT_VARIANTS=(hexagone simple attributes objects-framed objects galaxies)
 
 # Every variant that exists, so we can report what was deliberately left out.
-# Not (yet) in the font — the mask export still covers them:
-#   objects, galaxies      -> Phase 2
+# Not (yet) in the font — the mask export still covers it:
 #   galaxies-orbit         -> Phase 3 (dashed ring outlines to many tiny contours)
 ALL_VARIANTS=(hexagone simple attributes objects objects-framed galaxies galaxies-orbit)
+
+# Variants whose source glyphs are cropped to a non-square content box. A font
+# glyph must sit on a consistent em square — the mask paints into a 1em box with
+# mask-size:contain — so these are scaled + centred onto a SQUARE_CANVAS viewBox
+# before outlining, reproducing the mask's contain/centre and giving every glyph
+# the same visual weight. The Phase 1 variants are already square (attributes/
+# objects-framed 24, hexagone 32, simple a padded ~30 box) so they are outlined
+# as-is and stay byte-for-byte unchanged.
+SQUARE_VARIANTS=(objects galaxies)
+SQUARE_CANVAS=24               # square em canvas the non-square variants map onto
+                               # (must match the combine.svg viewBox in outline_icon)
 
 # Frame/marker sentinel ids (appended outside the glyph by frame-*.sh). The
 # masked-icon "hide" pass drops them: a frame is always shown, never a knockout.
@@ -90,6 +105,40 @@ _inkscape_outline() {
   inkscape "$1" --actions="${OUTLINE_ACTIONS/__OUT__/$2}" >/dev/null 2>&1
 }
 
+# Scale + centre a non-square glyph onto a square SQUARE_CANVAS viewBox, so it
+# maps onto the em exactly like the mask's 1em box + mask-size:contain (the glyph
+# fills the larger side and is centred on the other). Mirrors the fit-to-larger-
+# side maths of frame-objects.sh but appends no frame. <defs> are kept verbatim
+# so a masked glyph's <mask> survives for outline_icon's show − hide pass.
+#   $1 = source svg   $2 = destination (square) svg
+square_pad() {
+  local src="$1" dst="$2" viewbox
+  viewbox="$(grep -o 'viewBox="[^"]*"' "$src" | head -1 | sed 's/viewBox="//;s/"//')"
+  [[ -n "$viewbox" ]] || { echo "❌ $src: no viewBox to square"; exit 1; }
+
+  local TX TY S
+  read -r TX TY S < <(awk -v vb="$viewbox" -v n="$SQUARE_CANVAS" 'BEGIN {
+    split(vb, a, " ")
+    vx=a[1]+0; vy=a[2]+0; vw=a[3]+0; vh=a[4]+0
+    m = (vw > vh) ? vw : vh          # contain: fit the larger side to the canvas
+    s = n / m
+    tx = (n - vw*s)/2 - vx*s
+    ty = (n - vh*s)/2 - vy*s
+    printf "%.4f %.4f %.6f\n", tx, ty, s
+  }')
+
+  TX="$TX" TY="$TY" S="$S" N="$SQUARE_CANVAS" perl -0777 -pe '
+    s{<\?xml.*?\?>}{}s;
+    s{<sodipodi:namedview\b.*?(/>|</sodipodi:namedview>)}{}gs;
+    s{<metadata\b.*?</metadata>}{}gs;
+    if (m{<svg\b[^>]*>(.*)</svg>}s) {
+      my $inner = $1;
+      $_ = qq{<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 $ENV{N} $ENV{N}">}
+         . qq{<g transform="translate($ENV{TX} $ENV{TY}) scale($ENV{S})">$inner</g></svg>\n};
+    }
+  ' "$src" > "$dst"
+}
+
 # Outline one source icon into a single filled-contour glyph SVG.
 #   $1 = source svg   $2 = destination glyph svg
 #
@@ -100,6 +149,18 @@ _inkscape_outline() {
 # shapes only), outline+union each, then subtract hide from show.
 outline_icon() {
   local src="$1" dst="$2"
+
+  # Drop invisible padding boxes first. A few icons carry a <path fill="none">
+  # with no stroke — a rectangle that only pads the viewBox for the mask/PNG
+  # export (it renders nothing there). But a glyph outline is pure geometry:
+  # path-union merges contours regardless of paint, so the rectangle would union
+  # over the artwork and the glyph would come out as a solid filled box. Removing
+  # these no-stroke fill="none" paths is safe — real stroked artwork always
+  # carries a stroke (kept), and filled artwork is fill="currentColor" (kept).
+  local clean="$BUILD/clean.svg"
+  perl -0777 -pe 's{(<path\b[^>]*/>)}{ my $p=$1; ($p =~ /\bfill="none"/ && $p !~ /\bstroke/) ? "" : $p }ge' \
+    "$src" > "$clean"
+  src="$clean"
 
   if ! grep -q 'mask="url(' "$src"; then
     _inkscape_outline "$src" "$dst"
@@ -172,16 +233,31 @@ FLATS=()         # "variant__name" (fantasticon glyph id / staged filename)
 
 for variant in "${FONT_VARIANTS[@]}"; do
   [[ -d "$SVG_DIR/$variant" ]] || { echo "  ⚠ no $SVG_DIR/$variant — skipping variant"; continue; }
+
+  # Non-square variants are squared onto the em before outlining (see square_pad).
+  square=0
+  for v in "${SQUARE_VARIANTS[@]}"; do [[ "$v" == "$variant" ]] && square=1; done
+
   count=0
   while IFS= read -r file; do
     name="$(basename "$file" .svg)"
     flat="${variant}__${name}"
-    outline_icon "$file" "$GLYPHS/$flat.svg"
+    if [[ "$square" -eq 1 ]]; then
+      square_pad "$file" "$BUILD/square.svg"
+      outline_icon "$BUILD/square.svg" "$GLYPHS/$flat.svg"
+    else
+      outline_icon "$file" "$GLYPHS/$flat.svg"
+    fi
     KEYS+=("$variant/$name")
     FLATS+=("$flat")
     count=$((count + 1))
   done < <(find "$SVG_DIR/$variant" -type f -name "*.svg" | sort)
-  echo "  ✔ $variant: outlined $count icon(s)"
+
+  if [[ "$square" -eq 1 ]]; then
+    echo "  ✔ $variant: outlined $count icon(s) (squared onto ${SQUARE_CANVAS}u em)"
+  else
+    echo "  ✔ $variant: outlined $count icon(s)"
+  fi
 done
 
 echo "  → ${#KEYS[@]} glyph(s) outlined into the font"
@@ -306,10 +382,12 @@ EOF
 
 for variant in "${FONT_VARIANTS[@]}"; do
   case "$variant" in
-    hexagone)       printf '\n/* --- hexagone icons --- */\n\n'               >> "$CSS" ;;
-    simple)         printf '\n/* --- simple icons --- */\n\n'                 >> "$CSS" ;;
-    attributes)     printf '\n/* --- attribute type icons --- */\n\n'         >> "$CSS" ;;
+    hexagone)       printf '\n/* --- hexagone icons --- */\n\n'                >> "$CSS" ;;
+    simple)         printf '\n/* --- simple icons --- */\n\n'                  >> "$CSS" ;;
+    attributes)     printf '\n/* --- attribute type icons --- */\n\n'          >> "$CSS" ;;
     objects-framed) printf '\n/* --- object icons (framed variant) --- */\n\n' >> "$CSS" ;;
+    objects)        printf '\n/* --- object icons --- */\n\n'                  >> "$CSS" ;;
+    galaxies)       printf '\n/* --- galaxy icons --- */\n\n'                  >> "$CSS" ;;
   esac
 
   for i in "${!KEYS[@]}"; do

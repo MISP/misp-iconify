@@ -595,9 +595,11 @@ the accessible text tree by default. Mark **decorative** icons `aria-hidden="tru
 give **meaningful** icons an adjacent visually-hidden label, or
 `role="img"` + `aria-label="…"`.
 
-**Scope.** The font currently covers the `hexagone`, `simple`, `attributes` and
-`objects-framed` variants (295 glyphs). The `objects`, `galaxies` and
-`galaxies-orbit` variants are not in the font yet — use the mask CSS for those.
+**Scope.** The font currently covers the `hexagone`, `simple`, `attributes`,
+`objects-framed`, `objects` and `galaxies` variants (639 glyphs). Only the
+`galaxies-orbit` variant is not in the font yet — its dashed orbital ring
+outlines into dozens of tiny contours per glyph, so it is deferred; use the mask
+CSS for it.
 
 Build it with `make font` (or `make all`). This step needs Node — it uses
 [`fantasticon`](https://github.com/tancredi/fantasticon) to compile the glyphs,
