@@ -1,4 +1,10 @@
 {
+  "analyst-graph": {
+    "source": "MISP Project",
+    "original": "misp-project:analyst-graph",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP"
+  },
   "analyst-note": {
     "source": "MISP Project",
     "original": "misp-project:analyst-note",
@@ -1370,6 +1376,12 @@
   "user3": {
     "source": "MISP Project",
     "original": "misp-project:user3",
+    "license": "BSD-2-Clause",
+    "url": "https://github.com/MISP"
+  },
+  "value-intelligence": {
+    "source": "MISP Project",
+    "original": "misp-project:value-intelligence",
     "license": "BSD-2-Clause",
     "url": "https://github.com/MISP"
   },

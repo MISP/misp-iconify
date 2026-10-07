@@ -27,6 +27,7 @@ Main icon class:  `misp-icon`
 
 | Name | Icon Simple | Icon Hexa | CSS Class |
 |------|-------------|------------| ---- |
+| `analyst-graph` | <img src="./exports/png/2x/simple/analyst-graph.png" width="24" alt="analyst-graph simple" /> | <img src="./exports/png/2x/hexagone/analyst-graph.png" width="24" alt="analyst-graph hexagone" /> | `misp-analyst-graph` |
 | `analyst-note` | <img src="./exports/png/2x/simple/analyst-note.png" width="24" alt="analyst-note simple" /> | <img src="./exports/png/2x/hexagone/analyst-note.png" width="24" alt="analyst-note hexagone" /> | `misp-analyst-note` |
 | `analyst-opinion` | <img src="./exports/png/2x/simple/analyst-opinion.png" width="24" alt="analyst-opinion simple" /> | <img src="./exports/png/2x/hexagone/analyst-opinion.png" width="24" alt="analyst-opinion hexagone" /> | `misp-analyst-opinion` |
 | `attribute` | <img src="./exports/png/2x/simple/attribute.png" width="24" alt="attribute simple" /> | <img src="./exports/png/2x/hexagone/attribute.png" width="24" alt="attribute hexagone" /> | `misp-attribute` |
@@ -43,6 +44,7 @@ Main icon class:  `misp-icon`
 | `user1` | <img src="./exports/png/2x/simple/user1.png" width="24" alt="user1 simple" /> | <img src="./exports/png/2x/hexagone/user1.png" width="24" alt="user1 hexagone" /> | `misp-user1` |
 | `user2` | <img src="./exports/png/2x/simple/user2.png" width="24" alt="user2 simple" /> | <img src="./exports/png/2x/hexagone/user2.png" width="24" alt="user2 hexagone" /> | `misp-user2` |
 | `user3` | <img src="./exports/png/2x/simple/user3.png" width="24" alt="user3 simple" /> | <img src="./exports/png/2x/hexagone/user3.png" width="24" alt="user3 hexagone" /> | `misp-user3` |
+| `value-intelligence` | <img src="./exports/png/2x/simple/value-intelligence.png" width="24" alt="value-intelligence simple" /> | <img src="./exports/png/2x/hexagone/value-intelligence.png" width="24" alt="value-intelligence hexagone" /> | `misp-value-intelligence` |
 
 <!-- ICONS_END -->
 
